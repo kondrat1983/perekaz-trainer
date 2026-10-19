@@ -1,10 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" role="img" aria-label="Щасливий принц">
-  <rect x="22" y="128" width="76" height="18" rx="4" fill="#5B4A6E"/>
-  <path d="M44 128L48 74H72L76 128Z" fill="#E8B23A" stroke="#B9821C" stroke-width="2"/>
-  <path d="M44 74Q60 66 76 74" fill="none" stroke="#B9821C" stroke-width="2"/>
-  <circle cx="60" cy="52" r="17" fill="#F6CE5B" stroke="#B9821C" stroke-width="2"/>
-  <circle cx="54" cy="50" r="2.4" fill="#2F6FD6"/>
-  <circle cx="66" cy="50" r="2.4" fill="#2F6FD6"/>
-  <line x1="70" y1="110" x2="96" y2="94" stroke="#F6CE5B" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="71" cy="110" r="2.6" fill="#C2415A"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Щасливий принц">
+  <g stroke="#1E2433" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="62" y="342" width="176" height="50" fill="#6B5B7E"/>
+    <rect x="62" y="372" width="176" height="20" fill="#57496A" stroke="none"/>
+    <rect x="50" y="326" width="200" height="22" rx="4" fill="#7E6E92"/>
+    <path d="M104 150Q86 250 92 326H208Q214 250 196 150Z" fill="#B9821C"/>
+    <rect x="124" y="268" width="22" height="58" fill="#D9A42E"/>
+    <rect x="154" y="268" width="22" height="58" fill="#D9A42E"/>
+    <path d="M108 150Q150 134 192 150L202 280Q150 294 98 280Z" fill="#E8B23A"/>
+    <path d="M112 156Q130 148 146 146L140 284Q118 284 102 280Z" fill="#F6CE5B" stroke="none" opacity=".7"/>
+    <g fill="#F6CE5B" stroke="#B9821C" stroke-width="1.5">
+      <path d="M128 176q8-10 16 0q-8 10-16 0Z"/>
+      <path d="M160 190q8-10 16 0q-8 10-16 0Z"/>
+      <path d="M132 250q8-10 16 0q-8 10-16 0Z"/>
+      <path d="M164 256q8-10 16 0q-8 10-16 0Z"/>
+      <path d="M146 212q8-10 16 0q-8 10-16 0Z"/>
+    </g>
+    <rect x="102" y="222" width="96" height="12" fill="#B9821C"/>
+    <rect x="86" y="158" width="20" height="82" rx="10" fill="#E8B23A" transform="rotate(10 96 158)"/>
+    <rect x="194" y="158" width="20" height="74" rx="10" fill="#E8B23A" transform="rotate(-24 204 158)"/>
+    <circle cx="84" cy="240" r="10" fill="#F6CE5B"/>
+    <path d="M196 238L232 318L240 314L204 234Z" fill="#C9CED8"/>
+    <rect x="184" y="226" width="30" height="8" rx="3" fill="#B9821C" transform="rotate(-24 199 230)"/>
+    <circle cx="190" cy="222" r="9" fill="#C2415A"/>
+    <circle cx="187" cy="219" r="2.5" fill="#FFFFFF" stroke="none"/>
+    <circle cx="224" cy="226" r="10" fill="#F6CE5B"/>
+    <rect x="140" y="132" width="20" height="20" fill="#E8B23A"/>
+    <circle cx="150" cy="106" r="40" fill="#F2C04E"/>
+    <path d="M168 72A40 40 0 0 1 168 140Q182 106 168 72Z" fill="#D9A42E" stroke="none"/>
+    <path d="M112 96Q116 70 150 66Q184 70 188 96Q176 82 150 82Q124 82 112 96Z" fill="#E8B23A"/>
+    <path d="M116 74L124 46L138 64L150 38L162 64L176 46L184 74Z" fill="#F6CE5B"/>
+    <circle cx="150" cy="52" r="4" fill="#2F6FD6"/>
+    <ellipse cx="136" cy="108" rx="7" ry="9" fill="#2F6FD6"/>
+    <ellipse cx="164" cy="108" rx="7" ry="9" fill="#2F6FD6"/>
+    <circle cx="138.5" cy="104.5" r="2.6" fill="#FFFFFF" stroke="none"/>
+    <circle cx="166.5" cy="104.5" r="2.6" fill="#FFFFFF" stroke="none"/>
+    <path d="M127 95Q136 91 144 95" fill="none"/>
+    <path d="M156 95Q164 91 173 95" fill="none"/>
+    <path d="M141 126Q150 131 159 126" fill="none"/>
+  </g>
 </svg>
