@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Свинцеве серце">
+  <g stroke="#1E2433" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M100 170C40 128 22 96 30 66C38 36 80 30 100 62C120 30 162 36 170 66C178 96 160 128 100 170Z" fill="#8A8FA3"/>
+    <path d="M100 170C150 132 170 100 166 72C158 98 132 132 100 156Z" fill="#6B7086" stroke="none"/>
+    <path d="M44 70C50 52 70 48 84 60C66 58 52 66 48 84Z" fill="#B7BBC8" stroke="none"/>
+    <path d="M100 62L92 90L108 108L94 132L102 152" fill="none" stroke-width="3"/>
+  </g>
+</svg>

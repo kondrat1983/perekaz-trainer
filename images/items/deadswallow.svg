@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 160" role="img" aria-label="Пташка спить">
+  <g stroke="#1E2433" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="150" cy="140" rx="110" ry="10" fill="#1E2433" opacity=".15" stroke="none"/>
+    <path d="M80 118L30 104L52 122L28 140L82 132Z" fill="#1E2A4E"/>
+    <path d="M70 120Q120 74 196 86Q230 94 236 112Q216 140 160 142Q104 144 70 120Z" fill="#22305A"/>
+    <path d="M110 128Q160 142 214 124Q192 142 156 144Q126 142 110 128Z" fill="#F4EFE6"/>
+    <path d="M100 112Q140 86 190 98Q150 112 108 122Z" fill="#1E2A4E"/>
+    <path d="M120 106L170 98M126 114L176 106" fill="none" stroke="#5B6A9A" stroke-width="2"/>
+    <circle cx="214" cy="100" r="22" fill="#22305A"/>
+    <path d="M204 114Q218 124 232 112Q226 126 210 126Z" fill="#C2643A"/>
+    <path d="M212 96Q219 101 226 96" fill="none" stroke="#F4EFE6" stroke-width="2.5"/>
+    <path d="M234 100L250 104L234 108Z" fill="#E8B23A"/>
+  </g>
+</svg>

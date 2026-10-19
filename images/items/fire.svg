@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Піч з вогнем">
+  <g stroke="#1E2433" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M20 190V90Q20 40 100 40Q180 40 180 90V190Z" fill="#7A5A48"/>
+    <path d="M20 90Q20 40 100 40Q60 50 40 100V190H20Z" fill="#8E6C58" stroke="none"/>
+    <path d="M50 190V120Q50 92 100 92Q150 92 150 120V190Z" fill="#2A1E1A"/>
+    <path d="M60 190Q52 150 76 130Q74 150 88 156Q86 124 104 108Q108 140 124 146Q126 128 136 124Q152 152 140 190Z" fill="#E8862E"/>
+    <path d="M78 190Q74 168 90 156Q94 172 104 174Q106 156 116 148Q128 170 120 190Z" fill="#F6CE5B" stroke="none"/>
+  </g>
+</svg>

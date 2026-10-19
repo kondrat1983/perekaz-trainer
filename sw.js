@@ -1,5 +1,5 @@
 // Офлайн після першого завантаження: кешуємо оболонку застосунку і дані.
-const CACHE = 'perekaz-v2';
+const CACHE = 'perekaz-v3';
 const ASSETS = [
   './',
   'index.html',
@@ -21,6 +21,22 @@ const ASSETS = [
   'images/seamstress.svg',
   'images/matchgirl.svg',
   'images/angel.svg',
+  'images/items/gold.svg',
+  'images/items/sapphire.svg',
+  'images/items/ruby.svg',
+  'images/items/matches.svg',
+  'images/items/oranges.svg',
+  'images/items/heart.svg',
+  'images/items/deadswallow.svg',
+  'images/items/bread.svg',
+  'images/items/stones.svg',
+  'images/items/rain.svg',
+  'images/items/fire.svg',
+  'images/items/light.svg',
+  'images/bg/river.svg',
+  'images/bg/room.svg',
+  'images/bg/winter.svg',
+  'images/bg/sky.svg',
 ];
 
 self.addEventListener('install', (event) => {
