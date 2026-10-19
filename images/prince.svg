@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" role="img" aria-label="Щасливий принц">
+  <rect x="22" y="128" width="76" height="18" rx="4" fill="#5B4A6E"/>
+  <path d="M44 128L48 74H72L76 128Z" fill="#E8B23A" stroke="#B9821C" stroke-width="2"/>
+  <path d="M44 74Q60 66 76 74" fill="none" stroke="#B9821C" stroke-width="2"/>
+  <circle cx="60" cy="52" r="17" fill="#F6CE5B" stroke="#B9821C" stroke-width="2"/>
+  <circle cx="54" cy="50" r="2.4" fill="#2F6FD6"/>
+  <circle cx="66" cy="50" r="2.4" fill="#2F6FD6"/>
+  <line x1="70" y1="110" x2="96" y2="94" stroke="#F6CE5B" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="71" cy="110" r="2.6" fill="#C2415A"/>
+</svg>

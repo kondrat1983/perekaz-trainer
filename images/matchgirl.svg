@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" role="img" aria-label="Дівчинка з сірниками">
+  <polygon points="36,72 84,72 92,146 28,146" fill="#8A5A34"/>
+  <polygon points="46,72 74,72 80,146 40,146" fill="#B5402F" opacity=".85"/>
+  <circle cx="60" cy="42" r="20" fill="#F2C9A0"/>
+  <path d="M40 40Q60 12 80 40Q74 28 60 26Q46 28 40 40Z" fill="#3B2A24"/>
+  <circle cx="53" cy="44" r="2" fill="#1E2433"/>
+  <circle cx="67" cy="44" r="2" fill="#1E2433"/>
+  <circle cx="36" cy="100" r="5" fill="#F2C9A0"/>
+  <rect x="78" y="92" width="18" height="12" rx="2" fill="#E8B23A"/>
+  <line x1="80" y1="92" x2="96" y2="82" stroke="#B5402F" stroke-width="2"/>
+</svg>

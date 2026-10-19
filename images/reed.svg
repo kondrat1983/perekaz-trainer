@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" role="img" aria-label="Очерет">
+  <rect x="0" y="126" width="120" height="24" fill="#4A7CC4"/>
+  <line x1="60" y1="130" x2="60" y2="30" stroke="#6E9F5A" stroke-width="4"/>
+  <line x1="40" y1="130" x2="38" y2="60" stroke="#6E9F5A" stroke-width="3"/>
+  <path d="M60 110Q40 100 36 80Q52 88 60 100Z" fill="#8CBF76"/>
+  <path d="M60 90Q80 80 86 60Q70 70 60 80Z" fill="#8CBF76"/>
+  <rect x="54" y="12" width="12" height="28" rx="6" fill="#8A5A34"/>
+  <rect x="34" y="52" width="9" height="20" rx="4.5" fill="#8A5A34"/>
+</svg>
