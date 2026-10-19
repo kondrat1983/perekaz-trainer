@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" role="img" aria-label="Мер">
+  <path d="M34 150L38 84Q60 74 82 84L86 150Z" fill="#2B3A67"/>
+  <path d="M44 84L80 128" stroke="#C2415A" stroke-width="6"/>
+  <path d="M44 96Q60 112 76 96" fill="none" stroke="#E8B23A" stroke-width="3"/>
+  <circle cx="60" cy="58" r="16" fill="#F2C9A0"/>
+  <rect x="42" y="30" width="36" height="8" fill="#1E2433"/>
+  <rect x="48" y="14" width="24" height="18" rx="2" fill="#1E2433"/>
+  <circle cx="54" cy="58" r="2" fill="#1E2433"/>
+  <circle cx="66" cy="58" r="2" fill="#1E2433"/>
+  <path d="M52 67Q60 70 68 67" fill="none" stroke="#5B4A3A" stroke-width="2"/>
+</svg>

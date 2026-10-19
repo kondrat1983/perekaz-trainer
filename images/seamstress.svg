@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" role="img" aria-label="Кравчиня">
+  <path d="M38 150L44 78Q60 70 76 78L82 150Z" fill="#6E9F5A"/>
+  <path d="M48 84H72L76 150H44Z" fill="#F4EFE6" opacity=".9"/>
+  <circle cx="60" cy="24" r="7" fill="#5B3A24"/>
+  <circle cx="60" cy="52" r="16" fill="#F2C9A0"/>
+  <path d="M42 50Q60 22 78 50L80 58Q60 38 40 58Z" fill="#5B3A24"/>
+  <circle cx="54" cy="54" r="2" fill="#1E2433"/>
+  <circle cx="66" cy="54" r="2" fill="#1E2433"/>
+  <line x1="84" y1="98" x2="94" y2="76" stroke="#8A8FA3" stroke-width="2"/>
+  <path d="M94 76Q100 70 104 76" fill="none" stroke="#2F6FD6" stroke-width="1.5"/>
+</svg>
