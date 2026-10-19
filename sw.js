@@ -1,5 +1,5 @@
 // Офлайн після першого завантаження: кешуємо оболонку застосунку і дані.
-const CACHE = 'perekaz-v1';
+const CACHE = 'perekaz-v2';
 const ASSETS = [
   './',
   'index.html',

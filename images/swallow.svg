@@ -1,9 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" role="img" aria-label="Ластівка">
-  <ellipse cx="58" cy="46" rx="30" ry="16" fill="#2B3A67" transform="rotate(-8 58 46)"/>
-  <ellipse cx="66" cy="52" rx="18" ry="9" fill="#F4EFE6"/>
-  <path d="M40 44Q30 22 56 26Q58 40 44 50Z" fill="#1E2A4E"/>
-  <polygon points="28,50 6,40 14,52 4,64 28,58" fill="#2B3A67"/>
-  <circle cx="84" cy="36" r="12" fill="#2B3A67"/>
-  <circle cx="88" cy="33" r="2.4" fill="#1E2433"/>
-  <polygon points="95,36 104,39 95,42" fill="#E8B23A"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" role="img" aria-label="Ластівка">
+  <g stroke="#1E2433" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M74 122L8 76L44 120L6 166L76 138Z" fill="#1E2A4E"/>
+    <path d="M60 126Q120 82 200 94Q240 104 252 120Q232 152 170 156Q110 160 60 126Z" fill="#22305A"/>
+    <path d="M80 118Q130 92 196 100Q150 104 96 126Z" fill="#3A4C80" stroke="none"/>
+    <path d="M118 136Q170 152 226 128Q202 154 160 158Q130 154 118 136Z" fill="#F4EFE6"/>
+    <g id="wing-r">
+      <path d="M128 104Q102 30 176 14Q172 70 162 106Z" fill="#1E2A4E"/>
+      <path d="M140 96Q126 50 166 30Q160 66 156 98Z" fill="#3A4C80" stroke="none"/>
+      <path d="M146 80L162 52M140 64L160 38" fill="none" stroke="#5B6A9A" stroke-width="2"/>
+    </g>
+    <circle cx="228" cy="100" r="26" fill="#22305A"/>
+    <path d="M214 118Q232 130 250 116Q242 134 222 132Z" fill="#C2643A"/>
+    <circle cx="236" cy="95" r="6.5" fill="#1E2433"/>
+    <circle cx="238.5" cy="92.5" r="2.2" fill="#FFFFFF" stroke="none"/>
+    <path d="M228 84Q236 80 244 85" fill="none"/>
+    <path d="M252 100L272 106L252 112Z" fill="#E8B23A"/>
+  </g>
 </svg>
