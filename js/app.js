@@ -1,4 +1,4 @@
-import { matchesAnswer } from './normalize.js';
+import { matchesAnswer, normalizeAnswer } from './normalize.js';
 import { loadState, saveState, resetState } from './store.js';
 import { speak, ukrainianVoices, canSpeak, canListen, listen } from './speech.js';
 
@@ -146,13 +146,25 @@ function listenScene() {
   draw();
 }
 
+const CITY_BG = 'images/backdrop.svg';
+
+// Один актор на картинці: персонаж (char) або предмет (img). full — накладка на весь кадр (дощ).
+function actorView(actor, lit = false) {
+  if (actor.full) return `<img class="overlay" src="${actor.img}" alt="">`;
+  const c = actor.char ? charOf(actor.char) : null;
+  const src = c ? c.img : actor.img;
+  const alt = c ? c.name : actor.alt || '';
+  const cls = `actor${lit ? ' lit' : ''}${actor.grey ? ' grey' : ''}`;
+  return `<img class="${cls}" src="${src}" alt="${esc(alt)}" style="left:${actor.x}%;bottom:${actor.bottom}%;height:${actor.h}%">`;
+}
+
+function picture(bg, actors, lit = false) {
+  return `<img class="backdrop" src="${bg || CITY_BG}" alt="">${actors.map((a) => actorView(a, lit)).join('')}`;
+}
+
 function sceneStage(scene, target) {
   const actors = target ? scene.stage.filter((st) => st.char === target) : scene.stage;
-  return actors.map((st) => {
-    const c = charOf(st.char);
-    const lit = target ? ' lit' : '';
-    return `<img class="actor${lit}" src="${c.img}" alt="${esc(c.name)}" style="left:${st.x}%;bottom:${st.bottom}%;height:${st.h}%">`;
-  }).join('');
+  return picture(scene.bg, actors, Boolean(target));
 }
 
 function sceneView() {
@@ -168,7 +180,8 @@ function sceneView() {
 
   const { level, q } = currentSceneQuestion();
   const options = session.options.map((o) => {
-    const pic = o.char ? `<img src="${charOf(o.char).img}" alt="">` : '';
+    const src = o.char ? charOf(o.char).img : o.img;
+    const pic = src ? `<img src="${src}" alt="">` : '';
     const miss = session.missed.includes(o.id) ? ' miss' : '';
     return `<button class="opt${pic ? ' pic' : ''}${miss}" data-action="pick" data-id="${o.id}" ${session.locked ? 'disabled' : ''}>${pic}<span>${esc(o.text)}</span></button>`;
   }).join('');
@@ -177,10 +190,7 @@ function sceneView() {
     : '';
 
   return `${head}
-    <div class="stage">
-      <img class="backdrop" src="images/backdrop.svg" alt="">
-      ${sceneStage(scene, q.target)}
-    </div>
+    <div class="stage">${sceneStage(scene, q.target)}</div>
     <p class="prompt">${esc(q.prompt)}</p>
     <div class="speech">
       <button class="round" data-action="replay" aria-label="Повторити">🔊</button>
@@ -216,25 +226,48 @@ function sceneEndView(scene) {
 
 // ---------- Переказ ----------
 
+// Підкреслюємо слова еталону, які Гравець сказав сам (від 4 літер).
+function markHeard(text, heardWords) {
+  if (!heardWords.size) return esc(text);
+  return text.split(/(\s+)/).map((part) => {
+    const word = normalizeAnswer(part);
+    return word.length >= 4 && heardWords.has(word) ? `<u class="hit">${esc(part)}</u>` : esc(part);
+  }).join('');
+}
+
 function retellView() {
   const scene = sceneByNum(session.n);
+  const frames = scene.frames.map((f, i) => `
+    <button class="frame${session.active === i ? ' on' : ''}" data-action="zoom" data-i="${i}" aria-label="Кадр ${i + 1}">
+      ${picture(f.bg, f.actors)}
+      <span class="frame-num">${i + 1}</span>
+    </button>`).join('');
+  const heardWords = new Set(normalizeAnswer(session.heard).split(' ').filter(Boolean));
+  const phrases = scene.frames.map((f, i) => `
+    <li><button class="phrase${session.active === i ? ' on' : ''}" data-action="phrase" data-i="${i}">
+      <span class="phrase-num">${i + 1}</span><span>${markHeard(f.text, heardWords)}</span>
+    </button></li>`).join('');
+  const zoomed = session.zoom != null ? scene.frames[session.zoom] : null;
   return `
     <nav class="bar">
       <a class="back" href="#/scene/${scene.num}">← Сцена</a>
       <span>Переказ</span>
     </nav>
     <h1 class="title">${esc(scene.title)}</h1>
-    <div class="stage">
-      <img class="backdrop" src="images/backdrop.svg" alt="">
-      ${sceneStage(scene, null)}
-    </div>
+    <div class="storyboard">${frames}</div>
     <p class="prompt">Розкажи, що сталося в цій сцені.</p>
     <div class="row">
       ${canListen ? `<button class="btn" data-action="retell-listen" ${session.listening ? 'disabled' : ''}>🎤 Говорити</button>` : ''}
       <button class="btn ghost" data-action="reveal">${session.revealed ? 'Сховати переказ' : 'Показати переказ'}</button>
     </div>
     ${session.heard ? `<p class="feedback">Почули: ${esc(session.heard)}</p>` : ''}
-    ${session.revealed ? `<blockquote class="reference">${esc(scene.summary)}</blockquote>` : ''}`;
+    ${session.revealed ? `<ol class="phrases">${phrases}</ol>` : ''}
+    ${zoomed ? `
+      <div class="zoom" role="dialog" aria-label="Кадр ${session.zoom + 1}">
+        <div class="stage">${picture(zoomed.bg, zoomed.actors)}</div>
+        ${session.revealed ? `<p class="zoom-text">${esc(zoomed.text)}</p>` : ''}
+        <button class="btn" data-action="zoom-close">Закрити</button>
+      </div>` : ''}`;
 }
 
 function retellListen() {
@@ -476,7 +509,7 @@ function route() {
     const n = Number(arg);
     if (!sceneByNum(n)) return go('#/');
     session = sub === 'retell'
-      ? { kind: 'retell', n, revealed: false, heard: '', listening: false }
+      ? { kind: 'retell', n, revealed: false, heard: '', listening: false, active: null, zoom: null }
       : newSceneSession(n);
     return draw();
   }
@@ -566,6 +599,15 @@ app.addEventListener('click', (event) => {
     case 'restart': session = newSceneSession(session.n); draw(); break;
     case 'retell-listen': retellListen(); break;
     case 'reveal': session.revealed = !session.revealed; draw(); break;
+    case 'zoom': session.zoom = Number(button.dataset.i); draw(); break;
+    case 'zoom-close': session.zoom = null; draw(); break;
+    case 'phrase': {
+      const i = Number(button.dataset.i);
+      session.active = i;
+      say(sceneByNum(session.n).frames[i].text);
+      draw();
+      break;
+    }
     case 'pari-pick': pariPick(button.dataset.id); break;
     case 'pari-next': pariNext(true); break;
     case 'pari-restart': session = newPariSession(); draw(); break;

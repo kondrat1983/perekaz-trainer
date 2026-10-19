@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Рубін">
+  <g stroke="#1E2433" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M100 30L156 70L140 140L60 140L44 70Z" fill="#C2415A"/>
+    <path d="M100 30L156 70L100 92L44 70Z" fill="#E0647B"/>
+    <path d="M100 92L140 140L60 140Z" fill="#9C2F45"/>
+    <path d="M44 70L100 92L60 140M156 70L100 92L140 140" fill="none"/>
+    <path d="M100 30L76 66L100 92L124 66Z" fill="#EE8597"/>
+  </g>
+  <path d="M84 50l4-8 4 8-4 8z" fill="#FFFFFF" opacity=".9"/>
+</svg>

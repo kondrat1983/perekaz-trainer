@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="none" aria-hidden="true">
+  <g stroke="#9CC3EE" stroke-width="3" stroke-linecap="round" opacity=".75">
+    <path d="M40 20l-12 30M120 60l-12 30M200 10l-12 30M280 80l-12 30M360 30l-12 30M440 70l-12 30M520 20l-12 30M580 90l-12 30"/>
+    <path d="M70 140l-12 30M150 180l-12 30M230 130l-12 30M310 200l-12 30M390 150l-12 30M470 190l-12 30M550 140l-12 30"/>
+    <path d="M30 250l-12 30M110 290l-12 30M190 240l-12 30M270 310l-12 30M350 260l-12 30M430 300l-12 30M510 250l-12 30M590 300l-12 30"/>
+  </g>
+</svg>

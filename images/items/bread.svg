@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Хліб">
+  <g stroke="#1E2433" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M24 130Q20 70 100 66Q180 70 176 130Q176 150 150 150H50Q24 150 24 130Z" fill="#C98A3E"/>
+    <path d="M36 120Q40 82 100 78Q70 92 56 132Z" fill="#E0A85A" stroke="none"/>
+    <path d="M150 150Q170 146 172 126Q160 140 140 146Z" fill="#9C6526" stroke="none"/>
+    <path d="M62 90L76 112M94 82L106 108M126 84L138 108" fill="none" stroke="#9C6526" stroke-width="4"/>
+  </g>
+</svg>

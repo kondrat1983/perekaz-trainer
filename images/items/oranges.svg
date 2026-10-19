@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Апельсини">
+  <g stroke="#1E2433" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="70" cy="128" r="40" fill="#E8862E"/>
+    <circle cx="132" cy="132" r="38" fill="#E8862E"/>
+    <circle cx="102" cy="82" r="38" fill="#F09A3E"/>
+    <path d="M80 70a26 26 0 0 1 20-14" fill="none" stroke="#FFFFFF" stroke-width="4" opacity=".7"/>
+    <path d="M50 116a20 20 0 0 1 14-12" fill="none" stroke="#FFFFFF" stroke-width="4" opacity=".6"/>
+    <path d="M150 156a30 30 0 0 1-30 10" fill="none" stroke="#C26A1E" stroke-width="4"/>
+    <path d="M102 44L104 34" fill="none"/>
+    <path d="M104 36Q126 20 140 34Q120 46 104 36Z" fill="#6E9F5A"/>
+  </g>
+</svg>

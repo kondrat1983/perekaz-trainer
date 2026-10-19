@@ -24,3 +24,15 @@ test('parent gate opens with the sum answer', async ({ page }) => {
   await page.getByRole('button', { name: 'Відкрити' }).click();
   await expect(page.getByRole('heading', { name: 'Сцени' })).toBeVisible();
 });
+
+test('retell shows three frames and highlights the tapped phrase', async ({ page }) => {
+  await page.goto('/#/scene/2/retell');
+  await expect(page.locator('.frame')).toHaveCount(3);
+  await page.getByRole('button', { name: 'Показати переказ' }).click();
+  await page.getByRole('button', { name: /Вона закохалась в Очерет/ }).click();
+  await expect(page.getByRole('button', { name: 'Кадр 2' })).toHaveClass(/on/);
+  await page.getByRole('button', { name: 'Кадр 1' }).click();
+  await expect(page.getByRole('dialog', { name: 'Кадр 1' })).toBeVisible();
+  await page.getByRole('button', { name: 'Закрити' }).click();
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+});

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="heaven" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6CE5B"/>
+      <stop offset=".5" stop-color="#FFF4D6"/>
+      <stop offset="1" stop-color="#C9D8F2"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#heaven)"/>
+  <g fill="#FFFFFF" stroke="#C9D2E6" stroke-width="2.5">
+    <path d="M20 330Q20 296 56 300Q66 270 104 282Q130 262 156 290Q196 286 196 320Q196 346 160 346H52Q20 346 20 330Z"/>
+    <path d="M400 300Q400 270 432 274Q446 244 484 258Q512 240 536 268Q580 266 580 300Q580 324 546 324H430Q400 324 400 300Z"/>
+    <path d="M210 380Q210 352 240 354Q254 330 290 340Q318 324 340 350Q376 350 376 378Q376 398 344 398H236Q210 398 210 380Z"/>
+  </g>
+</svg>

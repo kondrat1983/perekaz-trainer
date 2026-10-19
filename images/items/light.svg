@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Світло">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="10%" r="70%">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".4" stop-color="#FFF4D6"/>
+      <stop offset="1" stop-color="#FFF4D6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g fill="#FFF4D6" opacity=".55">
+    <path d="M150 20L70 400H110Z"/>
+    <path d="M150 20L140 400H170Z"/>
+    <path d="M150 20L200 400H240Z"/>
+    <path d="M150 20L10 330L30 350Z"/>
+    <path d="M150 20L290 330L270 350Z"/>
+  </g>
+  <ellipse cx="150" cy="40" rx="140" ry="120" fill="url(#glow)"/>
+  <circle cx="150" cy="30" r="22" fill="#FFFFFF"/>
+</svg>

@@ -1,9 +1,21 @@
 {
   "pairs": [
-    ["swallow", "matchgirl"],
-    ["prince", "mayor"],
-    ["seamstress", "matchgirl"],
-    ["swallow", "reed"]
+    [
+      "swallow",
+      "matchgirl"
+    ],
+    [
+      "prince",
+      "mayor"
+    ],
+    [
+      "seamstress",
+      "matchgirl"
+    ],
+    [
+      "swallow",
+      "reed"
+    ]
   ],
   "scenes": [
     {
@@ -11,18 +23,44 @@
       "title": "Статуя",
       "summary": "Над містом стоїть статуя Щасливого принца. Він весь у листочках золота, очі в нього сапфіри, а на руків'ї шпаги рубін. Міський радник каже, що статуя гарна, але користі від неї мало.",
       "stage": [
-        { "char": "prince", "x": 50, "bottom": 0, "h": 78 },
-        { "char": "mayor", "x": 16, "bottom": 0, "h": 60 }
+        {
+          "char": "prince",
+          "x": 50,
+          "bottom": 0,
+          "h": 78
+        },
+        {
+          "char": "mayor",
+          "x": 16,
+          "bottom": 0,
+          "h": 60
+        }
       ],
       "questions": {
         "L1": {
           "prompt": "Хто це?",
           "target": "prince",
-          "accepted": ["щасливий принц", "принц", "статуя"],
+          "accepted": [
+            "щасливий принц",
+            "принц",
+            "статуя"
+          ],
           "options": [
-            { "id": "a", "text": "Щасливий принц", "char": "prince" },
-            { "id": "b", "text": "Мер", "char": "mayor" },
-            { "id": "c", "text": "Ластівка", "char": "swallow" }
+            {
+              "id": "a",
+              "text": "Щасливий принц",
+              "char": "prince"
+            },
+            {
+              "id": "b",
+              "text": "Мер",
+              "char": "mayor"
+            },
+            {
+              "id": "c",
+              "text": "Ластівка",
+              "char": "swallow"
+            }
           ],
           "answer": "a",
           "hint": "Він весь у золоті і стоїть високо над містом."
@@ -30,9 +68,18 @@
         "L2": {
           "prompt": "Що робить Щасливий принц?",
           "options": [
-            { "id": "a", "text": "стоїть" },
-            { "id": "b", "text": "летить" },
-            { "id": "c", "text": "спить" }
+            {
+              "id": "a",
+              "text": "стоїть"
+            },
+            {
+              "id": "b",
+              "text": "летить"
+            },
+            {
+              "id": "c",
+              "text": "спить"
+            }
           ],
           "answer": "a",
           "hint": "Він стоїть на високій колоні і не рухається."
@@ -40,32 +87,125 @@
         "L3": {
           "prompt": "Чому радник каже, що користі мало?",
           "options": [
-            { "id": "a", "text": "Бо статуя нічого не робить для людей" },
-            { "id": "b", "text": "Бо статуя маленька" },
-            { "id": "c", "text": "Бо статуя зроблена з дерева" }
+            {
+              "id": "a",
+              "text": "Бо статуя нічого не робить для людей"
+            },
+            {
+              "id": "b",
+              "text": "Бо статуя маленька"
+            },
+            {
+              "id": "c",
+              "text": "Бо статуя зроблена з дерева"
+            }
           ],
           "answer": "a",
           "hint": "Статуя стоїть на висоті і поки що нікому не допомагає."
         }
-      }
+      },
+      "frames": [
+        {
+          "bg": "images/backdrop.svg",
+          "text": "Над містом стоїть статуя Щасливого принца.",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 50,
+              "bottom": 0,
+              "h": 80
+            }
+          ]
+        },
+        {
+          "bg": "images/backdrop.svg",
+          "text": "Він весь у листочках золота, очі в нього сапфіри, а на руків'ї шпаги рубін.",
+          "actors": [
+            {
+              "img": "images/items/gold.svg",
+              "alt": "Золото",
+              "x": 25,
+              "bottom": 30,
+              "h": 30
+            },
+            {
+              "img": "images/items/sapphire.svg",
+              "alt": "Сапфір",
+              "x": 50,
+              "bottom": 38,
+              "h": 30
+            },
+            {
+              "img": "images/items/ruby.svg",
+              "alt": "Рубін",
+              "x": 75,
+              "bottom": 30,
+              "h": 30
+            }
+          ]
+        },
+        {
+          "bg": "images/backdrop.svg",
+          "text": "Міський радник каже, що статуя гарна, але користі від неї мало.",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 72,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "mayor",
+              "x": 28,
+              "bottom": 0,
+              "h": 68
+            }
+          ]
+        }
+      ]
     },
     {
       "num": 2,
       "title": "Ластівка і Очерет",
       "summary": "Ластівка відстала від подруг, які полетіли до Єгипту. Вона закохалась в Очерет. Очерет не хоче летіти, тож Ластівка летить сама.",
       "stage": [
-        { "char": "reed", "x": 74, "bottom": 0, "h": 60 },
-        { "char": "swallow", "x": 35, "bottom": 45, "h": 28 }
+        {
+          "char": "reed",
+          "x": 74,
+          "bottom": -10,
+          "h": 60
+        },
+        {
+          "char": "swallow",
+          "x": 35,
+          "bottom": 45,
+          "h": 28
+        }
       ],
       "questions": {
         "L1": {
           "prompt": "Хто це?",
           "target": "swallow",
-          "accepted": ["ластівка", "ластівку"],
+          "accepted": [
+            "ластівка",
+            "ластівку"
+          ],
           "options": [
-            { "id": "a", "text": "Ластівка", "char": "swallow" },
-            { "id": "b", "text": "Очерет", "char": "reed" },
-            { "id": "c", "text": "Дівчинка з сірниками", "char": "matchgirl" }
+            {
+              "id": "a",
+              "text": "Ластівка",
+              "char": "swallow"
+            },
+            {
+              "id": "b",
+              "text": "Очерет",
+              "char": "reed"
+            },
+            {
+              "id": "c",
+              "text": "Дівчинка з сірниками",
+              "char": "matchgirl"
+            }
           ],
           "answer": "a",
           "hint": "У неї є крила і хвіст як ножиці."
@@ -73,9 +213,18 @@
         "L2": {
           "prompt": "Що робить Ластівка?",
           "options": [
-            { "id": "a", "text": "летить" },
-            { "id": "b", "text": "стоїть" },
-            { "id": "c", "text": "спить" }
+            {
+              "id": "a",
+              "text": "летить"
+            },
+            {
+              "id": "b",
+              "text": "стоїть"
+            },
+            {
+              "id": "c",
+              "text": "спить"
+            }
           ],
           "answer": "a",
           "hint": "Вона летить до Єгипту, але вже сама."
@@ -83,32 +232,135 @@
         "L3": {
           "prompt": "Що відчуває Ластівка, коли Очерет не хоче летіти?",
           "options": [
-            { "id": "a", "text": "сумує" },
-            { "id": "b", "text": "радіє" },
-            { "id": "c", "text": "сміється" }
+            {
+              "id": "a",
+              "text": "сумує"
+            },
+            {
+              "id": "b",
+              "text": "радіє"
+            },
+            {
+              "id": "c",
+              "text": "сміється"
+            }
           ],
           "answer": "a",
           "hint": "Вона закохалась, а Очерет лишився."
         }
-      }
+      },
+      "bg": "images/bg/river.svg",
+      "frames": [
+        {
+          "bg": "images/bg/river.svg",
+          "text": "Ластівка відстала від подруг, які полетіли до Єгипту.",
+          "actors": [
+            {
+              "char": "swallow",
+              "x": 30,
+              "bottom": 50,
+              "h": 24
+            },
+            {
+              "char": "swallow",
+              "x": 62,
+              "bottom": 72,
+              "h": 11
+            },
+            {
+              "char": "swallow",
+              "x": 74,
+              "bottom": 78,
+              "h": 9
+            },
+            {
+              "char": "swallow",
+              "x": 86,
+              "bottom": 70,
+              "h": 9
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/river.svg",
+          "text": "Вона закохалась в Очерет.",
+          "actors": [
+            {
+              "char": "reed",
+              "x": 66,
+              "bottom": -10,
+              "h": 85
+            },
+            {
+              "char": "swallow",
+              "x": 32,
+              "bottom": 40,
+              "h": 26
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/river.svg",
+          "text": "Очерет не хоче летіти, тож Ластівка летить сама.",
+          "actors": [
+            {
+              "char": "reed",
+              "x": 25,
+              "bottom": -10,
+              "h": 80
+            },
+            {
+              "char": "swallow",
+              "x": 70,
+              "bottom": 60,
+              "h": 24
+            }
+          ]
+        }
+      ]
     },
     {
       "num": 3,
       "title": "Ніч під статуєю",
       "summary": "Ластівка хоче спати під статуєю, але починається дощ. Принц плаче, бо бачить, як бідно живе місто.",
       "stage": [
-        { "char": "prince", "x": 50, "bottom": 0, "h": 70 },
-        { "char": "swallow", "x": 20, "bottom": 0, "h": 28 }
+        {
+          "char": "prince",
+          "x": 50,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "char": "swallow",
+          "x": 20,
+          "bottom": 0,
+          "h": 28
+        }
       ],
       "questions": {
         "L1": {
           "prompt": "Хто це?",
           "target": "prince",
-          "accepted": ["щасливий принц", "принц"],
+          "accepted": [
+            "щасливий принц",
+            "принц"
+          ],
           "options": [
-            { "id": "a", "text": "Щасливий принц", "char": "prince" },
-            { "id": "b", "text": "Мер", "char": "mayor" },
-            { "id": "c", "text": "Кравчиня", "char": "seamstress" }
+            {
+              "id": "a",
+              "text": "Щасливий принц",
+              "char": "prince"
+            },
+            {
+              "id": "b",
+              "text": "Мер",
+              "char": "mayor"
+            },
+            {
+              "id": "c",
+              "text": "Кравчиня",
+              "char": "seamstress"
+            }
           ],
           "answer": "a",
           "hint": "Це статуя. Вона золота і стоїть високо."
@@ -116,9 +368,18 @@
         "L2": {
           "prompt": "Що робить Принц?",
           "options": [
-            { "id": "a", "text": "плаче" },
-            { "id": "b", "text": "співає" },
-            { "id": "c", "text": "танцює" }
+            {
+              "id": "a",
+              "text": "плаче"
+            },
+            {
+              "id": "b",
+              "text": "співає"
+            },
+            {
+              "id": "c",
+              "text": "танцює"
+            }
           ],
           "answer": "a",
           "hint": "Він бачить бідних людей і сумує."
@@ -126,32 +387,132 @@
         "L3": {
           "prompt": "Чому Принц плаче?",
           "options": [
-            { "id": "a", "text": "Бо бачить бідність у місті" },
-            { "id": "b", "text": "Бо йому холодно" },
-            { "id": "c", "text": "Бо він голодний" }
+            {
+              "id": "a",
+              "text": "Бо бачить бідність у місті"
+            },
+            {
+              "id": "b",
+              "text": "Бо йому холодно"
+            },
+            {
+              "id": "c",
+              "text": "Бо він голодний"
+            }
           ],
           "answer": "a",
           "hint": "Він бачить, що в місті багато бідних."
         }
-      }
+      },
+      "frames": [
+        {
+          "bg": "images/backdrop.svg",
+          "text": "Ластівка хоче спати під статуєю,",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 50,
+              "bottom": 0,
+              "h": 80
+            },
+            {
+              "char": "swallow",
+              "x": 26,
+              "bottom": 0,
+              "h": 20
+            }
+          ]
+        },
+        {
+          "bg": "images/backdrop.svg",
+          "text": "але починається дощ.",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 50,
+              "bottom": 0,
+              "h": 80
+            },
+            {
+              "char": "swallow",
+              "x": 26,
+              "bottom": 0,
+              "h": 20
+            },
+            {
+              "img": "images/items/rain.svg",
+              "alt": "",
+              "full": true
+            }
+          ]
+        },
+        {
+          "bg": "images/backdrop.svg",
+          "text": "Принц плаче, бо бачить, як бідно живе місто.",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 70,
+              "bottom": 0,
+              "h": 80
+            },
+            {
+              "char": "matchgirl",
+              "x": 26,
+              "bottom": 0,
+              "h": 55
+            },
+            {
+              "img": "images/items/rain.svg",
+              "alt": "",
+              "full": true
+            }
+          ]
+        }
+      ]
     },
     {
       "num": 4,
       "title": "Рубін для кравчині",
       "summary": "Принц просить Ластівку віднести рубін із його шпаги бідній швачці. У неї хворий синок, якому потрібні апельсини. Ластівка виконує прохання.",
       "stage": [
-        { "char": "seamstress", "x": 30, "bottom": 0, "h": 65 },
-        { "char": "swallow", "x": 72, "bottom": 50, "h": 26 }
+        {
+          "char": "seamstress",
+          "x": 30,
+          "bottom": 0,
+          "h": 65
+        },
+        {
+          "char": "swallow",
+          "x": 72,
+          "bottom": 50,
+          "h": 26
+        }
       ],
       "questions": {
         "L1": {
           "prompt": "Хто це?",
           "target": "seamstress",
-          "accepted": ["кравчиня", "швачка"],
+          "accepted": [
+            "кравчиня",
+            "швачка"
+          ],
           "options": [
-            { "id": "a", "text": "Кравчиня", "char": "seamstress" },
-            { "id": "b", "text": "Дівчинка з сірниками", "char": "matchgirl" },
-            { "id": "c", "text": "Ангел", "char": "angel" }
+            {
+              "id": "a",
+              "text": "Кравчиня",
+              "char": "seamstress"
+            },
+            {
+              "id": "b",
+              "text": "Дівчинка з сірниками",
+              "char": "matchgirl"
+            },
+            {
+              "id": "c",
+              "text": "Ангел",
+              "char": "angel"
+            }
           ],
           "answer": "a",
           "hint": "Вона шиє і тримає голку."
@@ -159,9 +520,21 @@
         "L2": {
           "prompt": "Що несе Ластівка?",
           "options": [
-            { "id": "a", "text": "рубін" },
-            { "id": "b", "text": "сапфір" },
-            { "id": "c", "text": "золото" }
+            {
+              "id": "a",
+              "text": "рубін",
+              "img": "images/items/ruby.svg"
+            },
+            {
+              "id": "b",
+              "text": "сапфір",
+              "img": "images/items/sapphire.svg"
+            },
+            {
+              "id": "c",
+              "text": "золото",
+              "img": "images/items/gold.svg"
+            }
           ],
           "answer": "a",
           "hint": "Це червоний камінь зі шпаги принца."
@@ -169,33 +542,144 @@
         "L3": {
           "prompt": "Навіщо кравчині рубін?",
           "options": [
-            { "id": "a", "text": "Щоб купити синові апельсини" },
-            { "id": "b", "text": "Щоб прикрасити кімнату" },
-            { "id": "c", "text": "Щоб віддати мерові" }
+            {
+              "id": "a",
+              "text": "Щоб купити синові апельсини"
+            },
+            {
+              "id": "b",
+              "text": "Щоб прикрасити кімнату"
+            },
+            {
+              "id": "c",
+              "text": "Щоб віддати мерові"
+            }
           ],
           "answer": "a",
           "hint": "Її синок хворий, йому потрібні апельсини."
         }
-      }
+      },
+      "bg": "images/bg/room.svg",
+      "frames": [
+        {
+          "bg": "images/backdrop.svg",
+          "text": "Принц просить Ластівку віднести рубін із його шпаги бідній швачці.",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 40,
+              "bottom": 0,
+              "h": 78
+            },
+            {
+              "char": "swallow",
+              "x": 72,
+              "bottom": 50,
+              "h": 20
+            },
+            {
+              "img": "images/items/ruby.svg",
+              "alt": "Рубін",
+              "x": 84,
+              "bottom": 30,
+              "h": 14
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/room.svg",
+          "text": "У неї хворий синок, якому потрібні апельсини.",
+          "actors": [
+            {
+              "char": "seamstress",
+              "x": 26,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/items/oranges.svg",
+              "alt": "Апельсини",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/room.svg",
+          "text": "Ластівка виконує прохання.",
+          "actors": [
+            {
+              "char": "seamstress",
+              "x": 26,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "swallow",
+              "x": 58,
+              "bottom": 55,
+              "h": 20
+            },
+            {
+              "img": "images/items/ruby.svg",
+              "alt": "Рубін",
+              "x": 56,
+              "bottom": 36,
+              "h": 12
+            }
+          ]
+        }
+      ]
     },
     {
       "num": 5,
       "title": "Очі",
       "summary": "Принц просить Ластівку віднести одне його око юнакові-драматургу в мансарду, а друге дівчинці, яка продає сірники. Ластівка віддає обидва сапфіри.",
       "stage": [
-        { "char": "matchgirl", "x": 35, "bottom": 0, "h": 60 },
-        { "char": "swallow", "x": 72, "bottom": 40, "h": 24 },
-        { "char": "prince", "x": 88, "bottom": 0, "h": 62 }
+        {
+          "char": "matchgirl",
+          "x": 35,
+          "bottom": 0,
+          "h": 60
+        },
+        {
+          "char": "swallow",
+          "x": 72,
+          "bottom": 40,
+          "h": 24
+        },
+        {
+          "char": "prince",
+          "x": 88,
+          "bottom": 0,
+          "h": 62
+        }
       ],
       "questions": {
         "L1": {
           "prompt": "Хто це?",
           "target": "matchgirl",
-          "accepted": ["дівчинка", "дівчинка з сірниками"],
+          "accepted": [
+            "дівчинка",
+            "дівчинка з сірниками"
+          ],
           "options": [
-            { "id": "a", "text": "Дівчинка з сірниками", "char": "matchgirl" },
-            { "id": "b", "text": "Кравчиня", "char": "seamstress" },
-            { "id": "c", "text": "Ластівка", "char": "swallow" }
+            {
+              "id": "a",
+              "text": "Дівчинка з сірниками",
+              "char": "matchgirl"
+            },
+            {
+              "id": "b",
+              "text": "Кравчиня",
+              "char": "seamstress"
+            },
+            {
+              "id": "c",
+              "text": "Ластівка",
+              "char": "swallow"
+            }
           ],
           "answer": "a",
           "hint": "Вона маленька і тримає сірники."
@@ -203,9 +687,21 @@
         "L2": {
           "prompt": "Що несе Ластівка?",
           "options": [
-            { "id": "a", "text": "сапфіри" },
-            { "id": "b", "text": "сірники" },
-            { "id": "c", "text": "апельсини" }
+            {
+              "id": "a",
+              "text": "сапфіри",
+              "img": "images/items/sapphire.svg"
+            },
+            {
+              "id": "b",
+              "text": "сірники",
+              "img": "images/items/matches.svg"
+            },
+            {
+              "id": "c",
+              "text": "апельсини",
+              "img": "images/items/oranges.svg"
+            }
           ],
           "answer": "a",
           "hint": "Це очі Щасливого принца."
@@ -213,32 +709,138 @@
         "L3": {
           "prompt": "Чому принц віддає свої очі?",
           "options": [
-            { "id": "a", "text": "Бо хоче допомогти бідним" },
-            { "id": "b", "text": "Бо йому набридло дивитися" },
-            { "id": "c", "text": "Бо хоче подивитися на небо" }
+            {
+              "id": "a",
+              "text": "Бо хоче допомогти бідним"
+            },
+            {
+              "id": "b",
+              "text": "Бо йому набридло дивитися"
+            },
+            {
+              "id": "c",
+              "text": "Бо хоче подивитися на небо"
+            }
           ],
           "answer": "a",
           "hint": "Він хоче, щоб людям стало легше."
         }
-      }
+      },
+      "frames": [
+        {
+          "bg": "images/backdrop.svg",
+          "text": "Принц просить Ластівку віднести одне його око юнакові-драматургу в мансарду,",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 35,
+              "bottom": 0,
+              "h": 78
+            },
+            {
+              "char": "swallow",
+              "x": 68,
+              "bottom": 55,
+              "h": 20
+            },
+            {
+              "img": "images/items/sapphire.svg",
+              "alt": "Сапфір",
+              "x": 80,
+              "bottom": 40,
+              "h": 12
+            }
+          ]
+        },
+        {
+          "bg": "images/backdrop.svg",
+          "text": "а друге дівчинці, яка продає сірники.",
+          "actors": [
+            {
+              "char": "matchgirl",
+              "x": 40,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/items/matches.svg",
+              "alt": "Сірники",
+              "x": 70,
+              "bottom": 8,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/backdrop.svg",
+          "text": "Ластівка віддає обидва сапфіри.",
+          "actors": [
+            {
+              "char": "matchgirl",
+              "x": 35,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "swallow",
+              "x": 66,
+              "bottom": 50,
+              "h": 20
+            },
+            {
+              "img": "images/items/sapphire.svg",
+              "alt": "Сапфір",
+              "x": 72,
+              "bottom": 32,
+              "h": 12
+            }
+          ]
+        }
+      ]
     },
     {
       "num": 6,
       "title": "Зима",
       "summary": "Принц став зовсім без золота. Ластівка роздає листочки золота бідним, і діти радіють. Настає зима, і Ластівка замерзає біля принца.",
       "stage": [
-        { "char": "prince", "x": 50, "bottom": 0, "h": 70 },
-        { "char": "swallow", "x": 66, "bottom": 0, "h": 22 }
+        {
+          "char": "prince",
+          "x": 50,
+          "bottom": 0,
+          "h": 70,
+          "grey": true
+        },
+        {
+          "char": "swallow",
+          "x": 66,
+          "bottom": 0,
+          "h": 22
+        }
       ],
       "questions": {
         "L1": {
           "prompt": "Хто це?",
           "target": "swallow",
-          "accepted": ["ластівка", "ластівку"],
+          "accepted": [
+            "ластівка",
+            "ластівку"
+          ],
           "options": [
-            { "id": "a", "text": "Ластівка", "char": "swallow" },
-            { "id": "b", "text": "Очерет", "char": "reed" },
-            { "id": "c", "text": "Ангел", "char": "angel" }
+            {
+              "id": "a",
+              "text": "Ластівка",
+              "char": "swallow"
+            },
+            {
+              "id": "b",
+              "text": "Очерет",
+              "char": "reed"
+            },
+            {
+              "id": "c",
+              "text": "Ангел",
+              "char": "angel"
+            }
           ],
           "answer": "a",
           "hint": "У неї маленькі крила і хвіст як ножиці."
@@ -246,9 +848,21 @@
         "L2": {
           "prompt": "Що роздає Ластівка?",
           "options": [
-            { "id": "a", "text": "золото" },
-            { "id": "b", "text": "хліб" },
-            { "id": "c", "text": "каміння" }
+            {
+              "id": "a",
+              "text": "золото",
+              "img": "images/items/gold.svg"
+            },
+            {
+              "id": "b",
+              "text": "хліб",
+              "img": "images/items/bread.svg"
+            },
+            {
+              "id": "c",
+              "text": "каміння",
+              "img": "images/items/stones.svg"
+            }
           ],
           "answer": "a",
           "hint": "Це листочки золота з принца."
@@ -256,32 +870,134 @@
         "L3": {
           "prompt": "Як почуваються діти, коли отримують золото?",
           "options": [
-            { "id": "a", "text": "радіють" },
-            { "id": "b", "text": "сумують" },
-            { "id": "c", "text": "сплять" }
+            {
+              "id": "a",
+              "text": "радіють"
+            },
+            {
+              "id": "b",
+              "text": "сумують"
+            },
+            {
+              "id": "c",
+              "text": "сплять"
+            }
           ],
           "answer": "a",
           "hint": "Їм дарують золото, і вони радіють."
         }
-      }
+      },
+      "bg": "images/bg/winter.svg",
+      "frames": [
+        {
+          "bg": "images/bg/winter.svg",
+          "text": "Принц став зовсім без золота.",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 50,
+              "bottom": 0,
+              "h": 80,
+              "grey": true
+            }
+          ]
+        },
+        {
+          "bg": "images/backdrop.svg",
+          "text": "Ластівка роздає листочки золота бідним, і діти радіють.",
+          "actors": [
+            {
+              "char": "matchgirl",
+              "x": 30,
+              "bottom": 0,
+              "h": 66
+            },
+            {
+              "char": "swallow",
+              "x": 66,
+              "bottom": 55,
+              "h": 20
+            },
+            {
+              "img": "images/items/gold.svg",
+              "alt": "Золото",
+              "x": 56,
+              "bottom": 30,
+              "h": 14
+            },
+            {
+              "img": "images/items/gold.svg",
+              "alt": "Золото",
+              "x": 76,
+              "bottom": 18,
+              "h": 12
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/winter.svg",
+          "text": "Настає зима, і Ластівка замерзає біля принца.",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 42,
+              "bottom": 0,
+              "h": 80,
+              "grey": true
+            },
+            {
+              "img": "images/items/deadswallow.svg",
+              "alt": "Пташка",
+              "x": 74,
+              "bottom": 2,
+              "h": 12
+            }
+          ]
+        }
+      ]
     },
     {
       "num": 7,
       "title": "Статую знесли",
       "summary": "Мер і радники бачать статую без золота і вирішують її переплавити. Серце не плавиться, його викидають на сміття разом із мертвою ластівкою.",
       "stage": [
-        { "char": "mayor", "x": 40, "bottom": 0, "h": 65 },
-        { "char": "prince", "x": 78, "bottom": 0, "h": 70 }
+        {
+          "char": "mayor",
+          "x": 40,
+          "bottom": 0,
+          "h": 65
+        },
+        {
+          "char": "prince",
+          "x": 78,
+          "bottom": 0,
+          "h": 70,
+          "grey": true
+        }
       ],
       "questions": {
         "L1": {
           "prompt": "Хто це?",
           "target": "mayor",
-          "accepted": ["мер"],
+          "accepted": [
+            "мер"
+          ],
           "options": [
-            { "id": "a", "text": "Мер", "char": "mayor" },
-            { "id": "b", "text": "Щасливий принц", "char": "prince" },
-            { "id": "c", "text": "Кравчиня", "char": "seamstress" }
+            {
+              "id": "a",
+              "text": "Мер",
+              "char": "mayor"
+            },
+            {
+              "id": "b",
+              "text": "Щасливий принц",
+              "char": "prince"
+            },
+            {
+              "id": "c",
+              "text": "Кравчиня",
+              "char": "seamstress"
+            }
           ],
           "answer": "a",
           "hint": "Він має ланцюг і стоїть серед радників."
@@ -289,9 +1005,18 @@
         "L2": {
           "prompt": "Що роблять радники?",
           "options": [
-            { "id": "a", "text": "переплавляють статую" },
-            { "id": "b", "text": "будують міст" },
-            { "id": "c", "text": "співають пісню" }
+            {
+              "id": "a",
+              "text": "переплавляють статую"
+            },
+            {
+              "id": "b",
+              "text": "будують міст"
+            },
+            {
+              "id": "c",
+              "text": "співають пісню"
+            }
           ],
           "answer": "a",
           "hint": "Вони хочуть переплавити статую на метал."
@@ -299,31 +1024,126 @@
         "L3": {
           "prompt": "Що станеться із серцем принца?",
           "options": [
-            { "id": "a", "text": "Його викидають на сміття" },
-            { "id": "b", "text": "Його дарують дітям" },
-            { "id": "c", "text": "Його ставлять у музей" }
+            {
+              "id": "a",
+              "text": "Його викидають на сміття"
+            },
+            {
+              "id": "b",
+              "text": "Його дарують дітям"
+            },
+            {
+              "id": "c",
+              "text": "Його ставлять у музей"
+            }
           ],
           "answer": "a",
           "hint": "Серце не плавиться, тому його викидають."
         }
-      }
+      },
+      "frames": [
+        {
+          "bg": "images/backdrop.svg",
+          "text": "Мер і радники бачать статую без золота",
+          "actors": [
+            {
+              "char": "mayor",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "prince",
+              "x": 72,
+              "bottom": 0,
+              "h": 76,
+              "grey": true
+            }
+          ]
+        },
+        {
+          "bg": "images/backdrop.svg",
+          "text": "і вирішують її переплавити.",
+          "actors": [
+            {
+              "char": "mayor",
+              "x": 28,
+              "bottom": 0,
+              "h": 68
+            },
+            {
+              "img": "images/items/fire.svg",
+              "alt": "Піч",
+              "x": 70,
+              "bottom": 0,
+              "h": 50
+            }
+          ]
+        },
+        {
+          "bg": "images/backdrop.svg",
+          "text": "Серце не плавиться, його викидають на сміття разом із мертвою ластівкою.",
+          "actors": [
+            {
+              "img": "images/items/stones.svg",
+              "alt": "Сміття",
+              "x": 50,
+              "bottom": 0,
+              "h": 24
+            },
+            {
+              "img": "images/items/heart.svg",
+              "alt": "Свинцеве серце",
+              "x": 40,
+              "bottom": 14,
+              "h": 24
+            },
+            {
+              "img": "images/items/deadswallow.svg",
+              "alt": "Пташка",
+              "x": 66,
+              "bottom": 10,
+              "h": 14
+            }
+          ]
+        }
+      ]
     },
     {
       "num": 8,
       "title": "Бог і ангел",
       "summary": "Бог велить ангелу принести дві найцінніші речі міста. Ангел приносить свинцеве серце і мертву пташку. Бог каже: «Ти правильно вибрав».",
       "stage": [
-        { "char": "angel", "x": 50, "bottom": 40, "h": 70 }
+        {
+          "char": "angel",
+          "x": 50,
+          "bottom": 40,
+          "h": 70
+        }
       ],
       "questions": {
         "L1": {
           "prompt": "Хто це?",
           "target": "angel",
-          "accepted": ["ангел"],
+          "accepted": [
+            "ангел"
+          ],
           "options": [
-            { "id": "a", "text": "Ангел", "char": "angel" },
-            { "id": "b", "text": "Ластівка", "char": "swallow" },
-            { "id": "c", "text": "Дівчинка з сірниками", "char": "matchgirl" }
+            {
+              "id": "a",
+              "text": "Ангел",
+              "char": "angel"
+            },
+            {
+              "id": "b",
+              "text": "Ластівка",
+              "char": "swallow"
+            },
+            {
+              "id": "c",
+              "text": "Дівчинка з сірниками",
+              "char": "matchgirl"
+            }
           ],
           "answer": "a",
           "hint": "У нього білі крила і світло над головою."
@@ -331,9 +1151,18 @@
         "L2": {
           "prompt": "Що приносить ангел?",
           "options": [
-            { "id": "a", "text": "свинцеве серце і мертву пташку" },
-            { "id": "b", "text": "золото і сапфіри" },
-            { "id": "c", "text": "апельсини і сірники" }
+            {
+              "id": "a",
+              "text": "свинцеве серце і мертву пташку"
+            },
+            {
+              "id": "b",
+              "text": "золото і сапфіри"
+            },
+            {
+              "id": "c",
+              "text": "апельсини і сірники"
+            }
           ],
           "answer": "a",
           "hint": "Бог велів принести дві найцінніші речі міста."
@@ -341,14 +1170,98 @@
         "L3": {
           "prompt": "Що каже Бог?",
           "options": [
-            { "id": "a", "text": "Ти правильно вибрав" },
-            { "id": "b", "text": "Ти помилився" },
-            { "id": "c", "text": "Іди спати" }
+            {
+              "id": "a",
+              "text": "Ти правильно вибрав"
+            },
+            {
+              "id": "b",
+              "text": "Ти помилився"
+            },
+            {
+              "id": "c",
+              "text": "Іди спати"
+            }
           ],
           "answer": "a",
           "hint": "Бог хвалить ангела за вибір."
         }
-      }
+      },
+      "bg": "images/bg/sky.svg",
+      "frames": [
+        {
+          "bg": "images/bg/sky.svg",
+          "text": "Бог велить ангелу принести дві найцінніші речі міста.",
+          "actors": [
+            {
+              "img": "images/items/light.svg",
+              "alt": "Світло",
+              "x": 50,
+              "bottom": 20,
+              "h": 90
+            },
+            {
+              "char": "angel",
+              "x": 50,
+              "bottom": 0,
+              "h": 65
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/sky.svg",
+          "text": "Ангел приносить свинцеве серце і мертву пташку.",
+          "actors": [
+            {
+              "char": "angel",
+              "x": 38,
+              "bottom": 0,
+              "h": 75
+            },
+            {
+              "img": "images/items/heart.svg",
+              "alt": "Свинцеве серце",
+              "x": 72,
+              "bottom": 30,
+              "h": 22
+            },
+            {
+              "img": "images/items/deadswallow.svg",
+              "alt": "Пташка",
+              "x": 74,
+              "bottom": 10,
+              "h": 12
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/sky.svg",
+          "text": "Бог каже: «Ти правильно вибрав».",
+          "actors": [
+            {
+              "img": "images/items/light.svg",
+              "alt": "Світло",
+              "x": 50,
+              "bottom": 10,
+              "h": 100
+            },
+            {
+              "img": "images/items/heart.svg",
+              "alt": "Свинцеве серце",
+              "x": 40,
+              "bottom": 10,
+              "h": 22
+            },
+            {
+              "img": "images/items/deadswallow.svg",
+              "alt": "Пташка",
+              "x": 64,
+              "bottom": 8,
+              "h": 12
+            }
+          ]
+        }
+      ]
     }
   ]
 }
