@@ -28,7 +28,7 @@ for (const scene of scenes) {
   for (const q of Object.values(scene.questions)) {
     for (const o of q.options) if (o.img) paths.add(o.img);
   }
-  for (const f of scene.frames) {
+  for (const f of scene.frames || []) {
     if (f.bg) paths.add(f.bg);
     for (const a of f.actors) if (a.img) paths.add(a.img);
   }
@@ -36,6 +36,11 @@ for (const scene of scenes) {
 
 test(`${work.id}: every scene has three frames whose phrases make up the summary`, () => {
   for (const scene of scenes) {
+    // Вірші й фольклор — без переказу: лише питання і одна картинка.
+    if (!scene.frames) {
+      assert.ok(['poem', 'folk'].includes(work.kind), `scene ${scene.num}: frames missing`);
+      continue;
+    }
     assert.equal(scene.frames.length, 3, `scene ${scene.num}`);
     assert.equal(scene.frames.map((f) => f.text).join(' '), scene.summary, `scene ${scene.num}`);
   }
@@ -43,9 +48,10 @@ test(`${work.id}: every scene has three frames whose phrases make up the summary
 
 test(`${work.id}: every character and pose on stage, in frames and in answers exists`, () => {
   for (const scene of scenes) {
-    const used = [...scene.stage, ...scene.frames.flatMap((f) => f.actors)];
+    const used = [...scene.stage, ...(scene.frames || []).flatMap((f) => f.actors)];
     for (const q of Object.values(scene.questions)) {
       used.push(...q.options);
+      assert.ok(q.options.length >= 2 && q.hint, `${scene.num}: options and hint`);
       assert.ok(q.options.some((o) => o.id === q.answer), `${scene.num}: answer ${q.answer}`);
       if (q.target) assert.ok(characters[q.target], `${scene.num}: target ${q.target}`);
     }

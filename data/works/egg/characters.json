@@ -1,0 +1,106 @@
+{
+  "lark": {
+    "name": "Цар-жайворонок",
+    "lname": "жайворонок",
+    "acc": "жайворонка",
+    "features": [
+      "маленька пташка",
+      "цар птахів",
+      "сердитий"
+    ],
+    "img": "images/egg/lark.svg",
+    "poses": {
+      "angry": "images/egg/lark-angry.svg"
+    }
+  },
+  "mouse": {
+    "name": "Цариця-миша",
+    "lname": "миша",
+    "acc": "мишу",
+    "features": [
+      "сіра",
+      "цариця звірів",
+      "хитра"
+    ],
+    "img": "images/egg/mouse.svg",
+    "poses": {
+      "happy": "images/egg/mouse-happy.svg"
+    }
+  },
+  "eagle": {
+    "name": "Орел",
+    "lname": "орел",
+    "acc": "орла",
+    "features": [
+      "великий птах",
+      "обскубані крила",
+      "вдячний"
+    ],
+    "img": "images/egg/eagle.svg",
+    "poses": {
+      "sad": "images/egg/eagle-sad.svg",
+      "scared": "images/egg/eagle-scared.svg",
+      "happy": "images/egg/eagle-happy.svg"
+    }
+  },
+  "hunter": {
+    "name": "Стрілець",
+    "lname": "стрілець",
+    "acc": "стрільця",
+    "features": [
+      "мисливець",
+      "з луком",
+      "добрий"
+    ],
+    "img": "images/egg/hunter.svg",
+    "poses": {
+      "scared": "images/egg/hunter-scared.svg",
+      "happy": "images/egg/hunter-happy.svg",
+      "sad": "images/egg/hunter-sad.svg"
+    }
+  },
+  "snake": {
+    "name": "Змія",
+    "lname": "змія",
+    "acc": "змію",
+    "features": [
+      "хитра",
+      "зла",
+      "загадує завдання"
+    ],
+    "img": "images/egg/snake.svg",
+    "poses": {
+      "angry": "images/egg/snake-angry.svg"
+    }
+  },
+  "son": {
+    "name": "Парубок",
+    "lname": "парубок",
+    "acc": "парубка",
+    "features": [
+      "син стрільця",
+      "сміливий",
+      "юний"
+    ],
+    "img": "images/egg/son.svg",
+    "poses": {
+      "sad": "images/egg/son-sad.svg",
+      "happy": "images/egg/son-happy.svg"
+    }
+  },
+  "daughter": {
+    "name": "Зміїна дочка",
+    "lname": "дочка змії",
+    "acc": "зміїну дочку",
+    "features": [
+      "чарівниця",
+      "розумна",
+      "вміє перекидатися"
+    ],
+    "img": "images/egg/daughter.svg",
+    "poses": {
+      "sad": "images/egg/daughter-sad.svg",
+      "happy": "images/egg/daughter-happy.svg"
+    }
+  }
+}

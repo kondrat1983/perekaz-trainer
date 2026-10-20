@@ -1,0 +1,27 @@
+{
+  "girl": {
+    "name": "Дівчинка у віночку",
+    "lname": "дівчинка",
+    "acc": "дівчинку",
+    "features": [
+      "вишита сорочка",
+      "барвистий віночок",
+      "усміхається"
+    ],
+    "img": "images/my-language/girl.svg",
+    "poses": {
+      "happy": "images/my-language/girl-happy.svg"
+    }
+  },
+  "lark": {
+    "name": "Жайворонок",
+    "lname": "жайворонок",
+    "acc": "жайворонка",
+    "features": [
+      "маленька пташка",
+      "співає в небі",
+      "над полем"
+    ],
+    "img": "images/my-language/lark.svg"
+  }
+}

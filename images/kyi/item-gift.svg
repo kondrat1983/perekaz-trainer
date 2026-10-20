@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Скриня з царськими дарунками">
+<rect x="30" y="80" width="140" height="100" rx="6" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="30" y="80" width="140" height="100" rx="6" fill="#8A5A34"/>
+<path d="M30 90Q100 40 170 90Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M30 90Q100 40 170 90Z" fill="#A06E44"/>
+<rect x="30" y="110" width="140" height="10" fill="#E8B23A"/>
+<rect x="88" y="100" width="24" height="30" rx="4" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="88" y="100" width="24" height="30" rx="4" fill="#E8B23A"/>
+<circle cx="70" cy="70" r="10" fill="#1E2433" opacity=".2" transform="translate(1 1)"/><circle cx="70" cy="70" r="10" fill="#C24A3E"/>
+<circle cx="130" cy="66" r="10" fill="#1E2433" opacity=".2" transform="translate(1 1)"/><circle cx="130" cy="66" r="10" fill="#2F6FD6"/>
+</svg>

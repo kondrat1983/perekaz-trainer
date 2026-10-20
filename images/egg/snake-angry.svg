@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Змія">
+<path d="M40 360Q40 300 120 310Q200 320 200 270Q200 220 150 220Q120 220 130 190Q150 160 210 170Q250 180 240 150" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M40 360Q40 300 120 310Q200 320 200 270Q200 220 150 220Q120 220 130 190Q150 160 210 170Q250 180 240 150" fill="none"/>
+<path d="M40 360Q40 300 120 310Q200 320 200 270Q200 220 150 220Q120 220 130 190" fill="none" stroke="#5E9A4C" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 360Q40 300 120 310Q200 320 200 270Q200 220 150 220Q120 220 130 190" fill="none" stroke="#8CBF76" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="150" cy="168" rx="40" ry="28" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><ellipse cx="150" cy="168" rx="40" ry="28" fill="#5E9A4C"/>
+<ellipse cx="138" cy="160" rx="6" ry="7" fill="#1E2433" opacity=".2" transform="translate(2 3)"/><ellipse cx="138" cy="160" rx="6" ry="7" fill="#FFFFFF"/><ellipse cx="139.5" cy="161" rx="3.7" ry="4.6" fill="#1E2433"/><circle cx="137.5" cy="158.2" r="1.8" fill="#FFFFFF"/>
+<ellipse cx="166" cy="160" rx="6" ry="7" fill="#1E2433" opacity=".2" transform="translate(2 3)"/><ellipse cx="166" cy="160" rx="6" ry="7" fill="#FFFFFF"/><ellipse cx="167.5" cy="161" rx="3.7" ry="4.6" fill="#1E2433"/><circle cx="165.5" cy="158.2" r="1.8" fill="#FFFFFF"/>
+<path d="M131 144L145 151" fill="none" stroke="#1E2433" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M159 151L173 144" fill="none" stroke="#1E2433" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M188 176l20 4l6 -6M208 180l6 6" fill="none" stroke="#C24A3E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

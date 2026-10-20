@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" role="img" aria-label="Місяць">
+<path d="M170 20A90 90 0 1 0 170 200A70 70 0 1 1 170 20Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M170 20A90 90 0 1 0 170 200A70 70 0 1 1 170 20Z" fill="#F6CE5B"/>
+<ellipse cx="128" cy="104" rx="6" ry="7" fill="#1E2433" opacity=".2" transform="translate(2 3)"/><ellipse cx="128" cy="104" rx="6" ry="7" fill="#FFFFFF"/><ellipse cx="129.5" cy="105" rx="3.7" ry="4.6" fill="#1E2433"/><circle cx="127.5" cy="102.2" r="1.8" fill="#FFFFFF"/>
+<ellipse cx="166" cy="104" rx="6" ry="7" fill="#1E2433" opacity=".2" transform="translate(2 3)"/><ellipse cx="166" cy="104" rx="6" ry="7" fill="#FFFFFF"/><ellipse cx="167.5" cy="105" rx="3.7" ry="4.6" fill="#1E2433"/><circle cx="165.5" cy="102.2" r="1.8" fill="#FFFFFF"/>
+<path d="M130 136Q148 150 166 136" fill="none" stroke="#1E2433" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

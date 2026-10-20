@@ -1,0 +1,1000 @@
+{
+  "pairs": [
+    [
+      "spring",
+      "summer"
+    ],
+    [
+      "winter",
+      "autumn"
+    ]
+  ],
+  "scenes": [
+    {
+      "num": 1,
+      "title": "Чотири сестри",
+      "summary": "Колись давно жили чотири сестри з різнобарвним волоссям. Вони по черзі сідали на золотий трон і правили світом. Сестри чемно змінювали одна одну і жили дружно.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "winter",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "char": "spring",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "img": "images/four-sisters/item-throne.svg",
+          "alt": "золотий трон",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "winter",
+          "accepted": [
+            "білокоса",
+            "зима",
+            "сестра зима"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Синьокоса",
+              "char": "summer"
+            },
+            {
+              "id": "b",
+              "text": "Білокоса",
+              "char": "winter"
+            },
+            {
+              "id": "c",
+              "text": "Золотокоса",
+              "char": "autumn"
+            }
+          ],
+          "answer": "b",
+          "hint": "Її волосся біле, як сніг."
+        },
+        "L2": {
+          "prompt": "Де по черзі сиділи сестри?",
+          "options": [
+            {
+              "id": "a",
+              "text": "На золотому троні",
+              "img": "images/four-sisters/item-throne.svg"
+            },
+            {
+              "id": "b",
+              "text": "На хмарі"
+            },
+            {
+              "id": "c",
+              "text": "На коні"
+            }
+          ],
+          "answer": "a",
+          "hint": "Хто там сидить, той править світом."
+        },
+        "L3": {
+          "prompt": "Чому сестри жили в злагоді?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Вони боялися батька"
+            },
+            {
+              "id": "b",
+              "text": "Вони рідко бачилися"
+            },
+            {
+              "id": "c",
+              "text": "Вони любили одна одну"
+            }
+          ],
+          "answer": "c",
+          "hint": "Вони завжди віталися лагідно."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Колись давно жили чотири сестри з різнобарвним волоссям.",
+          "actors": [
+            {
+              "char": "winter",
+              "x": 14,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "spring",
+              "x": 38,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "summer",
+              "x": 62,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "autumn",
+              "x": 86,
+              "bottom": 0,
+              "h": 60
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Вони по черзі сідали на золотий трон і правили світом.",
+          "actors": [
+            {
+              "char": "winter",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/four-sisters/item-throne.svg",
+              "alt": "золотий трон",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Сестри чемно змінювали одна одну і жили дружно.",
+          "actors": [
+            {
+              "char": "spring",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "winter",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/four-sisters/item-throne.svg",
+              "alt": "золотий трон",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Чорний Птах",
+      "summary": "Одного разу Чорний Вітер випустив у небо Чорного Птаха. Птах ударив Білокосу крилом і розбив її люстерко. Він сів їй на плече й шепотів, що сестри їй заздрять.",
+      "bg": "images/bg/winter.svg",
+      "stage": [
+        {
+          "char": "bird",
+          "x": 30,
+          "bottom": 46,
+          "h": 24,
+          "pose": "angry"
+        },
+        {
+          "char": "winter",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "scared"
+        },
+        {
+          "img": "images/four-sisters/item-mirror.svg",
+          "alt": "люстерко",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "bird",
+          "accepted": [
+            "чорний птах",
+            "птах",
+            "ворон",
+            "ворона"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Зеленокоса",
+              "char": "spring"
+            },
+            {
+              "id": "b",
+              "text": "Білокоса",
+              "char": "winter"
+            },
+            {
+              "id": "c",
+              "text": "Чорний Птах",
+              "char": "bird"
+            }
+          ],
+          "answer": "c",
+          "hint": "Його випустив Чорний Вітер."
+        },
+        "L2": {
+          "prompt": "Що розбив Чорний Птах?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Корону"
+            },
+            {
+              "id": "b",
+              "text": "Люстерко",
+              "img": "images/four-sisters/item-mirror.svg"
+            },
+            {
+              "id": "c",
+              "text": "Вікно"
+            }
+          ],
+          "answer": "b",
+          "hint": "У ньому Зима бачила своє обличчя."
+        },
+        "L3": {
+          "prompt": "Чому Білокоса повірила Птахові?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Він лестив їй, що вона найкраща"
+            },
+            {
+              "id": "b",
+              "text": "Сестри її скривдили"
+            },
+            {
+              "id": "c",
+              "text": "Вона була хвора"
+            }
+          ],
+          "answer": "a",
+          "hint": "Йому було приємно вірити."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/sky.svg",
+          "text": "Одного разу Чорний Вітер випустив у небо Чорного Птаха.",
+          "actors": [
+            {
+              "char": "bird",
+              "x": 42,
+              "bottom": 46,
+              "h": 24,
+              "pose": "angry"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/winter.svg",
+          "text": "Птах ударив Білокосу крилом і розбив її люстерко.",
+          "actors": [
+            {
+              "char": "bird",
+              "x": 30,
+              "bottom": 46,
+              "h": 24,
+              "pose": "angry"
+            },
+            {
+              "char": "winter",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            },
+            {
+              "img": "images/four-sisters/item-mirror.svg",
+              "alt": "люстерко",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/winter.svg",
+          "text": "Він сів їй на плече й шепотів, що сестри їй заздрять.",
+          "actors": [
+            {
+              "char": "bird",
+              "x": 30,
+              "bottom": 46,
+              "h": 24
+            },
+            {
+              "char": "winter",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Зима не пускає Весну",
+      "summary": "Прийшла Зеленокоса-Весна, бо настала її черга правити. Але Білокоса прогнала сестру і сказала, що ще не час. Весна засумувала, а на землі все лежав сніг.",
+      "bg": "images/bg/winter.svg",
+      "stage": [
+        {
+          "char": "spring",
+          "x": 18,
+          "bottom": 0,
+          "h": 60,
+          "pose": "sad"
+        },
+        {
+          "char": "winter",
+          "x": 50,
+          "bottom": 0,
+          "h": 60,
+          "pose": "angry"
+        },
+        {
+          "char": "bird",
+          "x": 82,
+          "bottom": 46,
+          "h": 20
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "spring",
+          "accepted": [
+            "зеленокоса",
+            "весна",
+            "сестра весна"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Білокоса",
+              "char": "winter"
+            },
+            {
+              "id": "b",
+              "text": "Синьокоса",
+              "char": "summer"
+            },
+            {
+              "id": "c",
+              "text": "Зеленокоса",
+              "char": "spring"
+            }
+          ],
+          "answer": "c",
+          "hint": "Після неї розпускається зелене листя."
+        },
+        "L2": {
+          "prompt": "Що сказала Білокоса Весні?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Що віддає їй трон"
+            },
+            {
+              "id": "b",
+              "text": "Що ще не її черга"
+            },
+            {
+              "id": "c",
+              "text": "Що їде в гості"
+            }
+          ],
+          "answer": "b",
+          "hint": "Зима не хотіла вставати з трону."
+        },
+        "L3": {
+          "prompt": "Що відчула Зеленокоса, коли її прогнали?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Радість"
+            },
+            {
+              "id": "b",
+              "text": "Сум і розгубленість"
+            },
+            {
+              "id": "c",
+              "text": "Злість"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вона подумала, що, може, сама помилилася."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Прийшла Зеленокоса-Весна, бо настала її черга правити.",
+          "actors": [
+            {
+              "char": "spring",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "winter",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/four-sisters/item-throne.svg",
+              "alt": "золотий трон",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Але Білокоса прогнала сестру і сказала, що ще не час.",
+          "actors": [
+            {
+              "char": "winter",
+              "x": 18,
+              "bottom": 0,
+              "h": 60,
+              "pose": "angry"
+            },
+            {
+              "char": "bird",
+              "x": 50,
+              "bottom": 46,
+              "h": 20,
+              "pose": "angry"
+            },
+            {
+              "char": "spring",
+              "x": 82,
+              "bottom": 0,
+              "h": 60,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/winter.svg",
+          "text": "Весна засумувала, а на землі все лежав сніг.",
+          "actors": [
+            {
+              "char": "spring",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            },
+            {
+              "img": "images/four-sisters/item-snow.svg",
+              "alt": "сніжна завірюха",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Світ без весни",
+      "summary": "Весна розбудила Синьокосу-Літо, а сама знову пішла просити Зиму. Зима не поступилася нікому, і сестри почали втрачати красу. Сама Білокоса ставала старою й похмурою.",
+      "bg": "images/bg/winter.svg",
+      "stage": [
+        {
+          "char": "summer",
+          "x": 18,
+          "bottom": 0,
+          "h": 60,
+          "pose": "sad"
+        },
+        {
+          "char": "spring",
+          "x": 50,
+          "bottom": 0,
+          "h": 60,
+          "pose": "sad"
+        },
+        {
+          "char": "winter",
+          "x": 82,
+          "bottom": 0,
+          "h": 60,
+          "pose": "angry"
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "summer",
+          "accepted": [
+            "синьокоса",
+            "літо",
+            "сестра літо"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Золотокоса",
+              "char": "autumn"
+            },
+            {
+              "id": "b",
+              "text": "Синьокоса",
+              "char": "summer"
+            },
+            {
+              "id": "c",
+              "text": "Зеленокоса",
+              "char": "spring"
+            }
+          ],
+          "answer": "b",
+          "hint": "Її волосся кольору неба."
+        },
+        "L2": {
+          "prompt": "Що сталося з Білокосою, поки вона сиділа на троні?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Вона помолодшала"
+            },
+            {
+              "id": "b",
+              "text": "Вона полетіла"
+            },
+            {
+              "id": "c",
+              "text": "Вона постаріла"
+            }
+          ],
+          "answer": "c",
+          "hint": "На її обличчі ставало все більше зморшок."
+        },
+        "L3": {
+          "prompt": "Чому на землі стало погано?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Сестри перестали змінювати одна одну"
+            },
+            {
+              "id": "b",
+              "text": "Птах з'їв сонце"
+            },
+            {
+              "id": "c",
+              "text": "Зламався трон"
+            }
+          ],
+          "answer": "a",
+          "hint": "Пори року мають приходити по черзі."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Весна розбудила Синьокосу-Літо, а сама знову пішла просити Зиму.",
+          "actors": [
+            {
+              "char": "spring",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            },
+            {
+              "char": "summer",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/winter.svg",
+          "text": "Зима не поступилася нікому, і сестри почали втрачати красу.",
+          "actors": [
+            {
+              "char": "winter",
+              "x": 18,
+              "bottom": 0,
+              "h": 60,
+              "pose": "angry"
+            },
+            {
+              "char": "spring",
+              "x": 50,
+              "bottom": 0,
+              "h": 60,
+              "pose": "sad"
+            },
+            {
+              "char": "summer",
+              "x": 82,
+              "bottom": 0,
+              "h": 60,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/winter.svg",
+          "text": "Сама Білокоса ставала старою й похмурою.",
+          "actors": [
+            {
+              "char": "winter",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            },
+            {
+              "char": "bird",
+              "x": 70,
+              "bottom": 46,
+              "h": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Золотокоса проти Птаха",
+      "summary": "Прийшла Золотокоса-Осінь із золотим пірначем, щоб визволити сестру. Срібний жучок причепив павутинку до волосся Білокосої. Птах кинувся на Осінь, але поранився об пірнач.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "autumn",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "angry"
+        },
+        {
+          "char": "bird",
+          "x": 70,
+          "bottom": 46,
+          "h": 24,
+          "pose": "scared"
+        },
+        {
+          "img": "images/four-sisters/item-bug.svg",
+          "alt": "срібний жучок на павутинці",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "autumn",
+          "accepted": [
+            "золотокоса",
+            "осінь",
+            "сестра осінь"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Золотокоса",
+              "char": "autumn"
+            },
+            {
+              "id": "b",
+              "text": "Білокоса",
+              "char": "winter"
+            },
+            {
+              "id": "c",
+              "text": "Зеленокоса",
+              "char": "spring"
+            }
+          ],
+          "answer": "a",
+          "hint": "У неї вінок із барвистого листя."
+        },
+        "L2": {
+          "prompt": "Хто допоміг Золотокосій?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Чорний Вітер"
+            },
+            {
+              "id": "b",
+              "text": "Срібний жучок",
+              "img": "images/four-sisters/item-bug.svg"
+            },
+            {
+              "id": "c",
+              "text": "Снігова баба"
+            }
+          ],
+          "answer": "b",
+          "hint": "Він уміє плести тонку павутинку."
+        },
+        "L3": {
+          "prompt": "Чому Золотокоса змогла перемогти Птаха?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Птах заснув"
+            },
+            {
+              "id": "b",
+              "text": "Вона була найбільша"
+            },
+            {
+              "id": "c",
+              "text": "Вона прийшла з добром"
+            }
+          ],
+          "answer": "c",
+          "hint": "Вона хотіла не трону, а врятувати сестру."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Прийшла Золотокоса-Осінь із золотим пірначем, щоб визволити сестру.",
+          "actors": [
+            {
+              "char": "autumn",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Срібний жучок причепив павутинку до волосся Білокосої.",
+          "actors": [
+            {
+              "img": "images/four-sisters/item-bug.svg",
+              "alt": "срібний жучок на павутинці",
+              "x": 50,
+              "bottom": 4,
+              "h": 22
+            },
+            {
+              "char": "winter",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Птах кинувся на Осінь, але поранився об пірнач.",
+          "actors": [
+            {
+              "char": "bird",
+              "x": 30,
+              "bottom": 46,
+              "h": 24,
+              "pose": "scared"
+            },
+            {
+              "char": "autumn",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Сльоза Зими",
+      "summary": "Золотокоса сказала, що любить сестру, і Зима заплакала. Чорний Птах злетів, зменшився до крапки і зник. Осінь вивела стареньку Зиму, а сніг навколо почав танути.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "winter",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "sad"
+        },
+        {
+          "char": "autumn",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "img": "images/four-sisters/item-mirror.svg",
+          "alt": "люстерко",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "winter",
+          "accepted": [
+            "білокоса",
+            "зима",
+            "сестра зима"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Зеленокоса",
+              "char": "spring"
+            },
+            {
+              "id": "b",
+              "text": "Золотокоса",
+              "char": "autumn"
+            },
+            {
+              "id": "c",
+              "text": "Білокоса",
+              "char": "winter"
+            }
+          ],
+          "answer": "c",
+          "hint": "Вона нарешті зрозуміла, що помилялася."
+        },
+        "L2": {
+          "prompt": "Що сталося з Чорним Птахом?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Він сів на трон"
+            },
+            {
+              "id": "b",
+              "text": "Він зменшився і зник"
+            },
+            {
+              "id": "c",
+              "text": "Він заснув"
+            }
+          ],
+          "answer": "b",
+          "hint": "Сльоза Зими прогнала зло."
+        },
+        "L3": {
+          "prompt": "Чому Білокоса заплакала?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Її розчулили добрі слова сестри"
+            },
+            {
+              "id": "b",
+              "text": "Вона впала"
+            },
+            {
+              "id": "c",
+              "text": "Їй стало холодно"
+            }
+          ],
+          "answer": "a",
+          "hint": "Осінь говорила з нею без злості."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Золотокоса сказала, що любить сестру, і Зима заплакала.",
+          "actors": [
+            {
+              "char": "autumn",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "winter",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Чорний Птах злетів, зменшився до крапки і зник.",
+          "actors": [
+            {
+              "char": "bird",
+              "x": 30,
+              "bottom": 46,
+              "h": 24,
+              "pose": "scared"
+            },
+            {
+              "char": "winter",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Осінь вивела стареньку Зиму, а сніг навколо почав танути.",
+          "actors": [
+            {
+              "char": "autumn",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "winter",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/four-sisters/item-mirror.svg",
+              "alt": "люстерко",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

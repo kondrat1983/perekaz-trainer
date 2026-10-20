@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Розгорнута книжка">
+<path d="M100 60Q60 40 20 50V160Q60 150 100 170Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M100 60Q60 40 20 50V160Q60 150 100 170Z" fill="#FFFFFF"/>
+<path d="M100 60Q140 40 180 50V160Q140 150 100 170Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M100 60Q140 40 180 50V160Q140 150 100 170Z" fill="#F1ECE2"/>
+<path d="M96 60H104V170H96Z" fill="#C24A3E"/>
+<path d="M36 80Q60 74 86 84M36 100Q60 94 86 104M114 84Q140 74 164 80M114 104Q140 94 164 100" fill="none" stroke="#8A8FA3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

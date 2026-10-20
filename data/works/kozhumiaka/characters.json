@@ -1,0 +1,102 @@
+{
+  "mykyta": {
+    "name": "Микита Кожум'яка",
+    "lname": "микита",
+    "acc": "Микиту",
+    "features": [
+      "дужий молодий чоловік",
+      "проста біла сорочка",
+      "не боїться Змія"
+    ],
+    "img": "images/kozhumiaka/mykyta.svg",
+    "poses": {
+      "happy": "images/kozhumiaka/mykyta-happy.svg",
+      "angry": "images/kozhumiaka/mykyta-angry.svg"
+    }
+  },
+  "knyaz": {
+    "name": "Князь",
+    "lname": "князь",
+    "acc": "Князя",
+    "features": [
+      "правитель держави",
+      "корона на голові",
+      "батько Князівни"
+    ],
+    "img": "images/kozhumiaka/knyaz.svg",
+    "poses": {
+      "sad": "images/kozhumiaka/knyaz-sad.svg",
+      "happy": "images/kozhumiaka/knyaz-happy.svg"
+    }
+  },
+  "knyahynia": {
+    "name": "Княгиня",
+    "lname": "княгиня",
+    "acc": "Княгиню",
+    "features": [
+      "мама Князівни",
+      "довга фіолетова сукня",
+      "серпанок на голові"
+    ],
+    "img": "images/kozhumiaka/knyahynia.svg",
+    "poses": {
+      "sad": "images/kozhumiaka/knyahynia-sad.svg",
+      "happy": "images/kozhumiaka/knyahynia-happy.svg"
+    }
+  },
+  "knyazhna": {
+    "name": "Князівна",
+    "lname": "князівна",
+    "acc": "Князівну",
+    "features": [
+      "донька Князя",
+      "біла сукня",
+      "вінок на голові"
+    ],
+    "img": "images/kozhumiaka/knyazhna.svg",
+    "poses": {
+      "scared": "images/kozhumiaka/knyazhna-scared.svg",
+      "happy": "images/kozhumiaka/knyazhna-happy.svg"
+    }
+  },
+  "voevoda": {
+    "name": "Воєвода",
+    "lname": "воєвода",
+    "acc": "воєводу",
+    "features": [
+      "княжий воїн",
+      "обладунок і шолом",
+      "меч при боці"
+    ],
+    "img": "images/kozhumiaka/voevoda.svg",
+    "poses": {
+      "sad": "images/kozhumiaka/voevoda-sad.svg"
+    }
+  },
+  "did": {
+    "name": "Дід",
+    "lname": "дід",
+    "acc": "діда",
+    "features": [
+      "сивий старенький",
+      "біла борода",
+      "ходить із палицею"
+    ],
+    "img": "images/kozhumiaka/did.svg"
+  },
+  "zmiy": {
+    "name": "Змій",
+    "lname": "змій",
+    "acc": "Змія",
+    "features": [
+      "страшне чудовисько",
+      "пускає пару й жар",
+      "хоче забрати Князівну"
+    ],
+    "img": "images/kozhumiaka/zmiy.svg",
+    "poses": {
+      "angry": "images/kozhumiaka/zmiy-angry.svg",
+      "scared": "images/kozhumiaka/zmiy-scared.svg"
+    }
+  }
+}

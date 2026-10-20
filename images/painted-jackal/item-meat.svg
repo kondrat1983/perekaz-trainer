@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Здобич">
+<path d="M40 120Q40 60 110 60Q170 64 170 120Q160 170 100 170Q40 168 40 120Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M40 120Q40 60 110 60Q170 64 170 120Q160 170 100 170Q40 168 40 120Z" fill="#C24A3E"/>
+<path d="M60 110Q80 80 120 84Q90 100 80 130Z" fill="#E07A6A"/>
+<rect x="150" y="70" width="40" height="16" rx="8" fill="#1E2433" opacity=".2" transform="translate(3 4) rotate(-30 150 78)"/><rect x="150" y="70" width="40" height="16" rx="8" fill="#F1ECE2" transform="rotate(-30 150 78)"/>
+</svg>

@@ -6,9 +6,8 @@
       "author": "Українська народна творчість",
       "kind": "folk",
       "page": 13,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/proverbs/item-book.svg",
+      "scenes": 1
     },
     {
       "id": "riddles",
@@ -16,9 +15,8 @@
       "author": "Українська народна творчість",
       "kind": "folk",
       "page": 18,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/riddles/item-cabbage.svg",
+      "scenes": 1
     },
     {
       "id": "glibov-riddles",
@@ -26,9 +24,8 @@
       "author": "Леонід Глібов",
       "kind": "poem",
       "page": 22,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/glibov-riddles/item-book.svg",
+      "scenes": 1
     },
     {
       "id": "painted-jackal",
@@ -36,9 +33,8 @@
       "author": "Індійська народна казка",
       "kind": "tale",
       "page": 26,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/painted-jackal/jackal.svg",
+      "scenes": 5
     },
     {
       "id": "aladdin",
@@ -46,9 +42,8 @@
       "author": "Арабська народна казка",
       "kind": "tale",
       "page": 30,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/aladdin/aladdin.svg",
+      "scenes": 6
     },
     {
       "id": "egg",
@@ -56,9 +51,8 @@
       "author": "Українська народна казка",
       "kind": "tale",
       "page": 44,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/egg/mouse.svg",
+      "scenes": 6
     },
     {
       "id": "golden-apple",
@@ -66,9 +60,8 @@
       "author": "Кримськотатарська народна казка",
       "kind": "tale",
       "page": 56,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/golden-apple/padishah.svg",
+      "scenes": 6
     },
     {
       "id": "mother-holle",
@@ -76,9 +69,8 @@
       "author": "Брати Якоб і Вільгельм Ґрімм",
       "kind": "tale",
       "page": 64,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/mother-holle/girl.svg",
+      "scenes": 6
     },
     {
       "id": "cinderella",
@@ -86,9 +78,8 @@
       "author": "Шарль Перро",
       "kind": "tale",
       "page": 72,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/cinderella/cinderella.svg",
+      "scenes": 6
     },
     {
       "id": "munchausen",
@@ -96,9 +87,8 @@
       "author": "Еріх Распе",
       "kind": "prose",
       "page": 84,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/munchausen/baron.svg",
+      "scenes": 6
     },
     {
       "id": "little-mermaid",
@@ -106,9 +96,8 @@
       "author": "Ганс Крістіан Андерсен",
       "kind": "tale",
       "page": 92,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/little-mermaid/mermaid.svg",
+      "scenes": 6
     },
     {
       "id": "happy-prince",
@@ -171,9 +160,8 @@
       "author": "Леся Українка",
       "kind": "tale",
       "page": 134,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/lelia/pavlus.svg",
+      "scenes": 6
     },
     {
       "id": "four-sisters",
@@ -181,9 +169,8 @@
       "author": "Валерій Шевчук",
       "kind": "tale",
       "page": 147,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/four-sisters/winter.svg",
+      "scenes": 6
     },
     {
       "id": "rome",
@@ -191,9 +178,8 @@
       "author": "Давньоримська легенда",
       "kind": "legend",
       "page": 158,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/rome/amulius.svg",
+      "scenes": 5
     },
     {
       "id": "kalyna",
@@ -201,9 +187,8 @@
       "author": "Українська народна легенда",
       "kind": "legend",
       "page": 163,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/kalyna/kalyna.svg",
+      "scenes": 4
     },
     {
       "id": "berehynia",
@@ -211,9 +196,8 @@
       "author": "Українська народна легенда",
       "kind": "legend",
       "page": 165,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/berehynia/svarog.svg",
+      "scenes": 5
     },
     {
       "id": "arthur-birth",
@@ -221,9 +205,8 @@
       "author": "Легенди про короля Артура",
       "kind": "legend",
       "page": 172,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/arthur-birth/uther.svg",
+      "scenes": 5
     },
     {
       "id": "sword-anvil",
@@ -231,9 +214,8 @@
       "author": "Легенди про короля Артура",
       "kind": "legend",
       "page": 177,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/sword-anvil/merlin.svg",
+      "scenes": 6
     },
     {
       "id": "robin-hood",
@@ -241,9 +223,8 @@
       "author": "Англійські народні легенди",
       "kind": "legend",
       "page": 186,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/robin-hood/robin.svg",
+      "scenes": 6
     },
     {
       "id": "kyi",
@@ -251,9 +232,8 @@
       "author": "Літописна оповідь",
       "kind": "legend",
       "page": 196,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/kyi/kyi.svg",
+      "scenes": 5
     },
     {
       "id": "cossack-guard",
@@ -261,9 +241,8 @@
       "author": "Народний переказ",
       "kind": "legend",
       "page": 202,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/cossack-guard/cossack.svg",
+      "scenes": 5
     },
     {
       "id": "kozhumiaka",
@@ -271,9 +250,8 @@
       "author": "Олександр Олесь",
       "kind": "tale",
       "page": 206,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/kozhumiaka/knyaz.svg",
+      "scenes": 6
     },
     {
       "id": "bohatyr-outpost",
@@ -281,9 +259,8 @@
       "author": "Сергій Плачинда",
       "kind": "legend",
       "page": 216,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/bohatyr-outpost/budymyr.svg",
+      "scenes": 6
     },
     {
       "id": "learn-read",
@@ -291,9 +268,8 @@
       "author": "Тарас Шевченко",
       "kind": "poem",
       "page": 227,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/learn-read/poet.svg",
+      "scenes": 1
     },
     {
       "id": "shevchenko-willow",
@@ -301,9 +277,8 @@
       "author": "Богдан Лепкий",
       "kind": "poem",
       "page": 234,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/shevchenko-willow/poet.svg",
+      "scenes": 1
     },
     {
       "id": "akkerman-steppes",
@@ -311,9 +286,8 @@
       "author": "Адам Міцкевич",
       "kind": "poem",
       "page": 238,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/akkerman-steppes/traveler.svg",
+      "scenes": 1
     },
     {
       "id": "my-language",
@@ -321,9 +295,8 @@
       "author": "Галина Кирпа",
       "kind": "poem",
       "page": 242,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/my-language/girl.svg",
+      "scenes": 1
     },
     {
       "id": "ukrainia",
@@ -331,9 +304,8 @@
       "author": "Тетяна Майданович",
       "kind": "poem",
       "page": 244,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/ukrainia/girl.svg",
+      "scenes": 1
     }
   ]
 }

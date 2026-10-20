@@ -1,0 +1,95 @@
+{
+  "pairs": [],
+  "scenes": [
+    {
+      "num": 1,
+      "title": "Народні загадки",
+      "bg": "images/bg/village.svg",
+      "stage": [
+        {
+          "img": "images/riddles/item-cabbage.svg",
+          "alt": "качан капусти на грядці",
+          "x": 50,
+          "bottom": 4,
+          "h": 22
+        },
+        {
+          "img": "images/riddles/item-potato.svg",
+          "alt": "кущ картоплі з бульбами під землею",
+          "x": 72,
+          "bottom": 4,
+          "h": 22
+        },
+        {
+          "img": "images/riddles/item-mirror.svg",
+          "alt": "кругле дзеркало",
+          "x": 72,
+          "bottom": 4,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Відгадай загадку: «Сидить баба на грядках, вся закутана в хустках».",
+          "options": [
+            {
+              "id": "a",
+              "text": "Цибуля"
+            },
+            {
+              "id": "b",
+              "text": "Капуста",
+              "img": "images/riddles/item-cabbage.svg"
+            },
+            {
+              "id": "c",
+              "text": "Квасоля"
+            }
+          ],
+          "answer": "b",
+          "hint": "Її «хустки» — це листки, що туго обгортають одне одного."
+        },
+        "L2": {
+          "prompt": "Відгадай загадку: «Під землею птиця кубло звила і яєць нанесла».",
+          "options": [
+            {
+              "id": "a",
+              "text": "Картопля",
+              "img": "images/riddles/item-potato.svg"
+            },
+            {
+              "id": "b",
+              "text": "Курка"
+            },
+            {
+              "id": "c",
+              "text": "Буряк"
+            }
+          ],
+          "answer": "a",
+          "hint": "«Яйця» цієї птиці викопують з городу восени."
+        },
+        "L3": {
+          "prompt": "Відгадай загадку: «Хто завжди правду каже?»",
+          "options": [
+            {
+              "id": "a",
+              "text": "Сорока"
+            },
+            {
+              "id": "b",
+              "text": "Годинник"
+            },
+            {
+              "id": "c",
+              "text": "Дзеркало",
+              "img": "images/riddles/item-mirror.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Глянь у нього — і побачиш себе таким, який ти є."
+        }
+      }
+    }
+  ]
+}

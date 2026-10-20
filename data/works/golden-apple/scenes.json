@@ -1,0 +1,953 @@
+{
+  "pairs": [
+    [
+      "youngest",
+      "brothers"
+    ],
+    [
+      "padishah",
+      "shepherd"
+    ],
+    [
+      "dragon",
+      "eagle"
+    ]
+  ],
+  "scenes": [
+    {
+      "num": 1,
+      "title": "Сліпий падишах",
+      "summary": "Войовничий падишах осліп і помирився з усіма сусідами. Пастух приніс йому з гір чарівний саджанець. Через сім років на деревці виросло золоте яблуко.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "padishah",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "sad"
+        },
+        {
+          "char": "shepherd",
+          "x": 70,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "img": "images/golden-apple/item-sapling.svg",
+          "alt": "молоде деревце-саджанець",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "padishah",
+          "accepted": [
+            "падишах",
+            "цар",
+            "правитель"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Пастух",
+              "char": "shepherd"
+            },
+            {
+              "id": "b",
+              "text": "Падишах",
+              "char": "padishah"
+            },
+            {
+              "id": "c",
+              "text": "Найменший син",
+              "char": "youngest"
+            }
+          ],
+          "answer": "b",
+          "hint": "Він правитель, який утратив зір."
+        },
+        "L2": {
+          "prompt": "Що приніс пастух падишахові?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Чарівний саджанець",
+              "img": "images/golden-apple/item-sapling.svg"
+            },
+            {
+              "id": "b",
+              "text": "Ліки в торбі"
+            },
+            {
+              "id": "c",
+              "text": "Гостру шаблю"
+            }
+          ],
+          "answer": "a",
+          "hint": "Його посадили в царському саду."
+        },
+        "L3": {
+          "prompt": "Навіщо падишахові золоте яблуко?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Щоб продати"
+            },
+            {
+              "id": "b",
+              "text": "Щоб частувати гостей"
+            },
+            {
+              "id": "c",
+              "text": "Щоб знову бачити"
+            }
+          ],
+          "answer": "c",
+          "hint": "Плоди цього дерева мають цілющу силу."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Войовничий падишах осліп і помирився з усіма сусідами.",
+          "actors": [
+            {
+              "char": "padishah",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Пастух приніс йому з гір чарівний саджанець.",
+          "actors": [
+            {
+              "char": "shepherd",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "padishah",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/golden-apple/item-sapling.svg",
+              "alt": "молоде деревце-саджанець",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Через сім років на деревці виросло золоте яблуко.",
+          "actors": [
+            {
+              "img": "images/golden-apple/item-apple.svg",
+              "alt": "золоте яблуко",
+              "x": 50,
+              "bottom": 4,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Хто краде яблуко?",
+      "summary": "Щороку яблуко зникало якраз перед тим, як дозріти. Старші брати вартували, але на мить задрімали. Найменший не спав і вистрілив у руку з хмарки.",
+      "bg": "images/bg/garden.svg",
+      "stage": [
+        {
+          "char": "brothers",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "sad"
+        },
+        {
+          "char": "youngest",
+          "x": 70,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "img": "images/golden-apple/item-apple.svg",
+          "alt": "золоте яблуко",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "brothers",
+          "accepted": [
+            "брати",
+            "старші брати",
+            "старший брат",
+            "сини падишаха"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Старші брати",
+              "char": "brothers"
+            },
+            {
+              "id": "b",
+              "text": "Пастух",
+              "char": "shepherd"
+            },
+            {
+              "id": "c",
+              "text": "Змій",
+              "char": "dragon"
+            }
+          ],
+          "answer": "a",
+          "hint": "Їм першим доручили стерегти яблуко."
+        },
+        "L2": {
+          "prompt": "Звідки з’явилася рука злодія?",
+          "options": [
+            {
+              "id": "a",
+              "text": "З-за муру"
+            },
+            {
+              "id": "b",
+              "text": "З маленької хмарки"
+            },
+            {
+              "id": "c",
+              "text": "З-під землі"
+            }
+          ],
+          "answer": "b",
+          "hint": "Подивися вгору, над деревом."
+        },
+        "L3": {
+          "prompt": "Чому старші брати не впіймали злодія?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Вони злякалися"
+            },
+            {
+              "id": "b",
+              "text": "Злодій не прийшов"
+            },
+            {
+              "id": "c",
+              "text": "Вони заснули на світанку"
+            }
+          ],
+          "answer": "c",
+          "hint": "Вони сиділи всю ніч, а під ранок утомились."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Щороку яблуко зникало якраз перед тим, як дозріти.",
+          "actors": [
+            {
+              "img": "images/golden-apple/item-apple.svg",
+              "alt": "золоте яблуко",
+              "x": 50,
+              "bottom": 4,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Старші брати вартували, але на мить задрімали.",
+          "actors": [
+            {
+              "char": "brothers",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Найменший не спав і вистрілив у руку з хмарки.",
+          "actors": [
+            {
+              "char": "youngest",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            },
+            {
+              "img": "images/golden-apple/item-apple.svg",
+              "alt": "золоте яблуко",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Глибока криниця",
+      "summary": "Сліди крові привели братів до глибокої криниці. Брати спустили найменшого вниз на зв’язаних арканах. Під землею він знайшов трьох сестер, яких викрав змій.",
+      "bg": "images/bg/cave.svg",
+      "stage": [
+        {
+          "char": "youngest",
+          "x": 30,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "char": "peri",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "sad"
+        },
+        {
+          "img": "images/golden-apple/item-rope.svg",
+          "alt": "аркан — довга мотузка з петлею",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "youngest",
+          "accepted": [
+            "найменший син",
+            "молодший брат",
+            "царевич",
+            "принц"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Падишах",
+              "char": "padishah"
+            },
+            {
+              "id": "b",
+              "text": "Старші брати",
+              "char": "brothers"
+            },
+            {
+              "id": "c",
+              "text": "Найменший син",
+              "char": "youngest"
+            }
+          ],
+          "answer": "c",
+          "hint": "Тільки він не побоявся спуститися вниз."
+        },
+        "L2": {
+          "prompt": "Як царевич спустився в криницю?",
+          "options": [
+            {
+              "id": "a",
+              "text": "На зв’язаних арканах",
+              "img": "images/golden-apple/item-rope.svg"
+            },
+            {
+              "id": "b",
+              "text": "По драбині"
+            },
+            {
+              "id": "c",
+              "text": "Стрибнув униз"
+            }
+          ],
+          "answer": "a",
+          "hint": "Довелося зв’язати три мотузки."
+        },
+        "L3": {
+          "prompt": "Що відчували сестри в полоні змія?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Радість"
+            },
+            {
+              "id": "b",
+              "text": "Смуток і страх"
+            },
+            {
+              "id": "c",
+              "text": "Нудьгу"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вони думали, що вже ніколи не побачать сонця."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/mountains.svg",
+          "text": "Сліди крові привели братів до глибокої криниці.",
+          "actors": [
+            {
+              "char": "brothers",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "youngest",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Брати спустили найменшого вниз на зв’язаних арканах.",
+          "actors": [
+            {
+              "char": "youngest",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/golden-apple/item-rope.svg",
+              "alt": "аркан — довга мотузка з петлею",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Під землею він знайшов трьох сестер, яких викрав змій.",
+          "actors": [
+            {
+              "char": "youngest",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "peri",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Таємниця змія",
+      "summary": "Дівчина хитро вивідала, де змій ховає свою смерть. Царевич знайшов у скрині шкатулку з голубиним яйцем. Він розчавив яйце, і триголовий змій загинув.",
+      "bg": "images/bg/cave.svg",
+      "stage": [
+        {
+          "char": "dragon",
+          "x": 30,
+          "bottom": 0,
+          "h": 84,
+          "pose": "angry"
+        },
+        {
+          "char": "peri",
+          "x": 70,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "img": "images/golden-apple/item-casket.svg",
+          "alt": "золота шкатулка з голубиним яйцем",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "dragon",
+          "accepted": [
+            "змій",
+            "триголовий змій",
+            "дракон"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Орел",
+              "char": "eagle"
+            },
+            {
+              "id": "b",
+              "text": "Змій",
+              "char": "dragon"
+            },
+            {
+              "id": "c",
+              "text": "Падишах",
+              "char": "padishah"
+            }
+          ],
+          "answer": "b",
+          "hint": "У нього три голови."
+        },
+        "L2": {
+          "prompt": "Де змій ховав свою смерть?",
+          "options": [
+            {
+              "id": "a",
+              "text": "У шкатулці в залізній скрині",
+              "img": "images/golden-apple/item-casket.svg"
+            },
+            {
+              "id": "b",
+              "text": "Під деревом"
+            },
+            {
+              "id": "c",
+              "text": "У хмарці"
+            }
+          ],
+          "answer": "a",
+          "hint": "Ця річ стояла в глибині печери."
+        },
+        "L3": {
+          "prompt": "Чому дівчина розповіла змієві про страшний сон?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Справді злякалася"
+            },
+            {
+              "id": "b",
+              "text": "Хотіла його розсмішити"
+            },
+            {
+              "id": "c",
+              "text": "Хотіла вивідати його таємницю"
+            }
+          ],
+          "answer": "c",
+          "hint": "Царевич навчив її, що сказати."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Дівчина хитро вивідала, де змій ховає свою смерть.",
+          "actors": [
+            {
+              "char": "peri",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "dragon",
+              "x": 70,
+              "bottom": 0,
+              "h": 84
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Царевич знайшов у скрині шкатулку з голубиним яйцем.",
+          "actors": [
+            {
+              "char": "youngest",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/golden-apple/item-casket.svg",
+              "alt": "золота шкатулка з голубиним яйцем",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Він розчавив яйце, і триголовий змій загинув.",
+          "actors": [
+            {
+              "char": "youngest",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            },
+            {
+              "char": "dragon",
+              "x": 70,
+              "bottom": 0,
+              "h": 84,
+              "pose": "angry"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Зрада братів",
+      "summary": "Брати витягли сестер нагору, а найменшого покинули. Під землею царевич звільнив з клітки могутнього орла. Орел підняв аркан нагору, і юнак вибрався з криниці.",
+      "bg": "images/bg/cave.svg",
+      "stage": [
+        {
+          "char": "eagle",
+          "x": 18,
+          "bottom": 46,
+          "h": 29,
+          "pose": "happy"
+        },
+        {
+          "char": "youngest",
+          "x": 50,
+          "bottom": 0,
+          "h": 60
+        },
+        {
+          "char": "brothers",
+          "x": 82,
+          "bottom": 0,
+          "h": 60,
+          "pose": "angry"
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "eagle",
+          "accepted": [
+            "орел",
+            "орлик",
+            "птах"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Змій",
+              "char": "dragon"
+            },
+            {
+              "id": "b",
+              "text": "Старші брати",
+              "char": "brothers"
+            },
+            {
+              "id": "c",
+              "text": "Орел",
+              "char": "eagle"
+            }
+          ],
+          "answer": "c",
+          "hint": "Він довго сидів у залізній клітці."
+        },
+        "L2": {
+          "prompt": "Кого звільнив царевич під землею?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Сестер"
+            },
+            {
+              "id": "b",
+              "text": "Орла з клітки"
+            },
+            {
+              "id": "c",
+              "text": "Коня"
+            }
+          ],
+          "answer": "b",
+          "hint": "Цей птах потім допоміг йому."
+        },
+        "L3": {
+          "prompt": "Чому брати покинули найменшого в криниці?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Хотіли забрати дівчат і славу собі"
+            },
+            {
+              "id": "b",
+              "text": "Не почули його"
+            },
+            {
+              "id": "c",
+              "text": "Обірвалася мотузка"
+            }
+          ],
+          "answer": "a",
+          "hint": "Вони пошепотілися і кинули аркан униз."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Брати витягли сестер нагору, а найменшого покинули.",
+          "actors": [
+            {
+              "char": "brothers",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            },
+            {
+              "char": "peri",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Під землею царевич звільнив з клітки могутнього орла.",
+          "actors": [
+            {
+              "char": "youngest",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "eagle",
+              "x": 70,
+              "bottom": 46,
+              "h": 30
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Орел підняв аркан нагору, і юнак вибрався з криниці.",
+          "actors": [
+            {
+              "char": "eagle",
+              "x": 30,
+              "bottom": 46,
+              "h": 30,
+              "pose": "happy"
+            },
+            {
+              "char": "youngest",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/golden-apple/item-rope.svg",
+              "alt": "аркан — довга мотузка з петлею",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Яблуко повертає зір",
+      "summary": "Чарівна китичка змія дала юнакові коня й лук. На змаганнях з лука він переміг старших братів. Падишах з’їв золоте яблуко і знову побачив синів.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "padishah",
+          "x": 18,
+          "bottom": 0,
+          "h": 60,
+          "pose": "happy"
+        },
+        {
+          "char": "youngest",
+          "x": 50,
+          "bottom": 0,
+          "h": 60,
+          "pose": "happy"
+        },
+        {
+          "char": "brothers",
+          "x": 82,
+          "bottom": 0,
+          "h": 60,
+          "pose": "sad"
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "padishah",
+          "accepted": [
+            "падишах",
+            "цар",
+            "батько"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Падишах",
+              "char": "padishah"
+            },
+            {
+              "id": "b",
+              "text": "Пастух",
+              "char": "shepherd"
+            },
+            {
+              "id": "c",
+              "text": "Змій",
+              "char": "dragon"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він знову бачить небо і сонце."
+        },
+        "L2": {
+          "prompt": "Що допомогло царевичу на змаганнях?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Порада батька"
+            },
+            {
+              "id": "b",
+              "text": "Поміч братів"
+            },
+            {
+              "id": "c",
+              "text": "Чарівна китичка змія",
+              "img": "images/golden-apple/item-tassel.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Варто було висмикнути з неї волосину."
+        },
+        "L3": {
+          "prompt": "Чому царевич простив братів?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Він їх боявся"
+            },
+            {
+              "id": "b",
+              "text": "Вони рідні, а він милосердний"
+            },
+            {
+              "id": "c",
+              "text": "Вони дали йому золото"
+            }
+          ],
+          "answer": "b",
+          "hint": "Він хотів, щоб у царстві панувала доброта."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/painted-fox/market.svg",
+          "text": "Чарівна китичка змія дала юнакові коня й лук.",
+          "actors": [
+            {
+              "char": "youngest",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/golden-apple/item-tassel.svg",
+              "alt": "золотиста китичка зі змієвого хвоста",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/market.svg",
+          "text": "На змаганнях з лука він переміг старших братів.",
+          "actors": [
+            {
+              "char": "youngest",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "brothers",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Падишах з’їв золоте яблуко і знову побачив синів.",
+          "actors": [
+            {
+              "char": "padishah",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "youngest",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/golden-apple/item-apple.svg",
+              "alt": "золоте яблуко",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

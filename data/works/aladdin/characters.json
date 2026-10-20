@@ -1,0 +1,90 @@
+{
+  "aladdin": {
+    "name": "Аладдін",
+    "lname": "аладдін",
+    "acc": "Аладдіна",
+    "features": [
+      "син бідного кравця",
+      "юний",
+      "у тюрбані"
+    ],
+    "img": "images/aladdin/aladdin.svg",
+    "poses": {
+      "happy": "images/aladdin/aladdin-happy.svg",
+      "sad": "images/aladdin/aladdin-sad.svg",
+      "scared": "images/aladdin/aladdin-scared.svg"
+    }
+  },
+  "sorcerer": {
+    "name": "Чаклун-магрибинець",
+    "lname": "чаклун",
+    "acc": "чаклуна",
+    "features": [
+      "з Магрибу",
+      "хитрий",
+      "з бородою"
+    ],
+    "img": "images/aladdin/sorcerer.svg",
+    "poses": {
+      "angry": "images/aladdin/sorcerer-angry.svg",
+      "happy": "images/aladdin/sorcerer-happy.svg"
+    }
+  },
+  "mother": {
+    "name": "Мати Аладдіна",
+    "lname": "мати",
+    "acc": "матір",
+    "features": [
+      "бідна",
+      "пряде прядиво",
+      "турботлива"
+    ],
+    "img": "images/aladdin/mother.svg",
+    "poses": {
+      "scared": "images/aladdin/mother-scared.svg",
+      "happy": "images/aladdin/mother-happy.svg"
+    }
+  },
+  "genie": {
+    "name": "Джин",
+    "lname": "джин",
+    "acc": "джина",
+    "features": [
+      "велетень",
+      "виконує бажання",
+      "слуга лампи й персня"
+    ],
+    "img": "images/aladdin/genie.svg",
+    "poses": {
+      "happy": "images/aladdin/genie-happy.svg"
+    }
+  },
+  "princess": {
+    "name": "Царівна Бадр аль-Будур",
+    "lname": "царівна",
+    "acc": "царівну",
+    "features": [
+      "донька царя",
+      "дуже вродлива",
+      "з покривалом"
+    ],
+    "img": "images/aladdin/princess.svg",
+    "poses": {
+      "happy": "images/aladdin/princess-happy.svg"
+    }
+  },
+  "sultan": {
+    "name": "Цар",
+    "lname": "цар",
+    "acc": "царя",
+    "features": [
+      "правитель міста",
+      "у короні",
+      "з сивою бородою"
+    ],
+    "img": "images/aladdin/sultan.svg",
+    "poses": {
+      "happy": "images/aladdin/sultan-happy.svg"
+    }
+  }
+}

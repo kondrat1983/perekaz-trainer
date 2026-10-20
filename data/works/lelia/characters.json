@@ -1,0 +1,89 @@
+{
+  "pavlus": {
+    "name": "Павлусь",
+    "lname": "павлусь",
+    "acc": "Павлуся",
+    "features": [
+      "хворий хлопчик",
+      "любить казки про ельфів",
+      "дуже хоче побачити Лелію"
+    ],
+    "img": "images/lelia/pavlus.svg",
+    "poses": {
+      "happy": "images/lelia/pavlus-happy.svg",
+      "sad": "images/lelia/pavlus-sad.svg",
+      "scared": "images/lelia/pavlus-scared.svg"
+    }
+  },
+  "mom": {
+    "name": "Мама",
+    "lname": "мама",
+    "acc": "маму",
+    "features": [
+      "доглядає хворого сина",
+      "розповідає казки",
+      "лагідна"
+    ],
+    "img": "images/lelia/mom.svg",
+    "poses": {
+      "happy": "images/lelia/mom-happy.svg"
+    }
+  },
+  "lelia": {
+    "name": "Лелія",
+    "lname": "лелія",
+    "acc": "Лелію",
+    "features": [
+      "найстарша ельфа",
+      "крильця, як у метелика",
+      "тримає білу лілію"
+    ],
+    "img": "images/lelia/lelia.svg",
+    "poses": {
+      "happy": "images/lelia/lelia-happy.svg",
+      "sad": "images/lelia/lelia-sad.svg"
+    }
+  },
+  "lady": {
+    "name": "Панна",
+    "lname": "панна",
+    "acc": "панну",
+    "features": [
+      "живе в палаці",
+      "їй усе набридло",
+      "не любить білих лілій"
+    ],
+    "img": "images/lelia/lady.svg",
+    "poses": {
+      "angry": "images/lelia/lady-angry.svg"
+    }
+  },
+  "worker": {
+    "name": "Робітниця",
+    "lname": "робітниця",
+    "acc": "робітницю",
+    "features": [
+      "бідна дівчинка з майстерні",
+      "робить штучні квіти",
+      "голодна з самого ранку"
+    ],
+    "img": "images/lelia/worker.svg",
+    "poses": {
+      "sad": "images/lelia/worker-sad.svg"
+    }
+  },
+  "maryana": {
+    "name": "Мар'яна",
+    "lname": "мар'яна",
+    "acc": "Мар'яну",
+    "features": [
+      "сусідка Павлуся",
+      "працьовита селянка",
+      "щоранку поливає квіти"
+    ],
+    "img": "images/lelia/maryana.svg",
+    "poses": {
+      "happy": "images/lelia/maryana-happy.svg"
+    }
+  }
+}

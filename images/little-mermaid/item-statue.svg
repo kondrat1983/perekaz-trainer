@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Мармурова статуя хлопчика">
+<rect x="60" y="160" width="80" height="30" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="60" y="160" width="80" height="30" fill="#B7BBC8"/>
+<rect x="84" y="80" width="32" height="80" rx="10" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="84" y="80" width="32" height="80" rx="10" fill="#D9DBE3"/>
+<circle cx="100" cy="60" r="24" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><circle cx="100" cy="60" r="24" fill="#D9DBE3"/>
+<path d="M108 40A24 24 0 0 1 110 82Q120 60 108 40Z" fill="#B7BBC8"/>
+</svg>

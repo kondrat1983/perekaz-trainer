@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" role="img" aria-label="Миша">
+<path d="M70 330Q20 320 30 270" fill="none" stroke="#C9A8A0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60 340Q60 250 150 250Q230 252 250 300Q240 344 170 346H70Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M60 340Q60 250 150 250Q230 252 250 300Q240 344 170 346H70Z" fill="#A8A6B4"/>
+<circle cx="150" cy="226" r="34" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><circle cx="150" cy="226" r="34" fill="#A8A6B4"/>
+<circle cx="196" cy="230" r="30" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><circle cx="196" cy="230" r="30" fill="#A8A6B4"/>
+<circle cx="150" cy="226" r="20" fill="#E8A0A0"/>
+<path d="M180 260Q230 250 266 290Q240 306 200 300Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M180 260Q230 250 266 290Q240 306 200 300Z" fill="#BDBBC8"/>
+<circle cx="266" cy="290" r="7" fill="#1E2433" opacity=".2" transform="translate(1 2)"/><circle cx="266" cy="290" r="7" fill="#E8A0A0"/>
+<ellipse cx="228" cy="276" rx="5" ry="6" fill="#1E2433" opacity=".2" transform="translate(2 3)"/><ellipse cx="228" cy="276" rx="5" ry="6" fill="#FFFFFF"/><ellipse cx="229.5" cy="277" rx="3.1" ry="4.0" fill="#1E2433"/><circle cx="227.5" cy="274.2" r="1.6" fill="#FFFFFF"/>
+<path d="M221 264Q228 259 235 263" fill="none" stroke="#1E2433" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M262 296l26-4M262 300l26 6" fill="none" stroke="#1E2433" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

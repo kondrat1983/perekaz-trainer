@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Золота карета">
+<path d="M40 140Q30 50 100 40Q170 50 160 140Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M40 140Q30 50 100 40Q170 50 160 140Z" fill="#E8B23A"/>
+<path d="M70 110Q66 70 100 64Q134 70 130 110Z" fill="#9EC3E6"/>
+<path d="M90 40L100 18L110 40Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M90 40L100 18L110 40Z" fill="#B9821C"/>
+<circle cx="60" cy="160" r="26" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><circle cx="60" cy="160" r="26" fill="#B9821C"/>
+<circle cx="60" cy="160" r="8" fill="#F6CE5B"/>
+<circle cx="140" cy="160" r="26" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><circle cx="140" cy="160" r="26" fill="#B9821C"/>
+<circle cx="140" cy="160" r="8" fill="#F6CE5B"/>
+</svg>

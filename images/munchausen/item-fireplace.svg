@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Камін з вогнем">
+<rect x="20" y="30" width="160" height="160" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="20" y="30" width="160" height="160" fill="#B98E5E"/>
+<rect x="10" y="30" width="180" height="20" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="10" y="30" width="180" height="20" fill="#8A5A34"/>
+<path d="M50 190V100Q100 70 150 100V190Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M50 190V100Q100 70 150 100V190Z" fill="#2E3242"/>
+<path d="M100 110Q130 140 120 186H80Q70 140 100 110Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M100 110Q130 140 120 186H80Q70 140 100 110Z" fill="#F29A5E"/>
+<path d="M100 140Q114 160 108 186H92Q86 160 100 140Z" fill="#F6CE5B"/>
+</svg>

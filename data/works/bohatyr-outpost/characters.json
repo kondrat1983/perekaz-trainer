@@ -1,0 +1,87 @@
+{
+  "budymyr": {
+    "name": "Будимир",
+    "lname": "будимир",
+    "acc": "Будимира",
+    "features": [
+      "старий чередник",
+      "сива борода",
+      "немає правої руки"
+    ],
+    "img": "images/bohatyr-outpost/budymyr.svg",
+    "poses": {
+      "sad": "images/bohatyr-outpost/budymyr-sad.svg",
+      "happy": "images/bohatyr-outpost/budymyr-happy.svg",
+      "scared": "images/bohatyr-outpost/budymyr-scared.svg"
+    }
+  },
+  "archer": {
+    "name": "Молодий лучник",
+    "lname": "лучник",
+    "acc": "лучника",
+    "features": [
+      "молодий захисник",
+      "зелена туніка й шолом",
+      "влучно стріляє з лука"
+    ],
+    "img": "images/bohatyr-outpost/archer.svg",
+    "poses": {
+      "happy": "images/bohatyr-outpost/archer-happy.svg"
+    }
+  },
+  "elder": {
+    "name": "Старійшина",
+    "lname": "старійшина",
+    "acc": "старійшину",
+    "features": [
+      "поважний старий",
+      "білий довгий одяг",
+      "радиться з людьми"
+    ],
+    "img": "images/bohatyr-outpost/elder.svg",
+    "poses": {
+      "sad": "images/bohatyr-outpost/elder-sad.svg",
+      "happy": "images/bohatyr-outpost/elder-happy.svg"
+    }
+  },
+  "woman": {
+    "name": "Білгородка",
+    "lname": "білгородка",
+    "acc": "білгородку",
+    "features": [
+      "жінка з міста",
+      "червона хустка",
+      "носить відро"
+    ],
+    "img": "images/bohatyr-outpost/woman.svg",
+    "poses": {
+      "sad": "images/bohatyr-outpost/woman-sad.svg",
+      "happy": "images/bohatyr-outpost/woman-happy.svg"
+    }
+  },
+  "pecheneg": {
+    "name": "Печеніг",
+    "lname": "печеніг",
+    "acc": "печеніга",
+    "features": [
+      "степовий нападник",
+      "хутряна шапка",
+      "спис у руці"
+    ],
+    "img": "images/bohatyr-outpost/pecheneg.svg",
+    "poses": {
+      "scared": "images/bohatyr-outpost/pecheneg-scared.svg"
+    }
+  },
+  "cow": {
+    "name": "Корова",
+    "lname": "корова",
+    "acc": "корову",
+    "features": [
+      "з Будимирової череди",
+      "дає молоко",
+      "сховалась у лісі"
+    ],
+    "img": "images/bohatyr-outpost/cow.svg"
+  }
+}

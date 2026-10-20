@@ -1,0 +1,102 @@
+{
+  "padishah": {
+    "name": "Падишах",
+    "lname": "падишах",
+    "acc": "падишаха",
+    "features": [
+      "правитель",
+      "сліпий",
+      "старий"
+    ],
+    "img": "images/golden-apple/padishah.svg",
+    "poses": {
+      "sad": "images/golden-apple/padishah-sad.svg",
+      "happy": "images/golden-apple/padishah-happy.svg"
+    }
+  },
+  "shepherd": {
+    "name": "Пастух",
+    "lname": "пастух",
+    "acc": "пастуха",
+    "features": [
+      "з гір",
+      "з торбами",
+      "добрий"
+    ],
+    "img": "images/golden-apple/shepherd.svg"
+  },
+  "youngest": {
+    "name": "Найменший син",
+    "lname": "найменший син",
+    "acc": "найменшого сина",
+    "features": [
+      "сміливий",
+      "з шаблею",
+      "добрий"
+    ],
+    "img": "images/golden-apple/youngest.svg",
+    "poses": {
+      "happy": "images/golden-apple/youngest-happy.svg",
+      "sad": "images/golden-apple/youngest-sad.svg",
+      "angry": "images/golden-apple/youngest-angry.svg"
+    }
+  },
+  "brothers": {
+    "name": "Старші брати",
+    "lname": "старші брати",
+    "acc": "старших братів",
+    "features": [
+      "заздрісні",
+      "сонливі",
+      "зрадили брата"
+    ],
+    "img": "images/golden-apple/brothers.svg",
+    "poses": {
+      "angry": "images/golden-apple/brothers-angry.svg",
+      "sad": "images/golden-apple/brothers-sad.svg"
+    }
+  },
+  "peri": {
+    "name": "Пері",
+    "lname": "пері",
+    "acc": "пері",
+    "features": [
+      "найменша з трьох сестер",
+      "вродлива",
+      "розумна"
+    ],
+    "img": "images/golden-apple/peri.svg",
+    "poses": {
+      "sad": "images/golden-apple/peri-sad.svg",
+      "happy": "images/golden-apple/peri-happy.svg"
+    }
+  },
+  "dragon": {
+    "name": "Триголовий змій",
+    "lname": "змій",
+    "acc": "змія",
+    "features": [
+      "три голови",
+      "краде яблуко",
+      "хвіст із золотою китичкою"
+    ],
+    "img": "images/golden-apple/dragon.svg",
+    "poses": {
+      "angry": "images/golden-apple/dragon-angry.svg"
+    }
+  },
+  "eagle": {
+    "name": "Орел",
+    "lname": "орел",
+    "acc": "орла",
+    "features": [
+      "могутній",
+      "сидів у клітці",
+      "вдячний"
+    ],
+    "img": "images/golden-apple/eagle.svg",
+    "poses": {
+      "happy": "images/golden-apple/eagle-happy.svg"
+    }
+  }
+}

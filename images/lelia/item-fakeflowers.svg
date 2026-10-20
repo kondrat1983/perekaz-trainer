@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Штучні квіти з дроту й тканини">
+<path d="M50 190L50 100" fill="none" stroke="#8A8FA3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M50 70L74 90L64 120L36 120L26 90Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M50 70L74 90L64 120L36 120L26 90Z" fill="#C24A3E"/>
+<circle cx="50" cy="98" r="7" fill="#FFFFFF" opacity=".7"/>
+<path d="M100 190L100 100" fill="none" stroke="#8A8FA3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100 70L124 90L114 120L86 120L76 90Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M100 70L124 90L114 120L86 120L76 90Z" fill="#9C7CC4"/>
+<circle cx="100" cy="98" r="7" fill="#FFFFFF" opacity=".7"/>
+<path d="M150 190L150 100" fill="none" stroke="#8A8FA3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M150 70L174 90L164 120L136 120L126 90Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M150 70L174 90L164 120L136 120L126 90Z" fill="#E8B23A"/>
+<circle cx="150" cy="98" r="7" fill="#FFFFFF" opacity=".7"/>
+</svg>

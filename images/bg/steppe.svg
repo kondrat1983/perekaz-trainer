@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" aria-hidden="true" preserveAspectRatio="xMidYMax slice">
+<rect x="0" y="0" width="600" height="64" fill="#7FAAF5"/>
+<rect x="0" y="62" width="600" height="64" fill="#9EC3E6"/>
+<rect x="0" y="124" width="600" height="64" fill="#C4DCEE"/>
+<rect x="0" y="186" width="600" height="64" fill="#F0E6C8"/>
+<circle cx="480" cy="80" r="28" fill="#F6CE5B"/>
+<path d="M0 240Q150 226 300 236T600 230V400H0Z" fill="#1E2433" opacity=".2" transform="translate(4 5)"/><path d="M0 240Q150 226 300 236T600 230V400H0Z" fill="#C9B27A"/>
+<path d="M0 290Q200 276 400 292T600 286V400H0Z" fill="#1E2433" opacity=".2" transform="translate(4 5)"/><path d="M0 290Q200 276 400 292T600 286V400H0Z" fill="#B89A5E"/>
+<path d="M380 240Q430 180 480 240Z" fill="#1E2433" opacity=".2" transform="translate(4 5)"/><path d="M380 240Q430 180 480 240Z" fill="#A08A5A"/>
+<path d="M20 330q4-20 0-34M28 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60 330q4-20 0-34M68 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100 330q4-20 0-34M108 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M140 330q4-20 0-34M148 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M180 330q4-20 0-34M188 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M220 330q4-20 0-34M228 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M260 330q4-20 0-34M268 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M300 330q4-20 0-34M308 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M340 330q4-20 0-34M348 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M380 330q4-20 0-34M388 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M420 330q4-20 0-34M428 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M460 330q4-20 0-34M468 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M500 330q4-20 0-34M508 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M540 330q4-20 0-34M548 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M580 330q4-20 0-34M588 330q6-18 12-26" fill="none" stroke="#8A7A42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,77 @@
+{
+  "jackal": {
+    "name": "Шакал Чандарава",
+    "lname": "шакал",
+    "acc": "шакала",
+    "features": [
+      "хитрий",
+      "голодний",
+      "після фарби синій"
+    ],
+    "img": "images/painted-jackal/jackal.svg",
+    "poses": {
+      "sad": "images/painted-jackal/jackal-sad.svg",
+      "scared": "images/painted-jackal/jackal-scared.svg",
+      "blue": "images/painted-jackal/jackal-blue.svg",
+      "bluescared": "images/painted-jackal/jackal-bluescared.svg"
+    }
+  },
+  "dogs": {
+    "name": "Пси",
+    "lname": "пси",
+    "acc": "псів",
+    "features": [
+      "міські",
+      "злі",
+      "гучно гавкають"
+    ],
+    "img": "images/painted-jackal/dogs.svg",
+    "poses": {
+      "angry": "images/painted-jackal/dogs-angry.svg"
+    }
+  },
+  "lion": {
+    "name": "Лев",
+    "lname": "лев",
+    "acc": "лева",
+    "features": [
+      "сильний",
+      "з гривою",
+      "став радником"
+    ],
+    "img": "images/painted-jackal/lion.svg",
+    "poses": {
+      "scared": "images/painted-jackal/lion-scared.svg",
+      "angry": "images/painted-jackal/lion-angry.svg"
+    }
+  },
+  "wolf": {
+    "name": "Вовк",
+    "lname": "вовк",
+    "acc": "вовка",
+    "features": [
+      "сірий",
+      "зубатий",
+      "став сторожем"
+    ],
+    "img": "images/painted-jackal/wolf.svg",
+    "poses": {
+      "scared": "images/painted-jackal/wolf-scared.svg",
+      "angry": "images/painted-jackal/wolf-angry.svg"
+    }
+  },
+  "jackals": {
+    "name": "Шакали-родичі",
+    "lname": "шакали",
+    "acc": "шакалів",
+    "features": [
+      "рідня Чандарави",
+      "звичайного кольору",
+      "протяжно виють"
+    ],
+    "img": "images/painted-jackal/jackals.svg",
+    "poses": {
+      "sad": "images/painted-jackal/jackals-sad.svg"
+    }
+  }
+}

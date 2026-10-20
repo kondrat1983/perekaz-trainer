@@ -1,0 +1,1006 @@
+{
+  "pairs": [
+    [
+      "girl",
+      "lazy"
+    ],
+    [
+      "holle",
+      "stepmother"
+    ]
+  ],
+  "scenes": [
+    {
+      "num": 1,
+      "title": "Веретено в криниці",
+      "summary": "Мачуха любила тільки рідну доньку, а падчерку змушувала працювати. Дівчина пряла біля криниці, і веретено впало у воду. Мачуха звеліла дістати його, і дівчина стрибнула в криницю.",
+      "bg": "images/bg/village.svg",
+      "stage": [
+        {
+          "char": "girl",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "sad"
+        },
+        {
+          "char": "stepmother",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "angry"
+        },
+        {
+          "img": "images/mother-holle/item-well.svg",
+          "alt": "криниця",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "girl",
+          "accepted": [
+            "дівчина",
+            "падчерка",
+            "падчірка",
+            "працьовита дівчина"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Працьовита дівчина",
+              "char": "girl"
+            },
+            {
+              "id": "b",
+              "text": "Ледача сестра",
+              "char": "lazy"
+            },
+            {
+              "id": "c",
+              "text": "Пані Метелиця",
+              "char": "holle"
+            }
+          ],
+          "answer": "a",
+          "hint": "Вона з ранку до вечора пряде біля криниці."
+        },
+        "L2": {
+          "prompt": "Що впало в криницю?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Відро"
+            },
+            {
+              "id": "b",
+              "text": "Веретено"
+            },
+            {
+              "id": "c",
+              "text": "Яблуко",
+              "img": "images/mother-holle/item-appletree.svg"
+            }
+          ],
+          "answer": "b",
+          "hint": "Цією річчю прядуть нитку."
+        },
+        "L3": {
+          "prompt": "Чому дівчина стрибнула в криницю?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Хотіла скупатися"
+            },
+            {
+              "id": "b",
+              "text": "Мачуха звеліла дістати веретено"
+            },
+            {
+              "id": "c",
+              "text": "Шукала золото"
+            }
+          ],
+          "answer": "b",
+          "hint": "Згадай, що сказала їй мачуха."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Мачуха любила тільки рідну доньку, а падчерку змушувала працювати.",
+          "actors": [
+            {
+              "char": "stepmother",
+              "x": 18,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "lazy",
+              "x": 50,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "girl",
+              "x": 82,
+              "bottom": 0,
+              "h": 60,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Дівчина пряла біля криниці, і веретено впало у воду.",
+          "actors": [
+            {
+              "char": "girl",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            },
+            {
+              "img": "images/mother-holle/item-well.svg",
+              "alt": "криниця",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Мачуха звеліла дістати його, і дівчина стрибнула в криницю.",
+          "actors": [
+            {
+              "char": "stepmother",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            },
+            {
+              "char": "girl",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            },
+            {
+              "img": "images/mother-holle/item-well.svg",
+              "alt": "криниця",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Піч і яблуня",
+      "summary": "Дівчина опинилася на гарній луці, повній квітів. Хліб у печі просив його витягти, і вона допомогла. Потім дівчина обтрусила яблуню, бо яблука вже достигли.",
+      "bg": "images/bg/garden.svg",
+      "stage": [
+        {
+          "char": "girl",
+          "x": 42,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "img": "images/mother-holle/item-oven.svg",
+          "alt": "піч із хлібом",
+          "x": 58,
+          "bottom": 18,
+          "h": 22
+        },
+        {
+          "img": "images/mother-holle/item-appletree.svg",
+          "alt": "яблуня з яблуками",
+          "x": 58,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "girl",
+          "accepted": [
+            "дівчина",
+            "падчерка",
+            "падчірка",
+            "працьовита дівчина"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Ледача сестра",
+              "char": "lazy"
+            },
+            {
+              "id": "b",
+              "text": "Працьовита дівчина",
+              "char": "girl"
+            },
+            {
+              "id": "c",
+              "text": "Мачуха",
+              "char": "stepmother"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вона нікому не відмовляє в допомозі."
+        },
+        "L2": {
+          "prompt": "Що зробила дівчина біля печі?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Витягла хліб",
+              "img": "images/mother-holle/item-oven.svg"
+            },
+            {
+              "id": "b",
+              "text": "Розпалила вогонь"
+            },
+            {
+              "id": "c",
+              "text": "Пройшла мимо"
+            }
+          ],
+          "answer": "a",
+          "hint": "Хліб боявся згоріти."
+        },
+        "L3": {
+          "prompt": "Чому дівчина допомагала печі та яблуні?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Їй за це заплатили"
+            },
+            {
+              "id": "b",
+              "text": "Її змусила мачуха"
+            },
+            {
+              "id": "c",
+              "text": "Вона добра й працьовита"
+            }
+          ],
+          "answer": "c",
+          "hint": "Подумай, яка в неї вдача."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Дівчина опинилася на гарній луці, повній квітів.",
+          "actors": [
+            {
+              "char": "girl",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Хліб у печі просив його витягти, і вона допомогла.",
+          "actors": [
+            {
+              "char": "girl",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/mother-holle/item-oven.svg",
+              "alt": "піч із хлібом",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Потім дівчина обтрусила яблуню, бо яблука вже достигли.",
+          "actors": [
+            {
+              "char": "girl",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/mother-holle/item-appletree.svg",
+              "alt": "яблуня з яблуками",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "У пані Метелиці",
+      "summary": "У хатинці жила старенька з дуже великими зубами. Бабуся лагідно запросила дівчину пожити в неї й працювати. Дівчина так трусила перину, що на землі падав сніг.",
+      "bg": "images/bg/hut.svg",
+      "stage": [
+        {
+          "char": "holle",
+          "x": 30,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "char": "girl",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "img": "images/mother-holle/item-pillow.svg",
+          "alt": "пухова перина, з якої летить пір'я, як с",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "holle",
+          "accepted": [
+            "пані метелиця",
+            "метелиця",
+            "бабуся",
+            "старенька"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Працьовита дівчина",
+              "char": "girl"
+            },
+            {
+              "id": "b",
+              "text": "Мачуха",
+              "char": "stepmother"
+            },
+            {
+              "id": "c",
+              "text": "Пані Метелиця",
+              "char": "holle"
+            }
+          ],
+          "answer": "c",
+          "hint": "Коли вона стелить ліжко, на землі зима."
+        },
+        "L2": {
+          "prompt": "Що робила дівчина, щоб на землі падав сніг?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Трусила перину",
+              "img": "images/mother-holle/item-pillow.svg"
+            },
+            {
+              "id": "b",
+              "text": "Мела подвір'я"
+            },
+            {
+              "id": "c",
+              "text": "Пекла хліб"
+            }
+          ],
+          "answer": "a",
+          "hint": "Пір'я летіло, наче сніжинки."
+        },
+        "L3": {
+          "prompt": "Що відчула дівчина, коли вперше побачила бабусю?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Радість"
+            },
+            {
+              "id": "b",
+              "text": "Страх"
+            },
+            {
+              "id": "c",
+              "text": "Нудьгу"
+            }
+          ],
+          "answer": "b",
+          "hint": "Згадай, які в бабусі були зуби."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "У хатинці жила старенька з дуже великими зубами.",
+          "actors": [
+            {
+              "char": "holle",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "girl",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Бабуся лагідно запросила дівчину пожити в неї й працювати.",
+          "actors": [
+            {
+              "char": "holle",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "girl",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Дівчина так трусила перину, що на землі падав сніг.",
+          "actors": [
+            {
+              "char": "girl",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/mother-holle/item-pillow.svg",
+              "alt": "пухова перина, з якої летить пір'я, як с",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Золотий дощ",
+      "summary": "Дівчині жилося добре, але вона засумувала за домом. Пані Метелиця вивела її до брами, і полився золотий дощ. Дівчина повернулася додому вся в золоті та з веретеном.",
+      "bg": "images/bg/village.svg",
+      "stage": [
+        {
+          "char": "girl",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "char": "holle",
+          "x": 70,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "img": "images/mother-holle/item-gold.svg",
+          "alt": "золотий дощ",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "girl",
+          "accepted": [
+            "дівчина",
+            "падчерка",
+            "падчірка",
+            "працьовита дівчина"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Мачуха",
+              "char": "stepmother"
+            },
+            {
+              "id": "b",
+              "text": "Пані Метелиця",
+              "char": "holle"
+            },
+            {
+              "id": "c",
+              "text": "Працьовита дівчина",
+              "char": "girl"
+            }
+          ],
+          "answer": "c",
+          "hint": "Вона чесно служила бабусі."
+        },
+        "L2": {
+          "prompt": "Що впало на дівчину біля брами?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Сніг"
+            },
+            {
+              "id": "b",
+              "text": "Смола"
+            },
+            {
+              "id": "c",
+              "text": "Золотий дощ",
+              "img": "images/mother-holle/item-gold.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Це була нагорода за старанність."
+        },
+        "L3": {
+          "prompt": "Чому дівчина захотіла додому?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Сумувала за рідною хатою"
+            },
+            {
+              "id": "b",
+              "text": "Бабуся її сварила"
+            },
+            {
+              "id": "c",
+              "text": "Їй було голодно"
+            }
+          ],
+          "answer": "a",
+          "hint": "Навіть у добрих людей сумують за своїм краєм."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Дівчині жилося добре, але вона засумувала за домом.",
+          "actors": [
+            {
+              "char": "girl",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            },
+            {
+              "char": "holle",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Пані Метелиця вивела її до брами, і полився золотий дощ.",
+          "actors": [
+            {
+              "char": "holle",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "girl",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/mother-holle/item-gold.svg",
+              "alt": "золотий дощ",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Дівчина повернулася додому вся в золоті та з веретеном.",
+          "actors": [
+            {
+              "char": "girl",
+              "x": 18,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            },
+            {
+              "char": "stepmother",
+              "x": 50,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "lazy",
+              "x": 82,
+              "bottom": 0,
+              "h": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Ледача сестра",
+      "summary": "Мачуха захотіла, щоб і рідна донька принесла золото. Ледача сестра навмисно кинула веретено і стрибнула в криницю. Вона не допомогла ні печі, ні яблуні.",
+      "bg": "images/bg/garden.svg",
+      "stage": [
+        {
+          "char": "lazy",
+          "x": 42,
+          "bottom": 0,
+          "h": 70,
+          "pose": "angry"
+        },
+        {
+          "img": "images/mother-holle/item-oven.svg",
+          "alt": "піч із хлібом",
+          "x": 58,
+          "bottom": 18,
+          "h": 22
+        },
+        {
+          "img": "images/mother-holle/item-appletree.svg",
+          "alt": "яблуня з яблуками",
+          "x": 58,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "lazy",
+          "accepted": [
+            "ледача сестра",
+            "сестра",
+            "ледарка",
+            "ледащиця"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Пані Метелиця",
+              "char": "holle"
+            },
+            {
+              "id": "b",
+              "text": "Ледача сестра",
+              "char": "lazy"
+            },
+            {
+              "id": "c",
+              "text": "Працьовита дівчина",
+              "char": "girl"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вона не любить бруднити руки."
+        },
+        "L2": {
+          "prompt": "Що зробила ледача сестра біля печі?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Витягла хліб"
+            },
+            {
+              "id": "b",
+              "text": "Спекла пиріг"
+            },
+            {
+              "id": "c",
+              "text": "Пройшла мимо",
+              "img": "images/mother-holle/item-oven.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Хліб кликав, але вона не захотіла працювати."
+        },
+        "L3": {
+          "prompt": "Навіщо ледача сестра пішла до криниці?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Хотіла отримати золото"
+            },
+            {
+              "id": "b",
+              "text": "Шукала сестру"
+            },
+            {
+              "id": "c",
+              "text": "Хотіла набрати води"
+            }
+          ],
+          "answer": "a",
+          "hint": "Мачуха позаздрила подарунку падчерки."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Мачуха захотіла, щоб і рідна донька принесла золото.",
+          "actors": [
+            {
+              "char": "stepmother",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "lazy",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Ледача сестра навмисно кинула веретено і стрибнула в криницю.",
+          "actors": [
+            {
+              "char": "lazy",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/mother-holle/item-well.svg",
+              "alt": "криниця",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Вона не допомогла ні печі, ні яблуні.",
+          "actors": [
+            {
+              "char": "lazy",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            },
+            {
+              "img": "images/mother-holle/item-oven.svg",
+              "alt": "піч із хлібом",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            },
+            {
+              "img": "images/mother-holle/item-appletree.svg",
+              "alt": "яблуня з яблуками",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Смола замість золота",
+      "summary": "Ледащиця старалася лише перший день, а потім лінувалася. Біля брами на неї вилився цілий казан смоли. Додому вона прийшла чорна, і смола так і не відмилася.",
+      "bg": "images/bg/village.svg",
+      "stage": [
+        {
+          "char": "holle",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "angry"
+        },
+        {
+          "char": "lazy",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "sad"
+        },
+        {
+          "img": "images/mother-holle/item-tar.svg",
+          "alt": "казан чорної смоли",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "holle",
+          "accepted": [
+            "пані метелиця",
+            "метелиця",
+            "бабуся",
+            "старенька"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Пані Метелиця",
+              "char": "holle"
+            },
+            {
+              "id": "b",
+              "text": "Мачуха",
+              "char": "stepmother"
+            },
+            {
+              "id": "c",
+              "text": "Ледача сестра",
+              "char": "lazy"
+            }
+          ],
+          "answer": "a",
+          "hint": "Вона кожному дає те, що він заробив."
+        },
+        "L2": {
+          "prompt": "Що вилилося на ледачу сестру?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Золото"
+            },
+            {
+              "id": "b",
+              "text": "Вода"
+            },
+            {
+              "id": "c",
+              "text": "Смола",
+              "img": "images/mother-holle/item-tar.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Воно чорне й липке."
+        },
+        "L3": {
+          "prompt": "Чому пані Метелиця так покарала дівчину?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Вона зламала піч"
+            },
+            {
+              "id": "b",
+              "text": "Вона лінувалася"
+            },
+            {
+              "id": "c",
+              "text": "Вона втекла"
+            }
+          ],
+          "answer": "b",
+          "hint": "Згадай, як вона збивала перину."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Ледащиця старалася лише перший день, а потім лінувалася.",
+          "actors": [
+            {
+              "char": "lazy",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "holle",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            },
+            {
+              "img": "images/mother-holle/item-pillow.svg",
+              "alt": "пухова перина, з якої летить пір'я, як с",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Біля брами на неї вилився цілий казан смоли.",
+          "actors": [
+            {
+              "char": "lazy",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            },
+            {
+              "img": "images/mother-holle/item-tar.svg",
+              "alt": "казан чорної смоли",
+              "x": 46,
+              "bottom": 18,
+              "h": 22
+            },
+            {
+              "char": "holle",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Додому вона прийшла чорна, і смола так і не відмилася.",
+          "actors": [
+            {
+              "char": "lazy",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            },
+            {
+              "char": "stepmother",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Корона">
+<path d="M36 150L28 62L70 104L100 46L130 104L172 62L164 150Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M36 150L28 62L70 104L100 46L130 104L172 62L164 150Z" fill="#E8B23A"/>
+<path d="M100 46L130 104L172 62L164 150H130Q140 100 100 46Z" fill="#B9821C" opacity=".5"/>
+<rect x="34" y="140" width="132" height="22" rx="4" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="34" y="140" width="132" height="22" rx="4" fill="#B9821C"/>
+<circle cx="70" cy="151" r="8" fill="#1E2433" opacity=".2" transform="translate(2 2)"/><circle cx="70" cy="151" r="8" fill="#2F6FD6"/>
+<circle cx="100" cy="151" r="8" fill="#1E2433" opacity=".2" transform="translate(2 2)"/><circle cx="100" cy="151" r="8" fill="#C2415A"/>
+<circle cx="130" cy="151" r="8" fill="#1E2433" opacity=".2" transform="translate(2 2)"/><circle cx="130" cy="151" r="8" fill="#2F6FD6"/>
+<circle cx="28" cy="62" r="8" fill="#1E2433" opacity=".2" transform="translate(2 2)"/><circle cx="28" cy="62" r="8" fill="#F6CE5B"/>
+<circle cx="100" cy="46" r="8" fill="#1E2433" opacity=".2" transform="translate(2 2)"/><circle cx="100" cy="46" r="8" fill="#F6CE5B"/>
+<circle cx="172" cy="62" r="8" fill="#1E2433" opacity=".2" transform="translate(2 2)"/><circle cx="172" cy="62" r="8" fill="#F6CE5B"/>
+</svg>

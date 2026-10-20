@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Торбинка із зерном">
+<path d="M60 60Q40 120 50 170Q100 190 150 170Q160 120 140 60Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M60 60Q40 120 50 170Q100 190 150 170Q160 120 140 60Z" fill="#C9A87A"/>
+<path d="M60 64Q100 76 140 64" fill="none" stroke="#8A5A34" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="100" cy="56" rx="30" ry="10" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><ellipse cx="100" cy="56" rx="30" ry="10" fill="#E8C46A"/>
+</svg>

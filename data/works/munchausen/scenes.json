@@ -1,0 +1,997 @@
+{
+  "pairs": [
+    [
+      "guest",
+      "traveler"
+    ],
+    [
+      "deer",
+      "horse"
+    ],
+    [
+      "commander",
+      "traveler"
+    ]
+  ],
+  "scenes": [
+    {
+      "num": 1,
+      "title": "Найправдивіша людина",
+      "summary": "Старий барон сидить біля каміна й розповідає про свої пригоди. Один проїжджий сказав, що все це вигадки. Барон відповів, що він найправдивіша людина, і всі зареготали.",
+      "bg": "images/bg/hut.svg",
+      "stage": [
+        {
+          "char": "baron",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "char": "traveler",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "angry"
+        },
+        {
+          "img": "images/munchausen/item-fireplace.svg",
+          "alt": "камін з вогнем",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "baron",
+          "accepted": [
+            "барон",
+            "мюнхгаузен",
+            "барон мюнхгаузен",
+            "дідок"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Гість",
+              "char": "guest"
+            },
+            {
+              "id": "b",
+              "text": "Барон Мюнхгаузен",
+              "char": "baron"
+            },
+            {
+              "id": "c",
+              "text": "Командир",
+              "char": "commander"
+            }
+          ],
+          "answer": "b",
+          "hint": "Він розповідає дивовижні історії про себе."
+        },
+        "L2": {
+          "prompt": "Де сидить барон, коли розповідає?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Біля каміна",
+              "img": "images/munchausen/item-fireplace.svg"
+            },
+            {
+              "id": "b",
+              "text": "На коні"
+            },
+            {
+              "id": "c",
+              "text": "У човні"
+            }
+          ],
+          "answer": "a",
+          "hint": "Там тепло й горить вогонь."
+        },
+        "L3": {
+          "prompt": "Чому слухачі сміються?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Барон смішно вдягнений"
+            },
+            {
+              "id": "b",
+              "text": "Барон розповідає неймовірні вигадки"
+            },
+            {
+              "id": "c",
+              "text": "Барон танцює"
+            }
+          ],
+          "answer": "b",
+          "hint": "Такого в житті не буває."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Старий барон сидить біля каміна й розповідає про свої пригоди.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/munchausen/item-fireplace.svg",
+              "alt": "камін з вогнем",
+              "x": 46,
+              "bottom": 18,
+              "h": 22
+            },
+            {
+              "char": "guest",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Один проїжджий сказав, що все це вигадки.",
+          "actors": [
+            {
+              "char": "traveler",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            },
+            {
+              "char": "baron",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Барон відповів, що він найправдивіша людина, і всі зареготали.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 18,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "guest",
+              "x": 50,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            },
+            {
+              "char": "traveler",
+              "x": 82,
+              "bottom": 0,
+              "h": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Олень з вишнею",
+      "summary": "Барон узявся розповідати ще й про дивного оленя. На голові в того оленя виросло ціле вишневе дерево. Барон запевняв, що вишні на ньому були соковиті й солодкі.",
+      "bg": "images/bg/forest.svg",
+      "stage": [
+        {
+          "char": "deer",
+          "x": 30,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "char": "baron",
+          "x": 70,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "img": "images/munchausen/item-cherry.svg",
+          "alt": "вишневе деревце з ягодами (росте на голо",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "deer",
+          "accepted": [
+            "олень",
+            "оленя",
+            "олень з вишнею"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Олень",
+              "char": "deer"
+            },
+            {
+              "id": "b",
+              "text": "Кінь",
+              "char": "horse"
+            },
+            {
+              "id": "c",
+              "text": "Гість",
+              "char": "guest"
+            }
+          ],
+          "answer": "a",
+          "hint": "У нього на голові замість рогів дерево."
+        },
+        "L2": {
+          "prompt": "Що виросло на голові в оленя?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Квіти"
+            },
+            {
+              "id": "b",
+              "text": "Яблуня"
+            },
+            {
+              "id": "c",
+              "text": "Вишневе дерево",
+              "img": "images/munchausen/item-cherry.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "На ньому червоні солодкі ягоди."
+        },
+        "L3": {
+          "prompt": "Що відчули слухачі, почувши про оленя?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Страх"
+            },
+            {
+              "id": "b",
+              "text": "Здивування"
+            },
+            {
+              "id": "c",
+              "text": "Сум"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вони перепитали, чи справді на голові в оленя."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Барон узявся розповідати ще й про дивного оленя.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "guest",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "На голові в того оленя виросло ціле вишневе дерево.",
+          "actors": [
+            {
+              "char": "deer",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/munchausen/item-cherry.svg",
+              "alt": "вишневе деревце з ягодами (росте на голо",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Барон запевняв, що вишні на ньому були соковиті й солодкі.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "deer",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/munchausen/item-cherry.svg",
+              "alt": "вишневе деревце з ягодами (росте на голо",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Політ на ядрі",
+      "summary": "Військо облягало турецьке місто, і командир хотів знати про гармати. Ніхто не наважився піти до ворогів, крім барона. Барон скочив на гарматне ядро і полетів до міста.",
+      "bg": "images/bg/steppe.svg",
+      "stage": [
+        {
+          "char": "baron",
+          "x": 42,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "img": "images/munchausen/item-cannon.svg",
+          "alt": "велика гармата",
+          "x": 58,
+          "bottom": 18,
+          "h": 22
+        },
+        {
+          "img": "images/munchausen/item-cannonball.svg",
+          "alt": "гарматне ядро",
+          "x": 58,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "baron",
+          "accepted": [
+            "барон",
+            "мюнхгаузен",
+            "барон мюнхгаузен"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Командир",
+              "char": "commander"
+            },
+            {
+              "id": "b",
+              "text": "Проїжджий",
+              "char": "traveler"
+            },
+            {
+              "id": "c",
+              "text": "Барон Мюнхгаузен",
+              "char": "baron"
+            }
+          ],
+          "answer": "c",
+          "hint": "Він називає себе найсміливішим у війську."
+        },
+        "L2": {
+          "prompt": "На чому полетів барон?",
+          "options": [
+            {
+              "id": "a",
+              "text": "На гарматному ядрі",
+              "img": "images/munchausen/item-cannonball.svg"
+            },
+            {
+              "id": "b",
+              "text": "На орлі"
+            },
+            {
+              "id": "c",
+              "text": "На повітряній кулі"
+            }
+          ],
+          "answer": "a",
+          "hint": "Його вистрелили з гармати."
+        },
+        "L3": {
+          "prompt": "Чому барон сам зголосився на це завдання?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Його покарали"
+            },
+            {
+              "id": "b",
+              "text": "Він заблукав"
+            },
+            {
+              "id": "c",
+              "text": "Він вважав себе найсміливішим"
+            }
+          ],
+          "answer": "c",
+          "hint": "Інші боялися йти до ворогів."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/steppe.svg",
+          "text": "Військо облягало турецьке місто, і командир хотів знати про гармати.",
+          "actors": [
+            {
+              "char": "commander",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "baron",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/steppe.svg",
+          "text": "Ніхто не наважився піти до ворогів, крім барона.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "commander",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/sky.svg",
+          "text": "Барон скочив на гарматне ядро і полетів до міста.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/munchausen/item-cannon.svg",
+              "alt": "велика гармата",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            },
+            {
+              "img": "images/munchausen/item-cannonball.svg",
+              "alt": "гарматне ядро",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Назад на зустрічному ядрі",
+      "summary": "У польоті барон злякався, що вороги його схоплять. Він перескочив на ядро, яке летіло назад до свого табору. Барон перелічив усі ворожі гармати і розповів командирові.",
+      "bg": "images/bg/sky.svg",
+      "stage": [
+        {
+          "char": "commander",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "char": "baron",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "scared"
+        },
+        {
+          "img": "images/munchausen/item-cannonball.svg",
+          "alt": "гарматне ядро",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "commander",
+          "accepted": [
+            "командир",
+            "генерал",
+            "начальник"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Гість",
+              "char": "guest"
+            },
+            {
+              "id": "b",
+              "text": "Командир",
+              "char": "commander"
+            },
+            {
+              "id": "c",
+              "text": "Барон Мюнхгаузен",
+              "char": "baron"
+            }
+          ],
+          "answer": "b",
+          "hint": "Він керує військом і чекає новин."
+        },
+        "L2": {
+          "prompt": "Як барон повернувся назад?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Пішки"
+            },
+            {
+              "id": "b",
+              "text": "На коні"
+            },
+            {
+              "id": "c",
+              "text": "Пересів на зустрічне ядро",
+              "img": "images/munchausen/item-cannonball.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Вороги теж стріляли з гармат."
+        },
+        "L3": {
+          "prompt": "Чому барон вирішив повернутися?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Забув капелюх"
+            },
+            {
+              "id": "b",
+              "text": "Злякався, що вороги його схоплять"
+            },
+            {
+              "id": "c",
+              "text": "Його покликав кінь"
+            }
+          ],
+          "answer": "b",
+          "hint": "Подумай, що чекає на шпигуна у ворожому місті."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/sky.svg",
+          "text": "У польоті барон злякався, що вороги його схоплять.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            },
+            {
+              "img": "images/munchausen/item-cannonball.svg",
+              "alt": "гарматне ядро",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/sky.svg",
+          "text": "Він перескочив на ядро, яке летіло назад до свого табору.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/munchausen/item-cannonball.svg",
+              "alt": "гарматне ядро",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/steppe.svg",
+          "text": "Барон перелічив усі ворожі гармати і розповів командирові.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "commander",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "У болоті",
+      "summary": "Тікаючи від ворогів, барон хотів перескочити болото на коні. Кінь не долетів до берега, і вони впали в багно. Болото затягувало їх, стирчала тільки кіска перуки.",
+      "bg": "images/bg/forest.svg",
+      "stage": [
+        {
+          "char": "horse",
+          "x": 30,
+          "bottom": 0,
+          "h": 76,
+          "pose": "scared"
+        },
+        {
+          "char": "baron",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "scared"
+        },
+        {
+          "img": "images/munchausen/item-swamp.svg",
+          "alt": "болото з багном",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "horse",
+          "accepted": [
+            "кінь",
+            "коник",
+            "кінь барона"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Олень",
+              "char": "deer"
+            },
+            {
+              "id": "b",
+              "text": "Гість",
+              "char": "guest"
+            },
+            {
+              "id": "c",
+              "text": "Кінь",
+              "char": "horse"
+            }
+          ],
+          "answer": "c",
+          "hint": "На ньому барон їздив верхи."
+        },
+        "L2": {
+          "prompt": "Куди впали барон і кінь?",
+          "options": [
+            {
+              "id": "a",
+              "text": "У річку"
+            },
+            {
+              "id": "b",
+              "text": "У болото",
+              "img": "images/munchausen/item-swamp.svg"
+            },
+            {
+              "id": "c",
+              "text": "У яму"
+            }
+          ],
+          "answer": "b",
+          "hint": "Там рідке й смердюче багно."
+        },
+        "L3": {
+          "prompt": "Що відчував барон, коли їх затягувало в багно?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Страх, бо порятунку не було"
+            },
+            {
+              "id": "b",
+              "text": "Радість"
+            },
+            {
+              "id": "c",
+              "text": "Нудьгу"
+            }
+          ],
+          "answer": "a",
+          "hint": "Над багном лишилася тільки його кіска."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Тікаючи від ворогів, барон хотів перескочити болото на коні.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "horse",
+              "x": 70,
+              "bottom": 0,
+              "h": 76
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Кінь не долетів до берега, і вони впали в багно.",
+          "actors": [
+            {
+              "char": "horse",
+              "x": 30,
+              "bottom": 0,
+              "h": 76,
+              "pose": "scared"
+            },
+            {
+              "char": "baron",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            },
+            {
+              "img": "images/munchausen/item-swamp.svg",
+              "alt": "болото з багном",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Болото затягувало їх, стирчала тільки кіска перуки.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            },
+            {
+              "img": "images/munchausen/item-swamp.svg",
+              "alt": "болото з багном",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Сам себе за кіску",
+      "summary": "Барон міцно схопив себе за кіску перуки. Він смикнув угору і витяг із болота себе разом з конем. Барон хвалиться, що він неймовірний силач.",
+      "bg": "images/bg/forest.svg",
+      "stage": [
+        {
+          "char": "baron",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "char": "horse",
+          "x": 70,
+          "bottom": 0,
+          "h": 76
+        },
+        {
+          "img": "images/munchausen/item-swamp.svg",
+          "alt": "болото з багном",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "baron",
+          "accepted": [
+            "барон",
+            "мюнхгаузен",
+            "барон мюнхгаузен"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Барон Мюнхгаузен",
+              "char": "baron"
+            },
+            {
+              "id": "b",
+              "text": "Проїжджий",
+              "char": "traveler"
+            },
+            {
+              "id": "c",
+              "text": "Командир",
+              "char": "commander"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він каже, що в нього дивовижно сильні руки."
+        },
+        "L2": {
+          "prompt": "За що барон витяг себе з болота?",
+          "options": [
+            {
+              "id": "a",
+              "text": "За мотузку"
+            },
+            {
+              "id": "b",
+              "text": "За гілку"
+            },
+            {
+              "id": "c",
+              "text": "За кіску перуки"
+            }
+          ],
+          "answer": "c",
+          "hint": "Ця річ була в нього на голові."
+        },
+        "L3": {
+          "prompt": "Чому ця історія смішна?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Кінь умів говорити"
+            },
+            {
+              "id": "b",
+              "text": "Ніхто не може витягти сам себе за волосся"
+            },
+            {
+              "id": "c",
+              "text": "Болото було сухе"
+            }
+          ],
+          "answer": "b",
+          "hint": "Спробуй уявити, чи можна таке зробити насправді."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Барон міцно схопив себе за кіску перуки.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/munchausen/item-swamp.svg",
+              "alt": "болото з багном",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Він смикнув угору і витяг із болота себе разом з конем.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "horse",
+              "x": 70,
+              "bottom": 0,
+              "h": 76
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Барон хвалиться, що він неймовірний силач.",
+          "actors": [
+            {
+              "char": "baron",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "guest",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Великий гарбуз">
+<ellipse cx="100" cy="120" rx="84" ry="62" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><ellipse cx="100" cy="120" rx="84" ry="62" fill="#E07A45"/>
+<ellipse cx="70" cy="120" rx="24" ry="58" fill="#F29A5E"/>
+<ellipse cx="130" cy="120" rx="24" ry="58" fill="#F29A5E"/>
+<path d="M100 60Q104 40 116 30" fill="none" stroke="#5E9A4C" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M110 50Q140 30 160 50Q136 66 110 50Z" fill="#1E2433" opacity=".2" transform="translate(1 2)"/><path d="M110 50Q140 30 160 50Q136 66 110 50Z" fill="#6E9F5A"/>
+</svg>

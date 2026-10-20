@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Миска меду">
+<path d="M30 100H170Q160 170 100 170Q40 170 30 100Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M30 100H170Q160 170 100 170Q40 170 30 100Z" fill="#3F5BA8"/>
+<ellipse cx="100" cy="100" rx="70" ry="16" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><ellipse cx="100" cy="100" rx="70" ry="16" fill="#E8B23A"/>
+<path d="M90 100q-4 30 6 40q6-30 -6-40Z" fill="#E8B23A"/>
+</svg>

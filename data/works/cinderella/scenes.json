@@ -1,0 +1,1021 @@
+{
+  "pairs": [
+    [
+      "sister1",
+      "sister2"
+    ],
+    [
+      "fairy",
+      "stepmother"
+    ],
+    [
+      "prince",
+      "messenger"
+    ]
+  ],
+  "scenes": [
+    {
+      "num": 1,
+      "title": "Попелюшка вдома",
+      "summary": "Мачуха з доньками змушувала дівчину робити всю брудну роботу. Після роботи дівчина сідала біля каміна просто в попіл. Тому молодша сестра прозвала її Попелюшкою.",
+      "bg": "images/bg/hut.svg",
+      "stage": [
+        {
+          "char": "cinderella",
+          "x": 18,
+          "bottom": 0,
+          "h": 60,
+          "pose": "sad"
+        },
+        {
+          "char": "stepmother",
+          "x": 50,
+          "bottom": 0,
+          "h": 60,
+          "pose": "angry"
+        },
+        {
+          "char": "sister1",
+          "x": 82,
+          "bottom": 0,
+          "h": 60
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "cinderella",
+          "accepted": [
+            "попелюшка",
+            "дівчина",
+            "чорногузка"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Старша сестра",
+              "char": "sister1"
+            },
+            {
+              "id": "b",
+              "text": "Попелюшка",
+              "char": "cinderella"
+            },
+            {
+              "id": "c",
+              "text": "Чарівниця",
+              "char": "fairy"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вона в старенькому одязі й завжди працює."
+        },
+        "L2": {
+          "prompt": "Що робила Попелюшка вдома?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Танцювала на балах"
+            },
+            {
+              "id": "b",
+              "text": "Читала книжки"
+            },
+            {
+              "id": "c",
+              "text": "Мила, прала й прибирала"
+            }
+          ],
+          "answer": "c",
+          "hint": "Мачуха давала їй найважчу роботу."
+        },
+        "L3": {
+          "prompt": "Чому дівчину прозвали Попелюшкою?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Вона сиділа в попелі біля каміна"
+            },
+            {
+              "id": "b",
+              "text": "Вона любила вогонь"
+            },
+            {
+              "id": "c",
+              "text": "Вона мала сіре волосся"
+            }
+          ],
+          "answer": "a",
+          "hint": "Подумай, де вона відпочивала після роботи."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Мачуха з доньками змушувала дівчину робити всю брудну роботу.",
+          "actors": [
+            {
+              "char": "stepmother",
+              "x": 14,
+              "bottom": 0,
+              "h": 60,
+              "pose": "angry"
+            },
+            {
+              "char": "sister1",
+              "x": 38,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "sister2",
+              "x": 62,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "cinderella",
+              "x": 86,
+              "bottom": 0,
+              "h": 60,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Після роботи дівчина сідала біля каміна просто в попіл.",
+          "actors": [
+            {
+              "char": "cinderella",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Тому молодша сестра прозвала її Попелюшкою.",
+          "actors": [
+            {
+              "char": "sister2",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "cinderella",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Сестри їдуть на бал",
+      "summary": "Принц запросив на бал усіх знатних людей королівства. Сестри довго вибирали сукні, а Попелюшка гарно їх зачесала. Сестри поїхали, а Попелюшка лишилася сама і заплакала.",
+      "bg": "images/bg/hut.svg",
+      "stage": [
+        {
+          "char": "sister1",
+          "x": 18,
+          "bottom": 0,
+          "h": 60,
+          "pose": "happy"
+        },
+        {
+          "char": "sister2",
+          "x": 50,
+          "bottom": 0,
+          "h": 60,
+          "pose": "happy"
+        },
+        {
+          "char": "cinderella",
+          "x": 82,
+          "bottom": 0,
+          "h": 60
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "sister1",
+          "accepted": [
+            "сестра",
+            "старша сестра",
+            "жавотт",
+            "жавотта"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Попелюшка",
+              "char": "cinderella"
+            },
+            {
+              "id": "b",
+              "text": "Мачуха",
+              "char": "stepmother"
+            },
+            {
+              "id": "c",
+              "text": "Старша сестра",
+              "char": "sister1"
+            }
+          ],
+          "answer": "c",
+          "hint": "Вона хоче на бал у червоній сукні."
+        },
+        "L2": {
+          "prompt": "Як Попелюшка допомогла сестрам?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Гарно їх зачесала"
+            },
+            {
+              "id": "b",
+              "text": "Пошила їм сукні"
+            },
+            {
+              "id": "c",
+              "text": "Купила прикраси"
+            }
+          ],
+          "answer": "a",
+          "hint": "Сестри знали, що в неї добрий смак."
+        },
+        "L3": {
+          "prompt": "Що відчувала Попелюшка, коли сестри поїхали?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Радість"
+            },
+            {
+              "id": "b",
+              "text": "Сум"
+            },
+            {
+              "id": "c",
+              "text": "Злість"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вона теж дуже хотіла на бал."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Принц запросив на бал усіх знатних людей королівства.",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Сестри довго вибирали сукні, а Попелюшка гарно їх зачесала.",
+          "actors": [
+            {
+              "char": "sister1",
+              "x": 18,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            },
+            {
+              "char": "sister2",
+              "x": 50,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "cinderella",
+              "x": 82,
+              "bottom": 0,
+              "h": 60
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Сестри поїхали, а Попелюшка лишилася сама і заплакала.",
+          "actors": [
+            {
+              "char": "cinderella",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Чарівна паличка",
+      "summary": "Раптом з'явилася хрещена мати, добра чарівниця. Паличкою вона зробила з гарбуза карету, а з мишей коней. Лахміття стало розкішною сукнею, а на ногах заблищали кришталеві черевички.",
+      "bg": "images/bg/garden.svg",
+      "stage": [
+        {
+          "char": "fairy",
+          "x": 30,
+          "bottom": 46,
+          "h": 30,
+          "pose": "happy"
+        },
+        {
+          "char": "cinderella",
+          "x": 70,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "img": "images/cinderella/item-pumpkin.svg",
+          "alt": "великий гарбуз",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "fairy",
+          "accepted": [
+            "чарівниця",
+            "хрещена",
+            "хрещена мати",
+            "фея"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Чарівниця",
+              "char": "fairy"
+            },
+            {
+              "id": "b",
+              "text": "Мачуха",
+              "char": "stepmother"
+            },
+            {
+              "id": "c",
+              "text": "Молодша сестра",
+              "char": "sister2"
+            }
+          ],
+          "answer": "a",
+          "hint": "У неї є чарівна паличка."
+        },
+        "L2": {
+          "prompt": "На що чарівниця перетворила гарбуз?",
+          "options": [
+            {
+              "id": "a",
+              "text": "На коня"
+            },
+            {
+              "id": "b",
+              "text": "На карету",
+              "img": "images/cinderella/item-carriage.svg"
+            },
+            {
+              "id": "c",
+              "text": "На палац"
+            }
+          ],
+          "answer": "b",
+          "hint": "У цьому Попелюшка поїхала на бал."
+        },
+        "L3": {
+          "prompt": "Чому чарівниця допомогла Попелюшці?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Попелюшка була доброю й слухняною"
+            },
+            {
+              "id": "b",
+              "text": "Попелюшка дала їй грошей"
+            },
+            {
+              "id": "c",
+              "text": "Так звеліла мачуха"
+            }
+          ],
+          "answer": "a",
+          "hint": "Згадай, яка в Попелюшки вдача."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Раптом з'явилася хрещена мати, добра чарівниця.",
+          "actors": [
+            {
+              "char": "fairy",
+              "x": 30,
+              "bottom": 46,
+              "h": 30
+            },
+            {
+              "char": "cinderella",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Паличкою вона зробила з гарбуза карету, а з мишей коней.",
+          "actors": [
+            {
+              "char": "fairy",
+              "x": 30,
+              "bottom": 46,
+              "h": 30
+            },
+            {
+              "img": "images/cinderella/item-pumpkin.svg",
+              "alt": "великий гарбуз",
+              "x": 46,
+              "bottom": 18,
+              "h": 22
+            },
+            {
+              "img": "images/cinderella/item-carriage.svg",
+              "alt": "золота карета",
+              "x": 46,
+              "bottom": 18,
+              "h": 22
+            },
+            {
+              "char": "mouse",
+              "x": 70,
+              "bottom": 0,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Лахміття стало розкішною сукнею, а на ногах заблищали кришталеві черевички.",
+          "actors": [
+            {
+              "char": "cinderella",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "fairy",
+              "x": 70,
+              "bottom": 46,
+              "h": 30,
+              "pose": "happy"
+            },
+            {
+              "img": "images/cinderella/item-slipper.svg",
+              "alt": "кришталевий черевичок",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Перший бал",
+      "summary": "Чарівниця попередила: на балу можна бути тільки до півночі. Принц зустрів незнайому красуню і танцював лише з нею. Сестри її не впізнали, а вона пригостила їх помаранчами.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "prince",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "char": "cinderella",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "img": "images/cinderella/item-clock.svg",
+          "alt": "годинник, що б'є північ",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "prince",
+          "accepted": [
+            "принц",
+            "син короля",
+            "королевич"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Посланець",
+              "char": "messenger"
+            },
+            {
+              "id": "b",
+              "text": "Мачуха",
+              "char": "stepmother"
+            },
+            {
+              "id": "c",
+              "text": "Принц",
+              "char": "prince"
+            }
+          ],
+          "answer": "c",
+          "hint": "Це він улаштував бал у палаці."
+        },
+        "L2": {
+          "prompt": "До котрої години Попелюшка могла бути на балу?",
+          "options": [
+            {
+              "id": "a",
+              "text": "До ранку"
+            },
+            {
+              "id": "b",
+              "text": "До півночі",
+              "img": "images/cinderella/item-clock.svg"
+            },
+            {
+              "id": "c",
+              "text": "До обіду"
+            }
+          ],
+          "answer": "b",
+          "hint": "Тоді годинник б'є дванадцять разів."
+        },
+        "L3": {
+          "prompt": "Чому гості в залі затихли?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Згасло світло"
+            },
+            {
+              "id": "b",
+              "text": "Король розсердився"
+            },
+            {
+              "id": "c",
+              "text": "Їх вразила краса незнайомки"
+            }
+          ],
+          "answer": "c",
+          "hint": "Усі дивилися лише на гостю."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Чарівниця попередила: на балу можна бути тільки до півночі.",
+          "actors": [
+            {
+              "char": "fairy",
+              "x": 30,
+              "bottom": 46,
+              "h": 30
+            },
+            {
+              "char": "cinderella",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/cinderella/item-clock.svg",
+              "alt": "годинник, що б'є північ",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Принц зустрів незнайому красуню і танцював лише з нею.",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "cinderella",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Сестри її не впізнали, а вона пригостила їх помаранчами.",
+          "actors": [
+            {
+              "char": "cinderella",
+              "x": 18,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "sister1",
+              "x": 50,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "sister2",
+              "x": 82,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "img": "images/cinderella/item-oranges.svg",
+              "alt": "помаранчі на таці",
+              "x": 92,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Загублений черевичок",
+      "summary": "На другому балу Попелюшці було так весело, що вона забула про час. Годинник почав бити північ, і дівчина швидко втекла. На сходах лишився кришталевий черевичок, і принц його підняв.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "cinderella",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "scared"
+        },
+        {
+          "char": "prince",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "sad"
+        },
+        {
+          "img": "images/cinderella/item-slipper.svg",
+          "alt": "кришталевий черевичок",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "cinderella",
+          "accepted": [
+            "попелюшка",
+            "дівчина",
+            "незнайомка",
+            "принцеса"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Молодша сестра",
+              "char": "sister2"
+            },
+            {
+              "id": "b",
+              "text": "Попелюшка",
+              "char": "cinderella"
+            },
+            {
+              "id": "c",
+              "text": "Чарівниця",
+              "char": "fairy"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вона поспішає, бо чари скоро зникнуть."
+        },
+        "L2": {
+          "prompt": "Що Попелюшка загубила на сходах?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Кришталевий черевичок",
+              "img": "images/cinderella/item-slipper.svg"
+            },
+            {
+              "id": "b",
+              "text": "Корону"
+            },
+            {
+              "id": "c",
+              "text": "Хустку"
+            }
+          ],
+          "answer": "a",
+          "hint": "Ця річ була на її нозі."
+        },
+        "L3": {
+          "prompt": "Чому Попелюшка так поспішала втекти?",
+          "options": [
+            {
+              "id": "a",
+              "text": "О півночі чари зникають"
+            },
+            {
+              "id": "b",
+              "text": "Її образив принц"
+            },
+            {
+              "id": "c",
+              "text": "Вона злякалася сестер"
+            }
+          ],
+          "answer": "a",
+          "hint": "Згадай, що наказала чарівниця."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "На другому балу Попелюшці було так весело, що вона забула про час.",
+          "actors": [
+            {
+              "char": "cinderella",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "prince",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Годинник почав бити північ, і дівчина швидко втекла.",
+          "actors": [
+            {
+              "img": "images/cinderella/item-clock.svg",
+              "alt": "годинник, що б'є північ",
+              "x": 50,
+              "bottom": 4,
+              "h": 22
+            },
+            {
+              "char": "cinderella",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "На сходах лишився кришталевий черевичок, і принц його підняв.",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            },
+            {
+              "img": "images/cinderella/item-slipper.svg",
+              "alt": "кришталевий черевичок",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Черевичок підійшов",
+      "summary": "Принц вирішив одружитися з тією, кому підійде черевичок. Сестрам черевичок не налазив, а Попелюшці підійшов одразу. Попелюшка простила сестер і стала дружиною принца.",
+      "bg": "images/bg/hut.svg",
+      "stage": [
+        {
+          "char": "messenger",
+          "x": 30,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "char": "cinderella",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "img": "images/cinderella/item-slipper.svg",
+          "alt": "кришталевий черевичок",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "messenger",
+          "accepted": [
+            "посланець",
+            "слуга",
+            "королівський посланець"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Принц",
+              "char": "prince"
+            },
+            {
+              "id": "b",
+              "text": "Чарівниця",
+              "char": "fairy"
+            },
+            {
+              "id": "c",
+              "text": "Посланець",
+              "char": "messenger"
+            }
+          ],
+          "answer": "c",
+          "hint": "Він їздить по всій країні з черевичком."
+        },
+        "L2": {
+          "prompt": "Що міряли всім дівчатам королівства?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Корону"
+            },
+            {
+              "id": "b",
+              "text": "Сукню"
+            },
+            {
+              "id": "c",
+              "text": "Черевичок",
+              "img": "images/cinderella/item-slipper.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Його знайшли на сходах палацу."
+        },
+        "L3": {
+          "prompt": "Чому Попелюшка простила сестер?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Вони дали їй подарунок"
+            },
+            {
+              "id": "b",
+              "text": "У неї добре серце"
+            },
+            {
+              "id": "c",
+              "text": "Так звелів принц"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вона ніколи не тримала зла."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Принц вирішив одружитися з тією, кому підійде черевичок.",
+          "actors": [
+            {
+              "char": "prince",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/cinderella/item-slipper.svg",
+              "alt": "кришталевий черевичок",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Сестрам черевичок не налазив, а Попелюшці підійшов одразу.",
+          "actors": [
+            {
+              "char": "messenger",
+              "x": 18,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "sister1",
+              "x": 50,
+              "bottom": 0,
+              "h": 60,
+              "pose": "angry"
+            },
+            {
+              "char": "cinderella",
+              "x": 82,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            },
+            {
+              "img": "images/cinderella/item-slipper.svg",
+              "alt": "кришталевий черевичок",
+              "x": 92,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Попелюшка простила сестер і стала дружиною принца.",
+          "actors": [
+            {
+              "char": "cinderella",
+              "x": 18,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            },
+            {
+              "char": "prince",
+              "x": 50,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            },
+            {
+              "char": "sister2",
+              "x": 82,
+              "bottom": 0,
+              "h": 60
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

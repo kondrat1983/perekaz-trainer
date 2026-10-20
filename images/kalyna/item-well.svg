@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Криниця з дерев'яним зрубом">
+<rect x="90" y="20" width="10" height="110" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="90" y="20" width="10" height="110" fill="#8A5A34"/>
+<path d="M40 20H170L150 4H60Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M40 20H170L150 4H60Z" fill="#6B4630"/>
+<path d="M95 40H150V80" fill="none" stroke="#6B4630" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="140" y="80" width="20" height="24" rx="3" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="140" y="80" width="20" height="24" rx="3" fill="#8A8FA3"/>
+<path d="M40 110H160V190H40Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M40 110H160V190H40Z" fill="#A06E44"/>
+<path d="M40 136H160M40 162H160" fill="none" stroke="#6B4630" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="100" cy="110" rx="60" ry="8" fill="#2F4580"/>
+</svg>

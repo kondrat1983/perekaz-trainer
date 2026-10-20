@@ -1,0 +1,16 @@
+{
+  "sun": {
+    "name": "Сонце",
+    "lname": "сонце",
+    "acc": "сонце",
+    "features": [
+      "золоте",
+      "кругле",
+      "світить на весь світ"
+    ],
+    "img": "images/glibov-riddles/sun.svg",
+    "poses": {
+      "happy": "images/glibov-riddles/sun-happy.svg"
+    }
+  }
+}

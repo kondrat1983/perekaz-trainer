@@ -1,0 +1,27 @@
+{
+  "traveler": {
+    "name": "Мандрівник",
+    "lname": "мандрівник",
+    "acc": "мандрівника",
+    "features": [
+      "поет у дорозі",
+      "темний плащ",
+      "сумно вслухається в тишу"
+    ],
+    "img": "images/akkerman-steppes/traveler.svg",
+    "poses": {
+      "sad": "images/akkerman-steppes/traveler-sad.svg"
+    }
+  },
+  "moon": {
+    "name": "Місяць",
+    "lname": "місяць",
+    "acc": "місяць",
+    "features": [
+      "світить уночі",
+      "срібний",
+      "над степом"
+    ],
+    "img": "images/akkerman-steppes/moon.svg"
+  }
+}

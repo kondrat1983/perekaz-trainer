@@ -1,0 +1,39 @@
+{
+  "kalyna": {
+    "name": "Калина",
+    "lname": "калина",
+    "acc": "Калину",
+    "features": [
+      "вродлива дівчина",
+      "червона сукня",
+      "вінок на голові"
+    ],
+    "img": "images/kalyna/kalyna.svg",
+    "poses": {
+      "happy": "images/kalyna/kalyna-happy.svg",
+      "sad": "images/kalyna/kalyna-sad.svg"
+    }
+  },
+  "crane": {
+    "name": "Журавель",
+    "lname": "журавель",
+    "acc": "журавля",
+    "features": [
+      "великий сірий птах",
+      "довгі ноги й дзьоб",
+      "прилетів із неба"
+    ],
+    "img": "images/kalyna/crane.svg"
+  },
+  "passerby": {
+    "name": "Перехожий",
+    "lname": "перехожий",
+    "acc": "перехожого",
+    "features": [
+      "чоловік, що йде повз",
+      "коричнева сорочка",
+      "капелюх"
+    ],
+    "img": "images/kalyna/passerby.svg"
+  }
+}

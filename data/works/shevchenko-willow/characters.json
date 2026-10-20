@@ -1,0 +1,16 @@
+{
+  "poet": {
+    "name": "Тарас Шевченко",
+    "lname": "тарас шевченко",
+    "acc": "Тараса Шевченка",
+    "features": [
+      "поет у засланні",
+      "сіра солдатська шинель",
+      "доглядає вербу"
+    ],
+    "img": "images/shevchenko-willow/poet.svg",
+    "poses": {
+      "sad": "images/shevchenko-willow/poet-sad.svg"
+    }
+  }
+}

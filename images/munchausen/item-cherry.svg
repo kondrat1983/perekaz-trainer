@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Вишневе деревце з ягодами (росте на голо">
+<path d="M100 190V80M100 120L70 90M100 110L130 80" fill="none" stroke="#6B4630" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="100" cy="70" r="50" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><circle cx="100" cy="70" r="50" fill="#5E9A4C"/>
+<circle cx="80" cy="70" r="9" fill="#1E2433" opacity=".2" transform="translate(1 1)"/><circle cx="80" cy="70" r="9" fill="#9C2F45"/>
+<circle cx="110" cy="56" r="9" fill="#1E2433" opacity=".2" transform="translate(1 1)"/><circle cx="110" cy="56" r="9" fill="#9C2F45"/>
+<circle cx="120" cy="90" r="9" fill="#1E2433" opacity=".2" transform="translate(1 1)"/><circle cx="120" cy="90" r="9" fill="#9C2F45"/>
+<circle cx="90" cy="100" r="9" fill="#1E2433" opacity=".2" transform="translate(1 1)"/><circle cx="90" cy="100" r="9" fill="#9C2F45"/>
+</svg>
