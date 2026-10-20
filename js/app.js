@@ -550,7 +550,7 @@ function libraryView() {
   const cards = library.map((w) => {
     const done = Object.values(state.works[w.id]?.scenes || {}).filter((e) => e.done).length;
     const ready = w.status !== 'soon';
-    const kind = w.kind === 'poem' ? 'Вірш' : w.kind === 'tale' ? 'Казка' : '';
+    const kind = { poem: 'Вірш', tale: 'Казка', legend: 'Легенда', folk: 'Фольклор' }[w.kind] || '';
     const inner = `
       <img class="cover" src="${w.cover}" alt="">
       <span class="work-text">
@@ -559,7 +559,7 @@ function libraryView() {
         ${ready
           ? `<span class="work-bar"><span style="width:${(done / w.scenes) * 100}%"></span></span>
              <span class="muted">${done} з ${w.scenes}</span>`
-          : '<span class="muted">Скоро</span>'}
+          : `<span class="muted">Скоро · с. ${w.page}</span>`}
       </span>`;
     return ready
       ? `<a class="card work" href="#/w/${w.id}">${inner}</a>`
