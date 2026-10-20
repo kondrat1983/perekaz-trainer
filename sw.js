@@ -1,5 +1,5 @@
 // Офлайн після першого завантаження: кешуємо оболонку застосунку і дані.
-const CACHE = 'perekaz-v4';
+const CACHE = 'perekaz-v5';
 const ASSETS = [
   './',
   'index.html',
@@ -21,6 +21,12 @@ const ASSETS = [
   'images/seamstress.svg',
   'images/matchgirl.svg',
   'images/angel.svg',
+  'images/prince-cry.svg',
+  'images/swallow-sad.svg',
+  'images/swallow-cold.svg',
+  'images/matchgirl-happy.svg',
+  'images/seamstress-happy.svg',
+  'images/mayor-angry.svg',
   'images/items/gold.svg',
   'images/items/sapphire.svg',
   'images/items/ruby.svg',

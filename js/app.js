@@ -152,7 +152,7 @@ const CITY_BG = 'images/backdrop.svg';
 function actorView(actor, lit = false) {
   if (actor.full) return `<img class="overlay" src="${actor.img}" alt="">`;
   const c = actor.char ? charOf(actor.char) : null;
-  const src = c ? c.img : actor.img;
+  const src = c ? (actor.pose && c.poses?.[actor.pose]) || c.img : actor.img;
   const alt = c ? c.name : actor.alt || '';
   const cls = `actor${lit ? ' lit' : ''}${actor.grey ? ' grey' : ''}`;
   return `<img class="${cls}" src="${src}" alt="${esc(alt)}" style="left:${actor.x}%;bottom:${actor.bottom}%;height:${actor.h}%">`;

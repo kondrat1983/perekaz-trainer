@@ -7,6 +7,7 @@ const characters = JSON.parse(readFileSync('data/characters.json', 'utf8'));
 const sw = readFileSync('sw.js', 'utf8');
 
 const paths = new Set(Object.values(characters).map((c) => c.img));
+for (const c of Object.values(characters)) for (const p of Object.values(c.poses || {})) paths.add(p);
 for (const scene of scenes) {
   if (scene.bg) paths.add(scene.bg);
   for (const q of Object.values(scene.questions)) {
@@ -28,7 +29,10 @@ test('every scene has three frames whose phrases make up the summary', () => {
 test('every frame character exists', () => {
   for (const scene of scenes) {
     for (const f of scene.frames) {
-      for (const a of f.actors) if (a.char) assert.ok(characters[a.char], `${scene.num}: ${a.char}`);
+      for (const a of f.actors) {
+        if (a.char) assert.ok(characters[a.char], `${scene.num}: ${a.char}`);
+        if (a.pose) assert.ok(characters[a.char].poses?.[a.pose], `${scene.num}: ${a.char}-${a.pose}`);
+      }
     }
   }
 });
