@@ -1,19 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" role="img" aria-label="Ластівка">
-  <g stroke="#1E2433" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M74 122L8 76L44 120L6 166L76 138Z" fill="#1E2A4E"/>
-    <path d="M60 126Q120 82 200 94Q240 104 252 120Q232 152 170 156Q110 160 60 126Z" fill="#22305A"/>
-    <path d="M80 118Q130 92 196 100Q150 104 96 126Z" fill="#3A4C80" stroke="none"/>
-    <path d="M118 136Q170 152 226 128Q202 154 160 158Q130 154 118 136Z" fill="#F4EFE6"/>
-    <g id="wing-r">
-      <path d="M128 104Q102 30 176 14Q172 70 162 106Z" fill="#1E2A4E"/>
-      <path d="M140 96Q126 50 166 30Q160 66 156 98Z" fill="#3A4C80" stroke="none"/>
-      <path d="M146 80L162 52M140 64L160 38" fill="none" stroke="#5B6A9A" stroke-width="2"/>
+  <defs>
+    <path id="farwing" d="M200 140Q230 70 292 50Q278 100 240 142Z"/>
+    <path id="tail" d="M122 166L52 118L88 166L46 216L126 184Z"/>
+    <path id="body" d="M108 172Q170 120 262 130Q302 138 314 156Q292 194 220 198Q150 202 108 172Z"/>
+    <path id="belly" d="M170 184Q232 200 292 172Q264 202 214 202Q184 200 170 184Z"/>
+    <path id="wing" d="M168 148Q128 60 214 26Q218 82 208 152Z"/>
+    <path id="wing2" d="M176 140Q150 80 206 48Q206 92 202 146Z"/>
+    <path id="head" d="M262 140a30 30 0 1 0 60 0a30 30 0 1 0-60 0Z"/>
+    <path id="throat" d="M276 162Q296 176 318 162Q308 182 286 182Z"/>
+    <path id="beak" d="M319 142L342 148L319 155Z"/>
+  </defs>
+  <g transform="translate(-44 -6)">
+    <g fill="#1E2433" opacity=".2" transform="translate(3 4)">
+      <use href="#farwing"/><use href="#tail"/><use href="#body"/><use href="#head"/>
     </g>
-    <circle cx="228" cy="100" r="26" fill="#22305A"/>
-    <path d="M214 118Q232 130 250 116Q242 134 222 132Z" fill="#C2643A"/>
-    <circle cx="236" cy="95" r="6.5" fill="#1E2433"/>
-    <circle cx="238.5" cy="92.5" r="2.2" fill="#FFFFFF" stroke="none"/>
-    <path d="M228 84Q236 80 244 85" fill="none"/>
-    <path d="M252 100L272 106L252 112Z" fill="#E8B23A"/>
+    <use href="#farwing" fill="#23325F"/>
+    <use href="#tail" fill="#2A3A6E"/>
+    <use href="#body" fill="#33468A"/>
+    <use href="#belly" transform="translate(2 3)" fill="#1E2433" opacity=".2"/>
+    <use href="#belly" fill="#FFF8EC"/>
+    <use href="#head" fill="#33468A"/>
+    <use href="#throat" transform="translate(2 3)" fill="#1E2433" opacity=".2"/>
+    <use href="#throat" fill="#E07A45"/>
+    <use href="#beak" fill="#F2B544"/>
+    <g id="wing-r">
+      <use href="#wing" transform="translate(3 4)" fill="#1E2433" opacity=".25"/>
+      <use href="#wing" fill="#4A63B0"/>
+      <use href="#wing2" transform="translate(2 3)" fill="#1E2433" opacity=".2"/>
+      <use href="#wing2" fill="#6A85CF"/>
+    </g>
+    <circle cx="305" cy="138" r="9" fill="#1E2433" opacity=".2"/>
+    <circle cx="303" cy="136" r="9" fill="#FFFFFF"/>
+    <circle cx="305" cy="137" r="5" fill="#1E2433"/>
+    <circle cx="306.5" cy="135" r="1.8" fill="#FFFFFF"/>
   </g>
 </svg>

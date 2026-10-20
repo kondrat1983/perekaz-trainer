@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Сапфір">
-  <g stroke="#1E2433" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
-    <path d="M50 76L76 44H124L150 76L100 160Z" fill="#2F6FD6"/>
-    <path d="M50 76H150L100 160Z" fill="#2459B0"/>
-    <path d="M76 44L88 76L100 44L112 76L124 44" fill="none"/>
-    <path d="M88 76L100 160L112 76" fill="none"/>
-    <path d="M76 44L88 76H50Z" fill="#5B93F0"/>
-    <path d="M100 44L112 76H88Z" fill="#7FAAF5"/>
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <path d="M50 76L76 44H124L150 76L100 160Z" fill="#1E2433" stroke="none" opacity="0.20" transform="translate(3 4)"/><path d="M50 76L76 44H124L150 76L100 160Z" fill="#2F6FD6" stroke="none"/>
+    <path d="M50 76H150L100 160Z" fill="#1E2433" stroke="none" opacity="0.20" transform="translate(3 4)"/><path d="M50 76H150L100 160Z" fill="#2459B0" stroke="none"/>
+    <path d="M76 44L88 76L100 44L112 76L124 44" fill="none" stroke="#1E2433" stroke-width="2.5"/>
+    <path d="M88 76L100 160L112 76" fill="none" stroke="#1E2433" stroke-width="2.5"/>
+    <path d="M76 44L88 76H50Z" fill="#1E2433" stroke="none" opacity="0.20" transform="translate(3 4)"/><path d="M76 44L88 76H50Z" fill="#5B93F0" stroke="none"/>
+    <path d="M100 44L112 76H88Z" fill="#1E2433" stroke="none" opacity="0.20" transform="translate(3 4)"/><path d="M100 44L112 76H88Z" fill="#7FAAF5" stroke="none"/>
   </g>
-  <path d="M82 52l4-8 4 8-4 8z" fill="#FFFFFF" opacity=".9"/>
-  <circle cx="132" cy="58" r="3" fill="#FFFFFF" opacity=".8"/>
+  <path d="M82 52l4-8 4 8-4 8z" fill="#FFFFFF" opacity=".9" stroke="none"/>
+  <circle cx="132" cy="58" r="3" fill="#FFFFFF" opacity=".8" stroke="none"/>
 </svg>
