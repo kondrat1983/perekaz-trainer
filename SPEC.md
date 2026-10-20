@@ -84,8 +84,9 @@
 
 Файлы в репозитории:
 
-- `data/scenes.json`: 8 сцен. Поля: `id`, `title`, `summary` (наш пересказ, 1–2 фразы), `image`, `questions` (L1–L4), `answers`, `hints`.
-- `data/characters.json`: персонажи и предметы. Поля: `id`, `name_uk`, `image`, `features` (подсказки-признаки), `confusable_with` (id пары).
+- `data/works.json`: список творів підручника (бібліотека): `id`, `title`, `author`, `kind` (prose, tale, poem), `cover`, кількість сцен, `status: "soon"` для ще не готових, `map` для твору з картою.
+- `data/works/<id>/scenes.json`: сцени твору. Поля: `num`, `title`, `summary` (наш пересказ), `stage`, `questions` (L1–L3), `frames` (3 кадри переказу), а також `pairs` для режиму «Пари».
+- `data/works/<id>/characters.json`: персонажі твору. Поля: `name`, `img`, `features`, `poses`.
 - `images/`: свои SVG или PNG, по одной картинке на персонажа и на сцену.
 
 Имя файла данных не содержит персональных данных. Прогресс хранится в `localStorage` в блоке try/catch, без аккаунта, без сервера. Экспорт и импорт прогресса в JSON.
