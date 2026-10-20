@@ -2,11 +2,26 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 
-const scenes = JSON.parse(readFileSync('data/scenes.json', 'utf8')).scenes;
-const characters = JSON.parse(readFileSync('data/characters.json', 'utf8'));
+const readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
+const library = readJson('data/works.json').works;
 const sw = readFileSync('sw.js', 'utf8');
 
+test('works.json lists ready works with matching scene counts', () => {
+  for (const work of library.filter((w) => w.status !== 'soon')) {
+    const scenes = readJson(`data/works/${work.id}/scenes.json`).scenes;
+    assert.equal(scenes.length, work.scenes, work.id);
+    assert.ok(sw.includes(`'data/works/${work.id}/scenes.json'`), `${work.id} scenes not cached`);
+    assert.ok(sw.includes(`'data/works/${work.id}/characters.json'`), `${work.id} characters not cached`);
+  }
+});
+
+for (const work of library.filter((w) => w.status !== 'soon')) {
+const scenes = readJson(`data/works/${work.id}/scenes.json`).scenes;
+const characters = readJson(`data/works/${work.id}/characters.json`);
+
 const paths = new Set(Object.values(characters).map((c) => c.img));
+paths.add(work.cover);
+if (work.map) paths.add(work.map.img);
 for (const c of Object.values(characters)) for (const p of Object.values(c.poses || {})) paths.add(p);
 for (const scene of scenes) {
   if (scene.bg) paths.add(scene.bg);
@@ -19,14 +34,14 @@ for (const scene of scenes) {
   }
 }
 
-test('every scene has three frames whose phrases make up the summary', () => {
+test(`${work.id}: every scene has three frames whose phrases make up the summary`, () => {
   for (const scene of scenes) {
     assert.equal(scene.frames.length, 3, `scene ${scene.num}`);
     assert.equal(scene.frames.map((f) => f.text).join(' '), scene.summary, `scene ${scene.num}`);
   }
 });
 
-test('every frame character exists', () => {
+test(`${work.id}: every frame character exists`, () => {
   for (const scene of scenes) {
     for (const f of scene.frames) {
       for (const a of f.actors) {
@@ -38,8 +53,9 @@ test('every frame character exists', () => {
 });
 
 for (const path of paths) {
-  test(`${path} exists and is cached offline`, () => {
+  test(`${work.id}: ${path} exists and is cached offline`, () => {
     assert.ok(existsSync(path), 'file is missing');
     assert.ok(sw.includes(`'${path}'`), 'not listed in sw.js');
   });
+}
 }

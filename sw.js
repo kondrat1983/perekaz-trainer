@@ -1,5 +1,5 @@
 // Офлайн після першого завантаження: кешуємо оболонку застосунку і дані.
-const CACHE = 'perekaz-v5';
+const CACHE = 'perekaz-v6';
 const ASSETS = [
   './',
   'index.html',
@@ -8,8 +8,9 @@ const ASSETS = [
   'js/normalize.js',
   'js/store.js',
   'js/speech.js',
-  'data/scenes.json',
-  'data/characters.json',
+  'data/works.json',
+  'data/works/happy-prince/scenes.json',
+  'data/works/happy-prince/characters.json',
   'manifest.webmanifest',
   'images/icon.svg',
   'images/map.svg',

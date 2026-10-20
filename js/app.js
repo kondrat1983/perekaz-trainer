@@ -3,21 +3,19 @@ import { loadState, saveState, resetState } from './store.js';
 import { speak, ukrainianVoices, canSpeak, canListen, listen } from './speech.js';
 
 const LEVELS = ['L1', 'L2', 'L3'];
-const TOTAL = 8;
-// Позиції місць на карті (координати viewBox 600×420 з images/map.svg).
-const MAP_POS = {
-  1: [300, 334], 2: [96, 318], 3: [330, 74], 4: [188, 262],
-  5: [430, 312], 6: [60, 170], 7: [236, 150], 8: [520, 130],
-};
 const PARENT_QUESTION = 'Скільки буде 7 × 8?';
 const PARENT_ANSWER = '56';
 
+const ICON_BOOK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h12a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2Z"/><path d="M5 18a2 2 0 0 1 2-2h12"/></svg>';
 const ICON_CITY = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11L12 4L21 11V20H14V14H10V20H3Z"/></svg>';
 const ICON_PAIR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8h11l-3-3M17 16H6l3 3"/></svg>';
 const ICON_PERSON = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg>';
 
 const app = document.getElementById('app');
 let data = null;
+let library = [];
+let workId = null;
+const workCache = {};
 let state = loadState();
 let session = null;
 let parentOpen = false;
@@ -35,9 +33,17 @@ const shuffle = (items) => {
   return copy;
 };
 
+const work = () => library.find((w) => w.id === workId);
+const base = () => `#/w/${workId}`;
+const total = () => data.scenes.length;
+// Прогрес кожного твору окремо.
+const prog = (id = workId) => {
+  state.works[id] ||= { scenes: {}, errors: {} };
+  return state.works[id];
+};
 const sceneByNum = (n) => data.scenes.find((scene) => scene.num === n);
 const charOf = (id) => data.characters[id];
-const isDone = (n) => Boolean(state.scenes[n]?.done);
+const isDone = (n) => Boolean(prog().scenes[n]?.done);
 const isUnlocked = (n) => n === 1 || state.settings.openAll || isDone(n - 1);
 const nextNum = () => data.scenes.find((scene) => isUnlocked(scene.num) && !isDone(scene.num))?.num ?? null;
 const doneCount = () => data.scenes.filter((scene) => isDone(scene.num)).length;
@@ -47,14 +53,14 @@ function say(text, rate = 0.95) {
 }
 
 function markClean(n, level) {
-  const entry = { ...(state.scenes[n] || {}), [level]: true };
+  const entry = { ...(prog().scenes[n] || {}), [level]: true };
   entry.done = LEVELS.every((l) => entry[l]);
-  state.scenes[n] = entry;
+  prog().scenes[n] = entry;
   saveState(state);
 }
 
 function recordError(key) {
-  state.errors[key] = (state.errors[key] || 0) + 1;
+  prog().errors[key] = (prog().errors[key] || 0) + 1;
   saveState(state);
 }
 
@@ -171,8 +177,8 @@ function sceneView() {
   const scene = sceneByNum(session.n);
   const head = `
     <nav class="bar">
-      <a class="back" href="#/">← Назад</a>
-      <span>Сцена ${scene.num} з ${TOTAL}</span>
+      <a class="back" href="${base()}">← Назад</a>
+      <span>Сцена ${scene.num} з ${total()}</span>
     </nav>
     <h1 class="title">${esc(scene.title)}</h1>`;
 
@@ -201,7 +207,7 @@ function sceneView() {
     <p class="feedback" role="status" aria-live="polite">${esc(session.feedback)}</p>
     <div class="row">
       <button class="btn ghost" data-action="hint" ${session.hinted || session.locked ? 'disabled' : ''}>Підказка</button>
-      <a class="btn ghost" href="#/scene/${scene.num}/retell">Переказ</a>
+      <a class="btn ghost" href="${base()}/scene/${scene.num}/retell">Переказ</a>
     </div>`;
 }
 
@@ -217,10 +223,10 @@ function sceneEndView(scene) {
         : 'Ця сцена ще не пройдена без підказок. Так запам’ятається краще.'}</p>
     </section>
     <div class="row">
-      ${done && nextOpen ? `<a class="btn" href="#/scene/${next.num}">Далі: сцена ${next.num}</a>` : ''}
+      ${done && nextOpen ? `<a class="btn" href="${base()}/scene/${next.num}">Далі: сцена ${next.num}</a>` : ''}
       ${done ? '' : '<button class="btn" data-action="restart">Ще раз</button>'}
-      <a class="btn ghost" href="#/scene/${scene.num}/retell">Переказ</a>
-      <a class="btn ghost" href="#/">На карту</a>
+      <a class="btn ghost" href="${base()}/scene/${scene.num}/retell">Переказ</a>
+      <a class="btn ghost" href="${base()}">До сцен</a>
     </div>`;
 }
 
@@ -250,7 +256,7 @@ function retellView() {
   const zoomed = session.zoom != null ? scene.frames[session.zoom] : null;
   return `
     <nav class="bar">
-      <a class="back" href="#/scene/${scene.num}">← Сцена</a>
+      <a class="back" href="${base()}/scene/${scene.num}">← Сцена</a>
       <span>Переказ</span>
     </nav>
     <h1 class="title">${esc(scene.title)}</h1>
@@ -355,7 +361,7 @@ function pariView() {
       </section>
       <div class="row">
         <button class="btn" data-action="pari-restart">Ще раз</button>
-        <a class="btn ghost" href="#/">На карту</a>
+        <a class="btn ghost" href="${base()}">До сцен</a>
       </div>`;
   }
   const round = session.queue[session.index];
@@ -397,12 +403,18 @@ function parentView() {
         </form>
       </section>`;
   }
-  const rows = data.scenes.map((scene) => {
-    const entry = state.scenes[scene.num] || {};
+  const summary = library.filter((w) => w.status !== 'soon').map((w) => {
+    const p = state.works[w.id] || { scenes: {}, errors: {} };
+    const done = Object.values(p.scenes).filter((e) => e.done).length;
+    const errors = Object.values(p.errors).reduce((sum, n) => sum + n, 0);
+    return `<tr><td>${esc(w.title)}</td><td>${done}/${w.scenes}</td><td>${errors}</td></tr>`;
+  }).join('');
+  const rows = !data ? '' : data.scenes.map((scene) => {
+    const entry = prog().scenes[scene.num] || {};
     const status = entry.done ? 'Пройдено'
       : LEVELS.some((l) => entry[l]) ? 'Частково'
         : isUnlocked(scene.num) ? 'Не почато' : 'Закрито';
-    const errors = LEVELS.reduce((sum, l) => sum + (state.errors[`${scene.num}.${l}`] || 0), 0);
+    const errors = LEVELS.reduce((sum, l) => sum + (prog().errors[`${scene.num}.${l}`] || 0), 0);
     return `<tr><td>${scene.num}</td><td>${esc(scene.title)}</td><td>${status}</td><td>${errors}</td></tr>`;
   }).join('');
   const voices = ukrainianVoices();
@@ -412,13 +424,20 @@ function parentView() {
   return `
     <nav class="bar"><span>Для батьків</span></nav>
     <section class="card">
-      <h2>Сцени</h2>
+      <h2>Твори</h2>
+      <table class="stats">
+        <thead><tr><th>Твір</th><th>Сцени</th><th>Помилки</th></tr></thead>
+        <tbody>${summary}</tbody>
+      </table>
+    </section>
+    ${data ? `<section class="card">
+      <h2>Сцени: ${esc(work().title)}</h2>
       <table class="stats">
         <thead><tr><th>№</th><th>Сцена</th><th>Стан</th><th>Помилки</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
-      <p class="note">Помилки в парах: ${state.errors.pari || 0}</p>
-    </section>
+      <p class="note">Помилки в парах: ${prog().errors.pari || 0}</p>
+    </section>` : ''}
     <section class="card">
       <h2>Налаштування</h2>
       <label class="check"><input type="checkbox" data-setting="openAll" ${state.settings.openAll ? 'checked' : ''}> Відкрити всі сцени</label>
@@ -446,19 +465,18 @@ function tabs(active) {
       ${icon}<span>${label}</span>
     </a>`;
   return `<nav class="tabs" aria-label="Головне меню">
-    ${item('home', '#/', 'Місто', ICON_CITY)}
-    ${item('pari', '#/pari', 'Пари', ICON_PAIR)}
+    ${item('library', '#/', 'Бібліотека', ICON_BOOK)}
+    ${workId ? item('home', base(), 'Сцени', ICON_CITY) : ''}
+    ${workId && data.pairs?.length ? item('pari', `${base()}/pari`, 'Пари', ICON_PAIR) : ''}
     ${item('parent', '#/parent', 'Батькам', ICON_PERSON)}
   </nav>`;
 }
 
 function placeView(scene) {
-  const [x, y] = MAP_POS[scene.num];
-  const status = isDone(scene.num) ? 'done'
-    : !isUnlocked(scene.num) ? 'locked'
-      : scene.num === nextNum() ? 'next' : 'open';
+  const [x, y] = work().map.pos[scene.num];
+  const status = sceneStatus(scene);
   const label = { done: 'пройдено', locked: 'закрито', next: 'наступна', open: 'відкрито' }[status];
-  const attrs = status === 'locked' ? 'disabled' : `data-go="#/scene/${scene.num}"`;
+  const attrs = status === 'locked' ? 'disabled' : `data-go="${base()}/scene/${scene.num}"`;
   return `<button class="place ${status}" style="left:${x / 6}%;top:${y / 4.2}%" aria-label="Сцена ${scene.num}: ${esc(scene.title)}, ${label}" ${attrs}>${status === 'done' ? '✓' : scene.num}</button>`;
 }
 
@@ -466,59 +484,144 @@ function homeView() {
   const next = nextNum();
   const current = next ? sceneByNum(next) : null;
   const done = doneCount();
-  const leaves = Array.from({ length: TOTAL }, (_, i) => `<span class="leaf${i < done ? ' on' : ''}"></span>`).join('');
+  const leaves = Array.from({ length: total() }, (_, i) => `<span class="leaf${i < done ? ' on' : ''}"></span>`).join('');
   const card = current
     ? `<section class="card now" aria-label="Наступна сцена">
         <img class="thumb" src="${charOf(current.stage[0].char).img}" alt="">
         <div class="now-text">
-          <span class="muted">Сцена ${current.num} з ${TOTAL}</span>
+          <span class="muted">Сцена ${current.num} з ${total()}</span>
           <span class="now-title">${esc(current.title)}</span>
-          <span class="pills">${LEVELS.map((l) => `<span class="pill${state.scenes[current.num]?.[l] ? ' on' : ''}">${l}${state.scenes[current.num]?.[l] ? ' ✓' : ''}</span>`).join('')}</span>
+          <span class="pills">${LEVELS.map((l) => `<span class="pill${prog().scenes[current.num]?.[l] ? ' on' : ''}">${l}${prog().scenes[current.num]?.[l] ? ' ✓' : ''}</span>`).join('')}</span>
         </div>
-        <a class="btn" href="#/scene/${current.num}">Продовжити</a>
+        <a class="btn" href="${base()}/scene/${current.num}">Продовжити</a>
       </section>`
     : `<section class="card now">
         <div class="now-text"><span class="now-title">Усі сцени пройдено</span>
         <span class="muted">Можна повторити будь-яку сцену.</span></div>
-        <a class="btn" href="#/scene/1">Сцена 1</a>
+        <a class="btn" href="${base()}/scene/1">Сцена 1</a>
       </section>`;
   return `
-    <header class="top">
-      <div class="brand"><span class="leaf-logo" aria-hidden="true"></span>Переказ</div>
-    </header>
-    <h1 class="title">Щасливий принц</h1>
+    <nav class="bar">
+      <a class="back" href="#/">← Бібліотека</a>
+      <span>${esc(work().author)}</span>
+    </nav>
+    <h1 class="title">${esc(work().title)}</h1>
     ${card}
-    <section class="map" aria-label="Карта міста">
-      <img class="map-bg" src="images/map.svg" alt="">
+    ${work().map ? `
+    <section class="map" aria-label="Карта">
+      <img class="map-bg" src="${work().map.img}" alt="">
       ${data.scenes.map(placeView).join('')}
     </section>
     <div class="gold-row">
       <span>Золота роздано</span>
       <span class="leaves" aria-hidden="true">${leaves}</span>
-      <span class="count">${done}/${TOTAL}</span>
-    </div>
-    <a class="pari-card" href="#/pari"><span class="pari-title">Пари</span><span>Знайди, хто це</span></a>
+      <span class="count">${done}/${total()}</span>
+    </div>` : pathView()}
+    <a class="pari-card" href="${base()}/pari"><span class="pari-title">Пари</span><span>Знайди, хто це</span></a>
     ${tabs('home')}`;
+}
+
+function sceneStatus(scene) {
+  return isDone(scene.num) ? 'done'
+    : !isUnlocked(scene.num) ? 'locked'
+      : scene.num === nextNum() ? 'next' : 'open';
+}
+
+// Доріжка сцен для творів без карти.
+function pathView() {
+  const steps = data.scenes.map((scene) => {
+    const status = sceneStatus(scene);
+    const attrs = status === 'locked' ? 'disabled' : `data-go="${base()}/scene/${scene.num}"`;
+    return `<li class="step ${status}">
+      <button class="step-btn" ${attrs} aria-label="Сцена ${scene.num}: ${esc(scene.title)}">
+        <span class="step-pic">${picture(scene.bg, scene.stage)}</span>
+        <span class="step-num">${status === 'done' ? '✓' : scene.num}</span>
+        <span class="step-title">${esc(scene.title)}</span>
+      </button>
+    </li>`;
+  }).join('');
+  return `<ol class="path" aria-label="Сцени">${steps}</ol>
+    <p class="note">Пройдено ${doneCount()} з ${total()}</p>`;
+}
+
+// ---------- Бібліотека ----------
+
+function libraryView() {
+  const cards = library.map((w) => {
+    const done = Object.values(state.works[w.id]?.scenes || {}).filter((e) => e.done).length;
+    const ready = w.status !== 'soon';
+    const kind = w.kind === 'poem' ? 'Вірш' : w.kind === 'tale' ? 'Казка' : '';
+    const inner = `
+      <img class="cover" src="${w.cover}" alt="">
+      <span class="work-text">
+        <span class="work-title">${esc(w.title)}</span>
+        <span class="muted">${esc(w.author)}${kind ? ` · ${kind}` : ''}</span>
+        ${ready
+          ? `<span class="work-bar"><span style="width:${(done / w.scenes) * 100}%"></span></span>
+             <span class="muted">${done} з ${w.scenes}</span>`
+          : '<span class="muted">Скоро</span>'}
+      </span>`;
+    return ready
+      ? `<a class="card work" href="#/w/${w.id}">${inner}</a>`
+      : `<div class="card work soon">${inner}</div>`;
+  }).join('');
+  return `
+    <header class="top">
+      <div class="brand"><span class="leaf-logo" aria-hidden="true"></span>Переказ</div>
+    </header>
+    <h1 class="title">Бібліотека</h1>
+    <p class="note">Українська література, 5 клас</p>
+    <div class="works">${cards}</div>
+    ${tabs('library')}`;
 }
 
 // ---------- Роутинг і малювання ----------
 
-function route() {
-  const [page, arg, sub] = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
+async function loadWork(id) {
+  if (!workCache[id]) {
+    const get = (file) => fetch(`data/works/${id}/${file}`).then((r) => {
+      if (!r.ok) throw new Error(file);
+      return r.json();
+    });
+    const [scenes, characters] = await Promise.all([get('scenes.json'), get('characters.json')]);
+    workCache[id] = { pairs: scenes.pairs || [], scenes: scenes.scenes, characters };
+  }
+  return workCache[id];
+}
+
+async function route() {
+  const parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
+  // Старі адреси без твору ведуть у «Щасливого принца».
+  if (parts[0] === 'scene' || parts[0] === 'pari') return go(`#/w/happy-prince/${parts.join('/')}`);
+  if (parts[0] === 'parent') {
+    session = { kind: 'parent', askReset: false, note: '' };
+    return draw();
+  }
+  if (parts[0] !== 'w') {
+    session = { kind: 'library' };
+    return draw();
+  }
+  const [, id, page, arg, sub] = parts;
+  if (!library.some((w) => w.id === id && w.status !== 'soon')) return go('#/');
+  if (workId !== id) {
+    try {
+      data = await loadWork(id);
+      workId = id;
+    } catch {
+      app.innerHTML = '<p class="note">Не вдалося завантажити твір. Перевірте з’єднання і оновіть сторінку.</p>';
+      return undefined;
+    }
+  }
   if (page === 'scene') {
     const n = Number(arg);
-    if (!sceneByNum(n)) return go('#/');
+    if (!sceneByNum(n)) return go(base());
     session = sub === 'retell'
       ? { kind: 'retell', n, revealed: false, heard: '', listening: false, active: null, zoom: null }
       : newSceneSession(n);
     return draw();
   }
-  if (page === 'pari') {
+  if (page === 'pari' && data.pairs.length) {
     session = newPariSession();
-    return draw();
-  }
-  if (page === 'parent') {
-    session = { kind: 'parent', askReset: false, note: '' };
     return draw();
   }
   session = { kind: 'home' };
@@ -530,6 +633,7 @@ function view() {
   if (session.kind === 'retell') return `<main class="screen">${retellView()}</main>`;
   if (session.kind === 'pari') return `<main class="screen">${pariView()}${tabs('pari')}</main>`;
   if (session.kind === 'parent') return `<main class="screen">${parentView()}${tabs('parent')}</main>`;
+  if (session.kind === 'library') return `<main class="screen">${libraryView()}</main>`;
   return `<main class="screen">${homeView()}</main>`;
 }
 
@@ -565,10 +669,10 @@ function importProgress(file) {
   file.text()
     .then((text) => {
       const parsed = JSON.parse(text);
-      if (!parsed || typeof parsed.scenes !== 'object' || typeof parsed.errors !== 'object') {
-        throw new Error('bad format');
-      }
-      state = { ...state, ...parsed, settings: { ...state.settings, ...(parsed.settings || {}) } };
+      const ok = parsed && (typeof parsed.works === 'object' || typeof parsed.scenes === 'object');
+      if (!ok) throw new Error('bad format');
+      const incoming = migrate(parsed);
+      state = { ...state, works: { ...state.works, ...incoming.works }, settings: { ...state.settings, ...(parsed.settings || {}) } };
       saveState(state);
       session.note = 'Прогрес відновлено.';
     })
@@ -651,23 +755,28 @@ app.addEventListener('change', (event) => {
 
 // ---------- Старт ----------
 
+// Прогрес з першої версії (лише «Щасливий принц») переносимо у твори.
+function migrate(saved) {
+  const next = { ...saved, works: { ...(saved.works || {}) } };
+  if (saved.scenes || saved.errors) {
+    next.works['happy-prince'] = { scenes: saved.scenes || {}, errors: saved.errors || {} };
+    delete next.scenes;
+    delete next.errors;
+  }
+  return next;
+}
+
 async function init() {
   try {
-    const [scenes, characters] = await Promise.all([
-      fetch('data/scenes.json').then((r) => {
-        if (!r.ok) throw new Error('scenes');
-        return r.json();
-      }),
-      fetch('data/characters.json').then((r) => {
-        if (!r.ok) throw new Error('characters');
-        return r.json();
-      }),
-    ]);
-    data = { pairs: scenes.pairs, scenes: scenes.scenes, characters };
+    const r = await fetch('data/works.json');
+    if (!r.ok) throw new Error('works');
+    library = (await r.json()).works;
   } catch {
     app.innerHTML = '<p class="note">Не вдалося завантажити дані. Перевірте з’єднання і оновіть сторінку.</p>';
     return;
   }
+  state = migrate(state);
+  saveState(state);
   window.addEventListener('hashchange', route);
   route();
   if ('serviceWorker' in navigator) {
