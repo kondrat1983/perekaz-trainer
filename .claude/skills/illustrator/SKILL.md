@@ -77,6 +77,10 @@ python3 -I .claude/skills/illustrator/paperize.py images/bg/new.svg --every-piec
 
 Если персонажу нужна новая поза или эмоция для вопросов L2/L3, делаем отдельный файл рядом: `images/<char>-<pose>.svg` (например, `swallow-cold.svg`, `prince-cry.svg`). Силуэт и одежда те же, меняются лицо, руки и наклон. Анимируемые части выносим в группы с id: `#wing-l`, `#wing-r`, `#eye-blink`, `#tear`, `#flame`.
 
+Самый быстрый путь: скопировать базовый файл, заменить полоски бровей и рта, добавить слёзы, дрожь или искорки и обернуть голову (от шеи до конца фигуры) в `<g transform="rotate(±5…6 cx cy)">`. Так сделаны `prince-cry`, `swallow-sad`, `swallow-cold`, `matchgirl-happy`, `seamstress-happy`, `mayor-angry`.
+
+Подключение: в `data/characters.json` у персонажа `"poses": {"cry": "images/prince-cry.svg"}`, а в кадре или на сцене актёру добавляем `"pose": "cry"`. Тест `tests/data.test.mjs` проверит, что поза существует и лежит в кэше.
+
 ## Кадры для переказу
 
 Кадр не рисуется отдельным файлом. Он собирается в `data/scenes.json` из фона и актёров:
