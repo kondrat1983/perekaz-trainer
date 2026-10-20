@@ -43,6 +43,7 @@ const prog = (id = workId) => {
 };
 const sceneByNum = (n) => data.scenes.find((scene) => scene.num === n);
 const charOf = (id) => data.characters[id];
+const poseImg = (id, pose) => (pose && charOf(id).poses?.[pose]) || charOf(id).img;
 const isDone = (n) => Boolean(prog().scenes[n]?.done);
 const isUnlocked = (n) => n === 1 || state.settings.openAll || isDone(n - 1);
 const nextNum = () => data.scenes.find((scene) => isUnlocked(scene.num) && !isDone(scene.num))?.num ?? null;
@@ -158,7 +159,7 @@ const CITY_BG = 'images/backdrop.svg';
 function actorView(actor, lit = false) {
   if (actor.full) return `<img class="overlay" src="${actor.img}" alt="">`;
   const c = actor.char ? charOf(actor.char) : null;
-  const src = c ? (actor.pose && c.poses?.[actor.pose]) || c.img : actor.img;
+  const src = c ? poseImg(actor.char, actor.pose) : actor.img;
   const alt = c ? c.name : actor.alt || '';
   const cls = `actor${lit ? ' lit' : ''}${actor.grey ? ' grey' : ''}`;
   return `<img class="${cls}" src="${src}" alt="${esc(alt)}" style="left:${actor.x}%;bottom:${actor.bottom}%;height:${actor.h}%">`;
@@ -186,7 +187,7 @@ function sceneView() {
 
   const { level, q } = currentSceneQuestion();
   const options = session.options.map((o) => {
-    const src = o.char ? charOf(o.char).img : o.img;
+    const src = o.char ? poseImg(o.char, o.pose) : o.img;
     const pic = src ? `<img src="${src}" alt="">` : '';
     const miss = session.missed.includes(o.id) ? ' miss' : '';
     return `<button class="opt${pic ? ' pic' : ''}${miss}" data-action="pick" data-id="${o.id}" ${session.locked ? 'disabled' : ''}>${pic}<span>${esc(o.text)}</span></button>`;
@@ -487,7 +488,7 @@ function homeView() {
   const leaves = Array.from({ length: total() }, (_, i) => `<span class="leaf${i < done ? ' on' : ''}"></span>`).join('');
   const card = current
     ? `<section class="card now" aria-label="Наступна сцена">
-        <img class="thumb" src="${charOf(current.stage[0].char).img}" alt="">
+        <img class="thumb" src="${poseImg(current.stage[0].char, current.stage[0].pose)}" alt="">
         <div class="now-text">
           <span class="muted">Сцена ${current.num} з ${total()}</span>
           <span class="now-title">${esc(current.title)}</span>

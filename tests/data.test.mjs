@@ -41,13 +41,17 @@ test(`${work.id}: every scene has three frames whose phrases make up the summary
   }
 });
 
-test(`${work.id}: every frame character exists`, () => {
+test(`${work.id}: every character and pose on stage, in frames and in answers exists`, () => {
   for (const scene of scenes) {
-    for (const f of scene.frames) {
-      for (const a of f.actors) {
-        if (a.char) assert.ok(characters[a.char], `${scene.num}: ${a.char}`);
-        if (a.pose) assert.ok(characters[a.char].poses?.[a.pose], `${scene.num}: ${a.char}-${a.pose}`);
-      }
+    const used = [...scene.stage, ...scene.frames.flatMap((f) => f.actors)];
+    for (const q of Object.values(scene.questions)) {
+      used.push(...q.options);
+      assert.ok(q.options.some((o) => o.id === q.answer), `${scene.num}: answer ${q.answer}`);
+      if (q.target) assert.ok(characters[q.target], `${scene.num}: target ${q.target}`);
+    }
+    for (const a of used) {
+      if (a.char) assert.ok(characters[a.char], `${scene.num}: ${a.char}`);
+      if (a.pose) assert.ok(characters[a.char].poses?.[a.pose], `${scene.num}: ${a.char}-${a.pose}`);
     }
   }
 });

@@ -1,0 +1,51 @@
+{
+  "fox": {
+    "name": "Лис Микита",
+    "lname": "лис микита",
+    "acc": "Лиса Микиту",
+    "img": "images/painted-fox/fox.svg",
+    "features": [
+      "рудий",
+      "пухнастий хвіст з білим кінчиком",
+      "хитро всміхається"
+    ],
+    "poses": {
+      "blue": "images/painted-fox/fox-blue.svg",
+      "king": "images/painted-fox/fox-king.svg",
+      "howl": "images/painted-fox/fox-howl.svg"
+    }
+  },
+  "wolf": {
+    "name": "Вовк",
+    "lname": "вовк",
+    "acc": "Вовка",
+    "img": "images/painted-fox/wolf.svg",
+    "features": [
+      "сірий",
+      "великий",
+      "хвіст опущений до землі"
+    ]
+  },
+  "bear": {
+    "name": "Ведмідь",
+    "lname": "ведмідь",
+    "acc": "Ведмедя",
+    "img": "images/painted-fox/bear.svg",
+    "features": [
+      "бурий",
+      "стоїть на задніх лапах",
+      "круглі вуха"
+    ]
+  },
+  "dog": {
+    "name": "Пес",
+    "lname": "пес",
+    "acc": "Пса",
+    "img": "images/painted-fox/dog.svg",
+    "features": [
+      "гавкає",
+      "має нашийник",
+      "вуха висять"
+    ]
+  }
+}

@@ -1,0 +1,957 @@
+{
+  "pairs": [
+    [
+      "fox",
+      "dog"
+    ],
+    [
+      "wolf",
+      "dog"
+    ],
+    [
+      "fox",
+      "wolf"
+    ]
+  ],
+  "scenes": [
+    {
+      "num": 1,
+      "title": "Хитрий Лис",
+      "summary": "У лісі жив хитрий Лис Микита. Він спритно крав курей. Лис став дуже гордий.",
+      "bg": "images/painted-fox/forest.svg",
+      "stage": [
+        {
+          "char": "fox",
+          "x": 34,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "img": "images/painted-fox/hen.svg",
+          "alt": "Курка",
+          "x": 66,
+          "bottom": 4,
+          "h": 26
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "fox",
+          "accepted": [
+            "лис",
+            "лис микита",
+            "микита",
+            "лисиця",
+            "остромисл"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Лис Микита",
+              "char": "fox"
+            },
+            {
+              "id": "b",
+              "text": "Вовк",
+              "char": "wolf"
+            },
+            {
+              "id": "c",
+              "text": "Пес",
+              "char": "dog"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він рудий, і в нього пухнастий хвіст."
+        },
+        "L2": {
+          "prompt": "Що крав Лис?",
+          "options": [
+            {
+              "id": "a",
+              "text": "курей",
+              "img": "images/painted-fox/hen.svg"
+            },
+            {
+              "id": "b",
+              "text": "корону",
+              "img": "images/painted-fox/crown.svg"
+            },
+            {
+              "id": "c",
+              "text": "діжку",
+              "img": "images/painted-fox/barrel.svg"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він залазив у курники."
+        },
+        "L3": {
+          "prompt": "Яким був Лис Микита?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Хитрим і гордим"
+            },
+            {
+              "id": "b",
+              "text": "Добрим і чесним"
+            },
+            {
+              "id": "c",
+              "text": "Лінивим і сонним"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він спритно крав і думав, що йому все можна."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/painted-fox/forest.svg",
+          "text": "У лісі жив хитрий Лис Микита.",
+          "actors": [
+            {
+              "char": "fox",
+              "x": 40,
+              "bottom": 0,
+              "h": 74
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/forest.svg",
+          "text": "Він спритно крав курей.",
+          "actors": [
+            {
+              "char": "fox",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/painted-fox/hen.svg",
+              "alt": "Курка",
+              "x": 64,
+              "bottom": 4,
+              "h": 28
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/forest.svg",
+          "text": "Лис став дуже гордий.",
+          "actors": [
+            {
+              "char": "fox",
+              "x": 42,
+              "bottom": 0,
+              "h": 82
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Діжка з фарбою",
+      "summary": "Лис побіг до міста по курку. На торговиці за ним погналися пси. Лис сховався в діжку з синьою фарбою.",
+      "bg": "images/painted-fox/market.svg",
+      "stage": [
+        {
+          "char": "dog",
+          "x": 30,
+          "bottom": 0,
+          "h": 62
+        },
+        {
+          "char": "fox",
+          "x": 68,
+          "bottom": 0,
+          "h": 56
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "dog",
+          "accepted": [
+            "пес",
+            "собака",
+            "песик"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Пес",
+              "char": "dog"
+            },
+            {
+              "id": "b",
+              "text": "Вовк",
+              "char": "wolf"
+            },
+            {
+              "id": "c",
+              "text": "Лис Микита",
+              "char": "fox"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він гавкає, і в нього нашийник."
+        },
+        "L2": {
+          "prompt": "Куди сховався Лис?",
+          "options": [
+            {
+              "id": "a",
+              "text": "у діжку з фарбою",
+              "img": "images/painted-fox/barrel.svg"
+            },
+            {
+              "id": "b",
+              "text": "на дерево"
+            },
+            {
+              "id": "c",
+              "text": "під воза"
+            }
+          ],
+          "answer": "a",
+          "hint": "Діжка стояла на подвір’ї маляра."
+        },
+        "L3": {
+          "prompt": "Чому Лис сховався?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Бо за ним гналися пси"
+            },
+            {
+              "id": "b",
+              "text": "Бо хотів стати синім"
+            },
+            {
+              "id": "c",
+              "text": "Бо змерз"
+            }
+          ],
+          "answer": "a",
+          "hint": "Пси хотіли його впіймати."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/painted-fox/market.svg",
+          "text": "Лис побіг до міста по курку.",
+          "actors": [
+            {
+              "char": "fox",
+              "x": 36,
+              "bottom": 0,
+              "h": 62
+            },
+            {
+              "img": "images/painted-fox/hen.svg",
+              "alt": "Курка",
+              "x": 70,
+              "bottom": 4,
+              "h": 26
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/market.svg",
+          "text": "На торговиці за ним погналися пси.",
+          "actors": [
+            {
+              "char": "fox",
+              "x": 72,
+              "bottom": 0,
+              "h": 54
+            },
+            {
+              "char": "dog",
+              "x": 30,
+              "bottom": 0,
+              "h": 62
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/market.svg",
+          "text": "Лис сховався в діжку з синьою фарбою.",
+          "actors": [
+            {
+              "char": "fox",
+              "x": 50,
+              "bottom": 16,
+              "h": 40,
+              "pose": "blue"
+            },
+            {
+              "img": "images/painted-fox/barrel.svg",
+              "alt": "Діжка з фарбою",
+              "x": 50,
+              "bottom": 0,
+              "h": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Синій звір",
+      "summary": "Уночі Лис утік до лісу. Уранці він побачив, що став синій. Вовк злякався дивного звіра і втік.",
+      "bg": "images/painted-fox/forest.svg",
+      "stage": [
+        {
+          "char": "fox",
+          "x": 32,
+          "bottom": 0,
+          "h": 66,
+          "pose": "blue"
+        },
+        {
+          "char": "wolf",
+          "x": 72,
+          "bottom": 0,
+          "h": 62
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "fox",
+          "accepted": [
+            "лис",
+            "лис микита",
+            "микита",
+            "лисиця",
+            "остромисл"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Лис Микита",
+              "char": "fox",
+              "pose": "blue"
+            },
+            {
+              "id": "b",
+              "text": "Вовк",
+              "char": "wolf"
+            },
+            {
+              "id": "c",
+              "text": "Ведмідь",
+              "char": "bear"
+            }
+          ],
+          "answer": "a",
+          "hint": "Це той самий Лис, тільки в синій фарбі."
+        },
+        "L2": {
+          "prompt": "Якого кольору став Лис?",
+          "options": [
+            {
+              "id": "a",
+              "text": "синього"
+            },
+            {
+              "id": "b",
+              "text": "рудого"
+            },
+            {
+              "id": "c",
+              "text": "білого"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він сидів у діжці з синьою фарбою."
+        },
+        "L3": {
+          "prompt": "Чому Вовк утік?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Бо злякався дивного звіра"
+            },
+            {
+              "id": "b",
+              "text": "Бо поспішав додому"
+            },
+            {
+              "id": "c",
+              "text": "Бо Лис його вкусив"
+            }
+          ],
+          "answer": "a",
+          "hint": "Такого звіра в лісі ще ніхто не бачив."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/painted-fox/glade.svg",
+          "text": "Уночі Лис утік до лісу.",
+          "actors": [
+            {
+              "char": "fox",
+              "x": 30,
+              "bottom": 0,
+              "h": 60,
+              "pose": "blue"
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/forest.svg",
+          "text": "Уранці він побачив, що став синій.",
+          "actors": [
+            {
+              "char": "fox",
+              "x": 44,
+              "bottom": 0,
+              "h": 76,
+              "pose": "blue"
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/forest.svg",
+          "text": "Вовк злякався дивного звіра і втік.",
+          "actors": [
+            {
+              "char": "fox",
+              "x": 28,
+              "bottom": 0,
+              "h": 62,
+              "pose": "blue"
+            },
+            {
+              "char": "wolf",
+              "x": 72,
+              "bottom": 0,
+              "h": 66
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Цар Остромисл",
+      "summary": "Звірі зібралися, але боялися підійти. Лис сказав, що його зліпив святий Миколай з небесної глини. Звірі зробили його своїм царем Остромислом.",
+      "bg": "images/painted-fox/glade.svg",
+      "stage": [
+        {
+          "char": "fox",
+          "x": 50,
+          "bottom": 0,
+          "h": 52,
+          "pose": "king"
+        },
+        {
+          "char": "bear",
+          "x": 16,
+          "bottom": 0,
+          "h": 62
+        },
+        {
+          "char": "wolf",
+          "x": 84,
+          "bottom": 0,
+          "h": 52
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "bear",
+          "accepted": [
+            "ведмідь",
+            "ведмедик"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Ведмідь",
+              "char": "bear"
+            },
+            {
+              "id": "b",
+              "text": "Вовк",
+              "char": "wolf"
+            },
+            {
+              "id": "c",
+              "text": "Пес",
+              "char": "dog"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він великий, бурий і стоїть на задніх лапах."
+        },
+        "L2": {
+          "prompt": "Як назвався Лис?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Остромисл"
+            },
+            {
+              "id": "b",
+              "text": "Микола"
+            },
+            {
+              "id": "c",
+              "text": "Вовчик"
+            }
+          ],
+          "answer": "a",
+          "hint": "Це ім’я каже про гострий розум."
+        },
+        "L3": {
+          "prompt": "Чому звірі послухали Лиса?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Бо повірили, що його послав святий Миколай"
+            },
+            {
+              "id": "b",
+              "text": "Бо він був найсильніший"
+            },
+            {
+              "id": "c",
+              "text": "Бо він приніс їм їжу"
+            }
+          ],
+          "answer": "a",
+          "hint": "Лис сказав, що його зліпили з небесної глини."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/painted-fox/glade.svg",
+          "text": "Звірі зібралися, але боялися підійти.",
+          "actors": [
+            {
+              "img": "images/painted-fox/stump.svg",
+              "alt": "Пеньок",
+              "x": 50,
+              "bottom": 0,
+              "h": 16
+            },
+            {
+              "char": "fox",
+              "x": 50,
+              "bottom": 12,
+              "h": 46,
+              "pose": "blue"
+            },
+            {
+              "char": "bear",
+              "x": 14,
+              "bottom": 0,
+              "h": 56
+            },
+            {
+              "char": "wolf",
+              "x": 86,
+              "bottom": 0,
+              "h": 48
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/glade.svg",
+          "text": "Лис сказав, що його зліпив святий Миколай з небесної глини.",
+          "actors": [
+            {
+              "img": "images/painted-fox/stump.svg",
+              "alt": "Пеньок",
+              "x": 50,
+              "bottom": 0,
+              "h": 16
+            },
+            {
+              "char": "fox",
+              "x": 50,
+              "bottom": 12,
+              "h": 58,
+              "pose": "blue"
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/glade.svg",
+          "text": "Звірі зробили його своїм царем Остромислом.",
+          "actors": [
+            {
+              "img": "images/painted-fox/stump.svg",
+              "alt": "Пеньок",
+              "x": 50,
+              "bottom": 0,
+              "h": 16
+            },
+            {
+              "char": "fox",
+              "x": 50,
+              "bottom": 12,
+              "h": 52,
+              "pose": "king"
+            },
+            {
+              "char": "bear",
+              "x": 16,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "wolf",
+              "x": 84,
+              "bottom": 0,
+              "h": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Цар береже фарбу",
+      "summary": "Лис став царем і жив у пошані. Він боявся, що фарба злізе. Тому Лис не ходив у дощ і не чухався.",
+      "bg": "images/painted-fox/forest.svg",
+      "stage": [
+        {
+          "char": "fox",
+          "x": 36,
+          "bottom": 0,
+          "h": 70,
+          "pose": "king"
+        },
+        {
+          "char": "bear",
+          "x": 74,
+          "bottom": 0,
+          "h": 64
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "fox",
+          "accepted": [
+            "лис",
+            "лис микита",
+            "микита",
+            "лисиця",
+            "остромисл"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Лис Микита",
+              "char": "fox",
+              "pose": "king"
+            },
+            {
+              "id": "b",
+              "text": "Ведмідь",
+              "char": "bear"
+            },
+            {
+              "id": "c",
+              "text": "Вовк",
+              "char": "wolf"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він синій і в короні."
+        },
+        "L2": {
+          "prompt": "Чого боявся цар?",
+          "options": [
+            {
+              "id": "a",
+              "text": "що фарба злізе"
+            },
+            {
+              "id": "b",
+              "text": "що прийде зима"
+            },
+            {
+              "id": "c",
+              "text": "що забракне їжі"
+            }
+          ],
+          "answer": "a",
+          "hint": "Від дощу фарба могла змитися."
+        },
+        "L3": {
+          "prompt": "Чому Лис не чухався?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Щоб звірі не впізнали, що він Лис"
+            },
+            {
+              "id": "b",
+              "text": "Бо в нього нічого не свербіло"
+            },
+            {
+              "id": "c",
+              "text": "Бо так велів Ведмідь"
+            }
+          ],
+          "answer": "a",
+          "hint": "Фарба облізла б, і всі побачили б рудого Лиса."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/painted-fox/forest.svg",
+          "text": "Лис став царем і жив у пошані.",
+          "actors": [
+            {
+              "char": "fox",
+              "x": 36,
+              "bottom": 0,
+              "h": 72,
+              "pose": "king"
+            },
+            {
+              "char": "bear",
+              "x": 76,
+              "bottom": 0,
+              "h": 62
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/forest.svg",
+          "text": "Він боявся, що фарба злізе.",
+          "actors": [
+            {
+              "char": "fox",
+              "x": 44,
+              "bottom": 0,
+              "h": 78,
+              "pose": "king"
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/forest.svg",
+          "text": "Тому Лис не ходив у дощ і не чухався.",
+          "actors": [
+            {
+              "img": "images/items/rain.svg",
+              "full": true
+            },
+            {
+              "char": "fox",
+              "x": 40,
+              "bottom": 0,
+              "h": 70,
+              "pose": "king"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Свято в лісі",
+      "summary": "Через рік звірі влаштували свято з концертом. Лисички заспівали, і цар не втримався та завив по-лисячому. Звірі впізнали брехуна і покарали його.",
+      "bg": "images/painted-fox/glade.svg",
+      "stage": [
+        {
+          "char": "fox",
+          "x": 50,
+          "bottom": 0,
+          "h": 54,
+          "pose": "howl"
+        },
+        {
+          "char": "bear",
+          "x": 16,
+          "bottom": 0,
+          "h": 60
+        },
+        {
+          "char": "wolf",
+          "x": 84,
+          "bottom": 0,
+          "h": 50
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "fox",
+          "accepted": [
+            "лис",
+            "лис микита",
+            "микита",
+            "лисиця",
+            "остромисл"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Лис Микита",
+              "char": "fox",
+              "pose": "howl"
+            },
+            {
+              "id": "b",
+              "text": "Вовк",
+              "char": "wolf"
+            },
+            {
+              "id": "c",
+              "text": "Пес",
+              "char": "dog"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він у короні й виє, як лисичка."
+        },
+        "L2": {
+          "prompt": "Що зробив цар на святі?",
+          "options": [
+            {
+              "id": "a",
+              "text": "завив по-лисячому",
+              "img": "images/painted-fox/notes.svg"
+            },
+            {
+              "id": "b",
+              "text": "заснув"
+            },
+            {
+              "id": "c",
+              "text": "утік"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він почув лисячий спів і не втримався."
+        },
+        "L3": {
+          "prompt": "Як звірі дізналися правду?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Почули, що цар виє, як лис"
+            },
+            {
+              "id": "b",
+              "text": "Дощ змив фарбу"
+            },
+            {
+              "id": "c",
+              "text": "Вовк усе розповів"
+            }
+          ],
+          "answer": "a",
+          "hint": "Цар заспівав разом із лисичками."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/painted-fox/glade.svg",
+          "text": "Через рік звірі влаштували свято з концертом.",
+          "actors": [
+            {
+              "char": "bear",
+              "x": 24,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "wolf",
+              "x": 74,
+              "bottom": 0,
+              "h": 52
+            },
+            {
+              "img": "images/painted-fox/notes.svg",
+              "alt": "Спів",
+              "x": 50,
+              "bottom": 52,
+              "h": 24
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/glade.svg",
+          "text": "Лисички заспівали, і цар не втримався та завив по-лисячому.",
+          "actors": [
+            {
+              "img": "images/painted-fox/stump.svg",
+              "alt": "Пеньок",
+              "x": 50,
+              "bottom": 0,
+              "h": 16
+            },
+            {
+              "char": "fox",
+              "x": 20,
+              "bottom": 0,
+              "h": 34
+            },
+            {
+              "char": "fox",
+              "x": 80,
+              "bottom": 0,
+              "h": 30
+            },
+            {
+              "char": "fox",
+              "x": 50,
+              "bottom": 12,
+              "h": 54,
+              "pose": "howl"
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/glade.svg",
+          "text": "Звірі впізнали брехуна і покарали його.",
+          "actors": [
+            {
+              "img": "images/painted-fox/stump.svg",
+              "alt": "Пеньок",
+              "x": 50,
+              "bottom": 0,
+              "h": 16
+            },
+            {
+              "char": "fox",
+              "x": 50,
+              "bottom": 12,
+              "h": 46,
+              "pose": "blue"
+            },
+            {
+              "char": "bear",
+              "x": 16,
+              "bottom": 0,
+              "h": 62
+            },
+            {
+              "char": "wolf",
+              "x": 84,
+              "bottom": 0,
+              "h": 54
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

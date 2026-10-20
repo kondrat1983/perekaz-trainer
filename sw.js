@@ -1,5 +1,5 @@
 // Офлайн після першого завантаження: кешуємо оболонку застосунку і дані.
-const CACHE = 'perekaz-v7';
+const CACHE = 'perekaz-v8';
 const ASSETS = [
   './',
   'index.html',
@@ -11,6 +11,8 @@ const ASSETS = [
   'data/works.json',
   'data/works/happy-prince/scenes.json',
   'data/works/happy-prince/characters.json',
+  'data/works/painted-fox/scenes.json',
+  'data/works/painted-fox/characters.json',
   'manifest.webmanifest',
   'images/icon.svg',
   'images/map.svg',
@@ -44,6 +46,21 @@ const ASSETS = [
   'images/bg/room.svg',
   'images/bg/winter.svg',
   'images/bg/sky.svg',
+  'images/painted-fox/barrel.svg',
+  'images/painted-fox/bear.svg',
+  'images/painted-fox/crown.svg',
+  'images/painted-fox/dog.svg',
+  'images/painted-fox/forest.svg',
+  'images/painted-fox/fox-blue.svg',
+  'images/painted-fox/fox-howl.svg',
+  'images/painted-fox/fox-king.svg',
+  'images/painted-fox/fox.svg',
+  'images/painted-fox/glade.svg',
+  'images/painted-fox/hen.svg',
+  'images/painted-fox/market.svg',
+  'images/painted-fox/notes.svg',
+  'images/painted-fox/stump.svg',
+  'images/painted-fox/wolf.svg',
 ];
 
 self.addEventListener('install', (event) => {
