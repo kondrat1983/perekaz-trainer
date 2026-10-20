@@ -162,9 +162,8 @@
       "author": "Іван Франко",
       "kind": "tale",
       "page": 125,
-      "cover": "images/icon.svg",
-      "scenes": 0,
-      "status": "soon"
+      "cover": "images/painted-fox/fox-king.svg",
+      "scenes": 6
     },
     {
       "id": "lelia",
