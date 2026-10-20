@@ -2,7 +2,7 @@
 const KEY = 'perekaz.v1';
 
 function emptyState() {
-  return { works: {}, settings: { voice: '', openAll: false } };
+  return { works: {}, settings: { voice: '', openAll: false, wait: 5 } };
 }
 
 let cache = null;

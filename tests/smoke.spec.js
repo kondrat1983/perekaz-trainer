@@ -1,5 +1,14 @@
 import { test, expect } from '@playwright/test';
 
+// У більшості тестів пауза перед відповіддю вимкнена; окремий тест перевіряє її саму.
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript(() => {
+    if (!localStorage.getItem('perekaz.v1')) {
+      localStorage.setItem('perekaz.v1', JSON.stringify({ works: {}, settings: { wait: 0 } }));
+    }
+  });
+});
+
 // Режим «Вибір»: проходимо сцену 1 і перевіряємо, що прогрес збережено після перезавантаження.
 test('scene 1 can be passed and progress survives reload', async ({ page }) => {
   await page.goto('/#/');
@@ -61,4 +70,18 @@ test('a poem is a quiz without retell', async ({ page }) => {
     await page.getByRole('button', { name: right, exact: true }).click();
   }
   await expect(page.getByText('Сцену пройдено!')).toBeVisible();
+});
+
+test('answers unlock after the countdown', async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.setItem('perekaz.v1', JSON.stringify({ works: {}, settings: { wait: 3 } }));
+  });
+  await page.goto('/#/w/happy-prince/scene/1');
+  const answer = page.getByRole('button', { name: 'Щасливий принц', exact: true });
+  await expect(page.getByRole('timer')).toBeVisible();
+  await expect(answer).toBeDisabled();
+  await expect(page.getByRole('timer')).toHaveCount(0, { timeout: 5000 });
+  await expect(answer).toBeEnabled();
+  await answer.click();
+  await expect(page.getByRole('button', { name: 'стоїть', exact: true })).toBeDisabled();
 });

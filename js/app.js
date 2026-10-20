@@ -51,6 +51,48 @@ const isUnlocked = (n) => n === 1 || state.settings.openAll || isDone(n - 1);
 const nextNum = () => data.scenes.find((scene) => isUnlocked(scene.num) && !isDone(scene.num))?.num ?? null;
 const doneCount = () => data.scenes.filter((scene) => isDone(scene.num)).length;
 
+// Пауза перед відповіддю: Гравець спершу слухає питання і дивиться на картинку.
+const waitSeconds = () => Number(state.settings.wait ?? 5);
+const isWaiting = () => Boolean(session?.waitUntil) && Date.now() < session.waitUntil;
+let waitTimer = null;
+
+function countdownView() {
+  if (!isWaiting()) return '';
+  const total = session.waitSeconds;
+  const left = Math.ceil((session.waitUntil - Date.now()) / 1000);
+  const elapsed = total - (session.waitUntil - Date.now()) / 1000;
+  return `<div class="countdown" role="timer" aria-label="Зачекай ${left} с">
+    <div class="dial"><svg viewBox="0 0 100 100" aria-hidden="true">
+      <circle class="ring-bg" cx="50" cy="50" r="44"/>
+      <circle class="ring" cx="50" cy="50" r="44" style="animation-duration:${total}s;animation-delay:-${elapsed.toFixed(2)}s"/>
+    </svg>
+    <span class="count">${left}</span></div>
+  </div>`;
+}
+
+// Оновлюємо лише цифру, а коли час вийшов, перемальовуємо екран з активними відповідями.
+function watchWait() {
+  clearInterval(waitTimer);
+  if (!isWaiting()) return;
+  const current = session;
+  waitTimer = setInterval(() => {
+    if (session !== current) { clearInterval(waitTimer); return; }
+    const left = Math.ceil((current.waitUntil - Date.now()) / 1000);
+    if (left <= 0) {
+      clearInterval(waitTimer);
+      draw();
+      return;
+    }
+    const count = app.querySelector('.countdown .count');
+    if (count) count.textContent = left;
+  }, 200);
+}
+
+function startWait(current) {
+  current.waitSeconds = waitSeconds();
+  current.waitUntil = current.waitSeconds > 0 ? Date.now() + current.waitSeconds * 1000 : 0;
+}
+
 function say(text, rate = 0.95) {
   speak(text, { rate, voiceName: state.settings.voice });
 }
@@ -96,6 +138,7 @@ function startSceneRound(current) {
   current.locked = false;
   current.feedback = '';
   current.announce = true;
+  startWait(current);
 }
 
 function pickScene(id) {
@@ -188,11 +231,12 @@ function sceneView() {
   if (session.finished) return head + sceneEndView(scene);
 
   const { level, q } = currentSceneQuestion();
+  const waiting = isWaiting();
   const options = session.options.map((o) => {
     const src = o.char ? poseImg(o.char, o.pose) : o.img;
     const pic = src ? `<img src="${src}" alt="">` : '';
     const miss = session.missed.includes(o.id) ? ' miss' : '';
-    return `<button class="opt${pic ? ' pic' : ''}${miss}" data-action="pick" data-id="${o.id}" ${session.locked ? 'disabled' : ''}>${pic}<span>${esc(o.text)}</span></button>`;
+    return `<button class="opt${pic ? ' pic' : ''}${miss}" data-action="pick" data-id="${o.id}" ${session.locked || waiting ? 'disabled' : ''}>${pic}<span>${esc(o.text)}</span></button>`;
   }).join('');
   const mic = canListen && level === 'L1' && q.accepted?.length
     ? `<button class="round mic" data-action="listen" aria-label="Відповісти голосом" ${session.listening ? 'disabled' : ''}>🎤</button>`
@@ -206,7 +250,7 @@ function sceneView() {
       <button class="round" data-action="slow" aria-label="Повільніше">🐢</button>
       ${mic}
     </div>
-    <div class="options">${options}</div>
+    <div class="answers${waiting ? ' waiting' : ''}">${countdownView()}<div class="options">${options}</div></div>
     <p class="feedback" role="status" aria-live="polite">${esc(session.feedback)}</p>
     <div class="row">
       <button class="btn ghost" data-action="hint" ${session.hinted || session.locked ? 'disabled' : ''}>Підказка</button>
@@ -317,6 +361,7 @@ function startPariRound(current) {
   current.wrong = false;
   current.feedback = '';
   current.announce = true;
+  startWait(current);
 }
 
 function pariPick(id) {
@@ -369,6 +414,7 @@ function pariView() {
   }
   const round = session.queue[session.index];
   const target = charOf(round.target);
+  const waiting = isWaiting();
   const cards = session.cards.map((id, i) => {
     const c = charOf(id);
     const isRight = id === round.target;
@@ -376,7 +422,7 @@ function pariView() {
     const label = reveal
       ? `<span class="tag">Це ${esc(c.lname)}</span><small>${esc(c.features.join(', '))}</small>`
       : '';
-    return `<button class="pcard${reveal ? ' right' : ''}" data-action="pari-pick" data-id="${id}" aria-label="Картка ${i + 1}" ${session.locked ? 'disabled' : ''}>
+    return `<button class="pcard${reveal ? ' right' : ''}" data-action="pari-pick" data-id="${id}" aria-label="Картка ${i + 1}" ${session.locked || waiting ? 'disabled' : ''}>
       <img src="${c.img}" alt="">${label}
     </button>`;
   }).join('');
@@ -385,7 +431,7 @@ function pariView() {
     <div class="speech">
       <button class="round" data-action="replay" aria-label="Повторити">🔊</button>
     </div>
-    <div class="pari">${cards}</div>
+    <div class="answers${waiting ? ' waiting' : ''}">${countdownView()}<div class="pari">${cards}</div></div>
     <p class="feedback" role="status" aria-live="polite">${esc(session.feedback)}</p>
     ${session.wrong ? '<div class="row"><button class="btn" data-action="pari-next">Далі</button></div>' : ''}`;
 }
@@ -444,6 +490,7 @@ function parentView() {
     <section class="card">
       <h2>Налаштування</h2>
       <label class="check"><input type="checkbox" data-setting="openAll" ${state.settings.openAll ? 'checked' : ''}> Відкрити всі сцени</label>
+      <label>Пауза перед відповіддю<select data-setting="wait">${[0, 3, 5, 8].map((n) => `<option value="${n}" ${waitSeconds() === n ? 'selected' : ''}>${n ? `${n} с` : 'Вимкнено'}</option>`).join('')}</select></label>
       <label>Голос<select data-setting="voice">${voiceOptions}</select></label>
       ${canSpeak && voices.length === 0 ? '<p class="note">Український голос не знайдено. Текст можна прочитати разом із дитиною.</p>' : ''}
     </section>
@@ -646,6 +693,7 @@ function view() {
 
 function draw() {
   app.innerHTML = view();
+  watchWait();
   if (session?.announce) {
     session.announce = false;
     say(currentPrompt());
@@ -700,7 +748,7 @@ app.addEventListener('click', (event) => {
   switch (button.dataset.action) {
     case 'replay': say(currentPrompt()); break;
     case 'slow': say(currentPrompt(), 0.6); break;
-    case 'pick': pickScene(button.dataset.id); break;
+    case 'pick': if (!isWaiting()) pickScene(button.dataset.id); break;
     case 'hint':
       session.hinted = true;
       session.feedback = currentSceneQuestion().q.hint;
@@ -719,7 +767,7 @@ app.addEventListener('click', (event) => {
       draw();
       break;
     }
-    case 'pari-pick': pariPick(button.dataset.id); break;
+    case 'pari-pick': if (!isWaiting()) pariPick(button.dataset.id); break;
     case 'pari-next': pariNext(true); break;
     case 'pari-restart': session = newPariSession(); draw(); break;
     case 'export': exportProgress(); break;
