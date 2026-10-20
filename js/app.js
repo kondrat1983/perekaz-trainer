@@ -2,7 +2,8 @@ import { matchesAnswer, normalizeAnswer } from './normalize.js';
 import { loadState, saveState, resetState } from './store.js';
 import { speak, ukrainianVoices, canSpeak, canListen, listen } from './speech.js';
 
-const LEVELS = ['L1', 'L2', 'L3'];
+// Рівні питань сцени: L1–L3 у прозі, 2–3 питання «Про що вірш?» у віршах і фольклорі.
+const levelsOf = (scene) => Object.keys(scene.questions);
 const PARENT_QUESTION = 'Скільки буде 7 × 8?';
 const PARENT_ANSWER = '56';
 
@@ -44,6 +45,7 @@ const prog = (id = workId) => {
 const sceneByNum = (n) => data.scenes.find((scene) => scene.num === n);
 const charOf = (id) => data.characters[id];
 const poseImg = (id, pose) => (pose && charOf(id).poses?.[pose]) || charOf(id).img;
+const actorSrc = (actor) => (actor.char ? poseImg(actor.char, actor.pose) : actor.img);
 const isDone = (n) => Boolean(prog().scenes[n]?.done);
 const isUnlocked = (n) => n === 1 || state.settings.openAll || isDone(n - 1);
 const nextNum = () => data.scenes.find((scene) => isUnlocked(scene.num) && !isDone(scene.num))?.num ?? null;
@@ -55,7 +57,7 @@ function say(text, rate = 0.95) {
 
 function markClean(n, level) {
   const entry = { ...(prog().scenes[n] || {}), [level]: true };
-  entry.done = LEVELS.every((l) => entry[l]);
+  entry.done = levelsOf(sceneByNum(n)).every((l) => entry[l]);
   prog().scenes[n] = entry;
   saveState(state);
 }
@@ -74,7 +76,7 @@ function go(hash) {
 
 function newSceneSession(n) {
   const next = {
-    kind: 'scene', n, queue: [...LEVELS], index: 0, attempts: {}, finished: false,
+    kind: 'scene', n, queue: levelsOf(sceneByNum(n)), index: 0, attempts: {}, finished: false,
     listening: false,
   };
   startSceneRound(next);
@@ -192,7 +194,7 @@ function sceneView() {
     const miss = session.missed.includes(o.id) ? ' miss' : '';
     return `<button class="opt${pic ? ' pic' : ''}${miss}" data-action="pick" data-id="${o.id}" ${session.locked ? 'disabled' : ''}>${pic}<span>${esc(o.text)}</span></button>`;
   }).join('');
-  const mic = canListen && level === 'L1'
+  const mic = canListen && level === 'L1' && q.accepted?.length
     ? `<button class="round mic" data-action="listen" aria-label="Відповісти голосом" ${session.listening ? 'disabled' : ''}>🎤</button>`
     : '';
 
@@ -208,7 +210,7 @@ function sceneView() {
     <p class="feedback" role="status" aria-live="polite">${esc(session.feedback)}</p>
     <div class="row">
       <button class="btn ghost" data-action="hint" ${session.hinted || session.locked ? 'disabled' : ''}>Підказка</button>
-      <a class="btn ghost" href="${base()}/scene/${scene.num}/retell">Переказ</a>
+      ${scene.frames?.length ? `<a class="btn ghost" href="${base()}/scene/${scene.num}/retell">Переказ</a>` : ''}
     </div>`;
 }
 
@@ -226,7 +228,7 @@ function sceneEndView(scene) {
     <div class="row">
       ${done && nextOpen ? `<a class="btn" href="${base()}/scene/${next.num}">Далі: сцена ${next.num}</a>` : ''}
       ${done ? '' : '<button class="btn" data-action="restart">Ще раз</button>'}
-      <a class="btn ghost" href="${base()}/scene/${scene.num}/retell">Переказ</a>
+      ${scene.frames?.length ? `<a class="btn ghost" href="${base()}/scene/${scene.num}/retell">Переказ</a>` : ''}
       <a class="btn ghost" href="${base()}">До сцен</a>
     </div>`;
 }
@@ -413,9 +415,9 @@ function parentView() {
   const rows = !data ? '' : data.scenes.map((scene) => {
     const entry = prog().scenes[scene.num] || {};
     const status = entry.done ? 'Пройдено'
-      : LEVELS.some((l) => entry[l]) ? 'Частково'
+      : levelsOf(scene).some((l) => entry[l]) ? 'Частково'
         : isUnlocked(scene.num) ? 'Не почато' : 'Закрито';
-    const errors = LEVELS.reduce((sum, l) => sum + (prog().errors[`${scene.num}.${l}`] || 0), 0);
+    const errors = levelsOf(scene).reduce((sum, l) => sum + (prog().errors[`${scene.num}.${l}`] || 0), 0);
     return `<tr><td>${scene.num}</td><td>${esc(scene.title)}</td><td>${status}</td><td>${errors}</td></tr>`;
   }).join('');
   const voices = ukrainianVoices();
@@ -488,11 +490,11 @@ function homeView() {
   const leaves = Array.from({ length: total() }, (_, i) => `<span class="leaf${i < done ? ' on' : ''}"></span>`).join('');
   const card = current
     ? `<section class="card now" aria-label="Наступна сцена">
-        <img class="thumb" src="${poseImg(current.stage[0].char, current.stage[0].pose)}" alt="">
+        <img class="thumb" src="${actorSrc(current.stage[0])}" alt="">
         <div class="now-text">
           <span class="muted">Сцена ${current.num} з ${total()}</span>
           <span class="now-title">${esc(current.title)}</span>
-          <span class="pills">${LEVELS.map((l) => `<span class="pill${prog().scenes[current.num]?.[l] ? ' on' : ''}">${l}${prog().scenes[current.num]?.[l] ? ' ✓' : ''}</span>`).join('')}</span>
+          <span class="pills">${levelsOf(current).map((l) => `<span class="pill${prog().scenes[current.num]?.[l] ? ' on' : ''}">${l}${prog().scenes[current.num]?.[l] ? ' ✓' : ''}</span>`).join('')}</span>
         </div>
         <a class="btn" href="${base()}/scene/${current.num}">Продовжити</a>
       </section>`
@@ -518,7 +520,7 @@ function homeView() {
       <span class="leaves" aria-hidden="true">${leaves}</span>
       <span class="count">${done}/${total()}</span>
     </div>` : pathView()}
-    <a class="pari-card" href="${base()}/pari"><span class="pari-title">Пари</span><span>Знайди, хто це</span></a>
+    ${data.pairs.length ? `<a class="pari-card" href="${base()}/pari"><span class="pari-title">Пари</span><span>Знайди, хто це</span></a>` : ''}
     ${tabs('home')}`;
 }
 
@@ -620,7 +622,7 @@ async function route() {
   if (page === 'scene') {
     const n = Number(arg);
     if (!sceneByNum(n)) return go(base());
-    session = sub === 'retell'
+    session = sub === 'retell' && sceneByNum(n).frames?.length
       ? { kind: 'retell', n, revealed: false, heard: '', listening: false, active: null, zoom: null }
       : newSceneSession(n);
     return draw();
