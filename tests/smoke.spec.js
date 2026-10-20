@@ -48,3 +48,17 @@ test('old progress without works moves into the happy prince', async ({ page }) 
   await page.goto('/#/w/happy-prince');
   await expect(page.getByRole('button', { name: /Сцена 1: Статуя, пройдено/ })).toBeVisible();
 });
+
+// Вірш: одна сцена з питаннями, без переказу.
+test('a poem is a quiz without retell', async ({ page }) => {
+  const res = await page.request.get('/data/works/learn-read/scenes.json');
+  const { scenes } = await res.json();
+  await page.goto('/#/w/learn-read/scene/1');
+  for (const q of Object.values(scenes[0].questions)) {
+    await expect(page.getByText(q.prompt)).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Переказ' })).toHaveCount(0);
+    const right = q.options.find((o) => o.id === q.answer).text;
+    await page.getByRole('button', { name: right, exact: true }).click();
+  }
+  await expect(page.getByText('Сцену пройдено!')).toBeVisible();
+});

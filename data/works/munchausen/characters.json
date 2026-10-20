@@ -1,0 +1,84 @@
+{
+  "baron": {
+    "name": "Барон Мюнхгаузен",
+    "lname": "барон мюнхгаузен",
+    "acc": "барона Мюнхгаузена",
+    "features": [
+      "довгий ніс і біла перука з кіскою",
+      "веселий вигадник",
+      "називає себе найправдивішим"
+    ],
+    "img": "images/munchausen/baron.svg",
+    "poses": {
+      "happy": "images/munchausen/baron-happy.svg",
+      "scared": "images/munchausen/baron-scared.svg"
+    }
+  },
+  "guest": {
+    "name": "Гість",
+    "lname": "гість",
+    "acc": "гостя",
+    "features": [
+      "слухає барона",
+      "сміється",
+      "сидить біля каміна"
+    ],
+    "img": "images/munchausen/guest.svg",
+    "poses": {
+      "happy": "images/munchausen/guest-happy.svg"
+    }
+  },
+  "traveler": {
+    "name": "Проїжджий",
+    "lname": "проїжджий",
+    "acc": "проїжджого",
+    "features": [
+      "випадковий слухач",
+      "не вірить барону",
+      "каже, що все це вигадки"
+    ],
+    "img": "images/munchausen/traveler.svg",
+    "poses": {
+      "angry": "images/munchausen/traveler-angry.svg"
+    }
+  },
+  "commander": {
+    "name": "Командир",
+    "lname": "командир",
+    "acc": "командира",
+    "features": [
+      "керує військом",
+      "хоче знати про ворожі гармати",
+      "дякує барону"
+    ],
+    "img": "images/munchausen/commander.svg",
+    "poses": {
+      "happy": "images/munchausen/commander-happy.svg"
+    }
+  },
+  "horse": {
+    "name": "Кінь",
+    "lname": "кінь",
+    "acc": "коня",
+    "features": [
+      "кінь барона",
+      "стрибнув через болото",
+      "застряг у багні"
+    ],
+    "img": "images/munchausen/horse.svg",
+    "poses": {
+      "scared": "images/munchausen/horse-scared.svg"
+    }
+  },
+  "deer": {
+    "name": "Олень",
+    "lname": "олень",
+    "acc": "оленя",
+    "features": [
+      "лісовий олень",
+      "на голові дерево",
+      "з вишнями"
+    ],
+    "img": "images/munchausen/deer.svg"
+  }
+}

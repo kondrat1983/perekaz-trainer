@@ -1,0 +1,117 @@
+{
+  "cinderella": {
+    "name": "Попелюшка",
+    "lname": "попелюшка",
+    "acc": "Попелюшку",
+    "features": [
+      "добра й лагідна",
+      "робить усю брудну роботу",
+      "сидить біля каміна в попелі"
+    ],
+    "img": "images/cinderella/cinderella.svg",
+    "poses": {
+      "happy": "images/cinderella/cinderella-happy.svg",
+      "sad": "images/cinderella/cinderella-sad.svg",
+      "scared": "images/cinderella/cinderella-scared.svg"
+    }
+  },
+  "stepmother": {
+    "name": "Мачуха",
+    "lname": "мачуха",
+    "acc": "мачуху",
+    "features": [
+      "горда й зла",
+      "не любить пасербицю",
+      "має двох доньок"
+    ],
+    "img": "images/cinderella/stepmother.svg",
+    "poses": {
+      "angry": "images/cinderella/stepmother-angry.svg"
+    }
+  },
+  "sister1": {
+    "name": "Старша сестра",
+    "lname": "старша сестра",
+    "acc": "старшу сестру",
+    "features": [
+      "донька мачухи",
+      "пихата",
+      "вбирається в червоне"
+    ],
+    "img": "images/cinderella/sister1.svg",
+    "poses": {
+      "happy": "images/cinderella/sister1-happy.svg",
+      "angry": "images/cinderella/sister1-angry.svg",
+      "sad": "images/cinderella/sister1-sad.svg"
+    }
+  },
+  "sister2": {
+    "name": "Молодша сестра",
+    "lname": "молодша сестра",
+    "acc": "молодшу сестру",
+    "features": [
+      "донька мачухи",
+      "не така зла, як старша",
+      "любить прикраси"
+    ],
+    "img": "images/cinderella/sister2.svg",
+    "poses": {
+      "happy": "images/cinderella/sister2-happy.svg",
+      "sad": "images/cinderella/sister2-sad.svg"
+    }
+  },
+  "fairy": {
+    "name": "Чарівниця",
+    "lname": "чарівниця",
+    "acc": "чарівницю",
+    "features": [
+      "хрещена мати Попелюшки",
+      "має чарівну паличку",
+      "добра"
+    ],
+    "img": "images/cinderella/fairy.svg",
+    "poses": {
+      "happy": "images/cinderella/fairy-happy.svg"
+    }
+  },
+  "prince": {
+    "name": "Принц",
+    "lname": "принц",
+    "acc": "принца",
+    "features": [
+      "син короля",
+      "влаштував бал",
+      "шукає незнайомку"
+    ],
+    "img": "images/cinderella/prince.svg",
+    "poses": {
+      "happy": "images/cinderella/prince-happy.svg",
+      "sad": "images/cinderella/prince-sad.svg"
+    }
+  },
+  "messenger": {
+    "name": "Посланець",
+    "lname": "посланець",
+    "acc": "посланця",
+    "features": [
+      "служить принцові",
+      "міряє черевичок",
+      "чесний"
+    ],
+    "img": "images/cinderella/messenger.svg",
+    "poses": {
+      "happy": "images/cinderella/messenger-happy.svg"
+    }
+  },
+  "mouse": {
+    "name": "Миша",
+    "lname": "миша",
+    "acc": "мишу",
+    "features": [
+      "сіра",
+      "сиділа в пастці",
+      "стала конем"
+    ],
+    "img": "images/cinderella/mouse.svg"
+  }
+}

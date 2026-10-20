@@ -1,0 +1,990 @@
+{
+  "pairs": [
+    [
+      "lady",
+      "maryana"
+    ],
+    [
+      "worker",
+      "maryana"
+    ],
+    [
+      "mom",
+      "maryana"
+    ]
+  ],
+  "scenes": [
+    {
+      "num": 1,
+      "title": "Хворий Павлусь",
+      "summary": "Хворий Павлусь не спить і дивиться на смужку місячного світла. Він просить маму розповісти казку про ельфів і Лелію. Мама каже, що вже пізно, і просить сина заснути.",
+      "bg": "images/bg/hut.svg",
+      "stage": [
+        {
+          "char": "pavlus",
+          "x": 30,
+          "bottom": 0,
+          "h": 58,
+          "pose": "sad"
+        },
+        {
+          "char": "mom",
+          "x": 70,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "img": "images/lelia/item-moonbeam.svg",
+          "alt": "смужка місячного світла на підлозі",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "pavlus",
+          "accepted": [
+            "павлусь",
+            "хлопчик",
+            "павлик",
+            "павло"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Мама",
+              "char": "mom"
+            },
+            {
+              "id": "b",
+              "text": "Павлусь",
+              "char": "pavlus"
+            },
+            {
+              "id": "c",
+              "text": "Робітниця",
+              "char": "worker"
+            }
+          ],
+          "answer": "b",
+          "hint": "Він хворий і лежить у ліжку."
+        },
+        "L2": {
+          "prompt": "На що дивиться Павлусь?",
+          "options": [
+            {
+              "id": "a",
+              "text": "На смужку місячного світла",
+              "img": "images/lelia/item-moonbeam.svg"
+            },
+            {
+              "id": "b",
+              "text": "На кота"
+            },
+            {
+              "id": "c",
+              "text": "На свічку"
+            }
+          ],
+          "answer": "a",
+          "hint": "Це світло падає з вікна вночі."
+        },
+        "L3": {
+          "prompt": "Чому мама не розповіла казку?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Вона не знала казок"
+            },
+            {
+              "id": "b",
+              "text": "Павлусь не слухався"
+            },
+            {
+              "id": "c",
+              "text": "Було пізно, і хлопчикові треба спати"
+            }
+          ],
+          "answer": "c",
+          "hint": "Мама боялася, що він довго не засне."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Хворий Павлусь не спить і дивиться на смужку місячного світла.",
+          "actors": [
+            {
+              "char": "pavlus",
+              "x": 42,
+              "bottom": 0,
+              "h": 58,
+              "pose": "sad"
+            },
+            {
+              "img": "images/lelia/item-moonbeam.svg",
+              "alt": "смужка місячного світла на підлозі",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Він просить маму розповісти казку про ельфів і Лелію.",
+          "actors": [
+            {
+              "char": "pavlus",
+              "x": 30,
+              "bottom": 0,
+              "h": 58
+            },
+            {
+              "char": "mom",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Мама каже, що вже пізно, і просить сина заснути.",
+          "actors": [
+            {
+              "char": "mom",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "pavlus",
+              "x": 70,
+              "bottom": 0,
+              "h": 58,
+              "pose": "sad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Прийшла Лелія",
+      "summary": "Смужка світла затремтіла, і з'явилася маленька дівчинка з крильцями. Це була ельфа Лелія з білою квіткою в руці. Вона торкнулася хлопчика квіткою, і він став рожевим маком.",
+      "bg": "images/bg/hut.svg",
+      "stage": [
+        {
+          "char": "lelia",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "char": "pavlus",
+          "x": 70,
+          "bottom": 0,
+          "h": 58,
+          "pose": "happy"
+        },
+        {
+          "img": "images/lelia/item-poppy.svg",
+          "alt": "рожевий мак",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "lelia",
+          "accepted": [
+            "лелія",
+            "ельфа",
+            "ельф",
+            "фея"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Мама",
+              "char": "mom"
+            },
+            {
+              "id": "b",
+              "text": "Панна",
+              "char": "lady"
+            },
+            {
+              "id": "c",
+              "text": "Лелія",
+              "char": "lelia"
+            }
+          ],
+          "answer": "c",
+          "hint": "Вона живе в найкращій квітці на світі."
+        },
+        "L2": {
+          "prompt": "На що Лелія перетворила Павлуся?",
+          "options": [
+            {
+              "id": "a",
+              "text": "На метелика"
+            },
+            {
+              "id": "b",
+              "text": "На рожевий мак",
+              "img": "images/lelia/item-poppy.svg"
+            },
+            {
+              "id": "c",
+              "text": "На пташку"
+            }
+          ],
+          "answer": "b",
+          "hint": "Це теж квітка, тільки не лілія."
+        },
+        "L3": {
+          "prompt": "Чому Лелія прийшла до Павлуся?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Він дуже хотів її побачити"
+            },
+            {
+              "id": "b",
+              "text": "Її покликала мама"
+            },
+            {
+              "id": "c",
+              "text": "Вона загубилася"
+            }
+          ],
+          "answer": "a",
+          "hint": "Вона почула, як він про неї розпитував."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Смужка світла затремтіла, і з'явилася маленька дівчинка з крильцями.",
+          "actors": [
+            {
+              "char": "lelia",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "pavlus",
+              "x": 70,
+              "bottom": 0,
+              "h": 58,
+              "pose": "scared"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Це була ельфа Лелія з білою квіткою в руці.",
+          "actors": [
+            {
+              "char": "lelia",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/lelia/item-lily.svg",
+              "alt": "біла лілія",
+              "x": 46,
+              "bottom": 18,
+              "h": 22
+            },
+            {
+              "char": "pavlus",
+              "x": 70,
+              "bottom": 0,
+              "h": 58,
+              "pose": "happy"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Вона торкнулася хлопчика квіткою, і він став рожевим маком.",
+          "actors": [
+            {
+              "char": "lelia",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/lelia/item-poppy.svg",
+              "alt": "рожевий мак",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Панський сад",
+      "summary": "Лелія принесла Павлуся в панський сад, де росли лілії. Лілії поскаржилися, що їх зрізають і вони в'януть у вазах. Панна вийшла в сад і сказала, що їй усе набридло.",
+      "bg": "images/bg/garden.svg",
+      "stage": [
+        {
+          "char": "lady",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "angry"
+        },
+        {
+          "char": "lelia",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "sad"
+        },
+        {
+          "img": "images/lelia/item-lilybed.svg",
+          "alt": "клумба з білими ліліями",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "lady",
+          "accepted": [
+            "панна",
+            "панночка",
+            "пані"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Мар'яна",
+              "char": "maryana"
+            },
+            {
+              "id": "b",
+              "text": "Панна",
+              "char": "lady"
+            },
+            {
+              "id": "c",
+              "text": "Робітниця",
+              "char": "worker"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вона живе в палаці і нудьгує."
+        },
+        "L2": {
+          "prompt": "На що скаржилися лілії?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Що мало сонця"
+            },
+            {
+              "id": "b",
+              "text": "Що їх не поливають"
+            },
+            {
+              "id": "c",
+              "text": "Що їх зрізають і вони гинуть",
+              "img": "images/lelia/item-lilybed.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Їх часто ставлять у вази в палаці."
+        },
+        "L3": {
+          "prompt": "Що відчуває панна у своєму саду?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Радість"
+            },
+            {
+              "id": "b",
+              "text": "Страх"
+            },
+            {
+              "id": "c",
+              "text": "Нудьгу"
+            }
+          ],
+          "answer": "c",
+          "hint": "Їй не подобаються ні квіти, ні гості."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Лелія принесла Павлуся в панський сад, де росли лілії.",
+          "actors": [
+            {
+              "char": "lelia",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/lelia/item-poppy.svg",
+              "alt": "рожевий мак",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            },
+            {
+              "img": "images/lelia/item-lilybed.svg",
+              "alt": "клумба з білими ліліями",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Лілії поскаржилися, що їх зрізають і вони в'януть у вазах.",
+          "actors": [
+            {
+              "img": "images/lelia/item-lilybed.svg",
+              "alt": "клумба з білими ліліями",
+              "x": 50,
+              "bottom": 4,
+              "h": 22
+            },
+            {
+              "char": "lelia",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/garden.svg",
+          "text": "Панна вийшла в сад і сказала, що їй усе набридло.",
+          "actors": [
+            {
+              "char": "lady",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            },
+            {
+              "img": "images/lelia/item-lilybed.svg",
+              "alt": "клумба з білими ліліями",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Майстерня в місті",
+      "summary": "Вони полетіли в місто, де у вітрині було багато квітів. Ці квіти робили з дроту й тканини бідні дівчата. Одна дівчинка не їла з ранку, і Павлусь попросився геть.",
+      "bg": "images/painted-fox/market.svg",
+      "stage": [
+        {
+          "char": "worker",
+          "x": 30,
+          "bottom": 0,
+          "h": 58,
+          "pose": "sad"
+        },
+        {
+          "char": "lelia",
+          "x": 70,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "img": "images/lelia/item-fakeflowers.svg",
+          "alt": "штучні квіти з дроту й тканини",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "worker",
+          "accepted": [
+            "робітниця",
+            "дівчинка",
+            "дівчина"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Лелія",
+              "char": "lelia"
+            },
+            {
+              "id": "b",
+              "text": "Робітниця",
+              "char": "worker"
+            },
+            {
+              "id": "c",
+              "text": "Мар'яна",
+              "char": "maryana"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вона цілий день сидить за довгим столом."
+        },
+        "L2": {
+          "prompt": "З чого робили квіти в майстерні?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Із цукру"
+            },
+            {
+              "id": "b",
+              "text": "Із глини"
+            },
+            {
+              "id": "c",
+              "text": "З дроту й тканини",
+              "img": "images/lelia/item-fakeflowers.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Ці квіти не живі."
+        },
+        "L3": {
+          "prompt": "Чому Павлусь захотів піти з майстерні?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Там було бідно й сумно"
+            },
+            {
+              "id": "b",
+              "text": "Він хотів спати"
+            },
+            {
+              "id": "c",
+              "text": "Його покликала мама"
+            }
+          ],
+          "answer": "a",
+          "hint": "Згадай голодну дівчинку."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/painted-fox/market.svg",
+          "text": "Вони полетіли в місто, де у вітрині було багато квітів.",
+          "actors": [
+            {
+              "char": "lelia",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/lelia/item-poppy.svg",
+              "alt": "рожевий мак",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            },
+            {
+              "img": "images/lelia/item-fakeflowers.svg",
+              "alt": "штучні квіти з дроту й тканини",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Ці квіти робили з дроту й тканини бідні дівчата.",
+          "actors": [
+            {
+              "char": "worker",
+              "x": 42,
+              "bottom": 0,
+              "h": 58,
+              "pose": "sad"
+            },
+            {
+              "img": "images/lelia/item-fakeflowers.svg",
+              "alt": "штучні квіти з дроту й тканини",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Одна дівчинка не їла з ранку, і Павлусь попросився геть.",
+          "actors": [
+            {
+              "char": "worker",
+              "x": 30,
+              "bottom": 0,
+              "h": 58,
+              "pose": "sad"
+            },
+            {
+              "char": "lelia",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            },
+            {
+              "img": "images/lelia/item-poppy.svg",
+              "alt": "рожевий мак",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Садочок Мар'яни",
+      "summary": "На світанку Лелія прилетіла до хатинки сусідки Мар'яни. Мар'яна вдосвіта поливала свої квіти і співала. Найменша лілія росла тут щаслива, бо її любили.",
+      "bg": "images/bg/village.svg",
+      "stage": [
+        {
+          "char": "maryana",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "char": "lelia",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "img": "images/lelia/item-lily.svg",
+          "alt": "біла лілія",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "maryana",
+          "accepted": [
+            "мар'яна",
+            "марʼяна",
+            "маряна",
+            "сусідка",
+            "дівчина"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Мар'яна",
+              "char": "maryana"
+            },
+            {
+              "id": "b",
+              "text": "Панна",
+              "char": "lady"
+            },
+            {
+              "id": "c",
+              "text": "Робітниця",
+              "char": "worker"
+            }
+          ],
+          "answer": "a",
+          "hint": "Вона живе в селі по сусідству з Павлусем."
+        },
+        "L2": {
+          "prompt": "Що робила Мар'яна щоранку?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Спала до обіду"
+            },
+            {
+              "id": "b",
+              "text": "Поливала квіти",
+              "img": "images/lelia/item-lily.svg"
+            },
+            {
+              "id": "c",
+              "text": "Їздила в гості"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вона бігала з відерцем до криниці."
+        },
+        "L3": {
+          "prompt": "Чому лілії в Мар'яни добре?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Там немає людей"
+            },
+            {
+              "id": "b",
+              "text": "Там багато сонця"
+            },
+            {
+              "id": "c",
+              "text": "Мар'яна її любить і доглядає"
+            }
+          ],
+          "answer": "c",
+          "hint": "Квітка — її радість після тяжкої праці."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/village.svg",
+          "text": "На світанку Лелія прилетіла до хатинки сусідки Мар'яни.",
+          "actors": [
+            {
+              "char": "lelia",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/lelia/item-poppy.svg",
+              "alt": "рожевий мак",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Мар'яна вдосвіта поливала свої квіти і співала.",
+          "actors": [
+            {
+              "char": "maryana",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/lelia/item-lily.svg",
+              "alt": "біла лілія",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Найменша лілія росла тут щаслива, бо її любили.",
+          "actors": [
+            {
+              "img": "images/lelia/item-lily.svg",
+              "alt": "біла лілія",
+              "x": 50,
+              "bottom": 4,
+              "h": 22
+            },
+            {
+              "char": "lelia",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Павлусь прокидається",
+      "summary": "Лелія повернула Павлуся додому і попрощалася з ним. Павлусь прокинувся, а над ним стояла мама. Хлопчик почувався здоровим і розповів мамі чудовий сон.",
+      "bg": "images/bg/hut.svg",
+      "stage": [
+        {
+          "char": "mom",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "happy"
+        },
+        {
+          "char": "pavlus",
+          "x": 70,
+          "bottom": 0,
+          "h": 58,
+          "pose": "happy"
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "mom",
+          "accepted": [
+            "мама",
+            "мати",
+            "матуся"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Панна",
+              "char": "lady"
+            },
+            {
+              "id": "b",
+              "text": "Мар'яна",
+              "char": "maryana"
+            },
+            {
+              "id": "c",
+              "text": "Мама",
+              "char": "mom"
+            }
+          ],
+          "answer": "c",
+          "hint": "Вона всю ніч доглядала сина."
+        },
+        "L2": {
+          "prompt": "Як почувався Павлусь уранці?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ще гірше"
+            },
+            {
+              "id": "b",
+              "text": "Зовсім добре"
+            },
+            {
+              "id": "c",
+              "text": "Хотів плакати"
+            }
+          ],
+          "answer": "b",
+          "hint": "Хвороба минула."
+        },
+        "L3": {
+          "prompt": "Чому Павлусь радів уранці?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Йому наснилася Лелія"
+            },
+            {
+              "id": "b",
+              "text": "Йому купили іграшку"
+            },
+            {
+              "id": "c",
+              "text": "Прийшли гості"
+            }
+          ],
+          "answer": "a",
+          "hint": "Уночі він побачив дивовижний сон."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Лелія повернула Павлуся додому і попрощалася з ним.",
+          "actors": [
+            {
+              "char": "lelia",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "pavlus",
+              "x": 70,
+              "bottom": 0,
+              "h": 58
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Павлусь прокинувся, а над ним стояла мама.",
+          "actors": [
+            {
+              "char": "pavlus",
+              "x": 30,
+              "bottom": 0,
+              "h": 58
+            },
+            {
+              "char": "mom",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Хлопчик почувався здоровим і розповів мамі чудовий сон.",
+          "actors": [
+            {
+              "char": "pavlus",
+              "x": 30,
+              "bottom": 0,
+              "h": 58,
+              "pose": "happy"
+            },
+            {
+              "char": "mom",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

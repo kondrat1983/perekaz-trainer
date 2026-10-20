@@ -1,0 +1,79 @@
+{
+  "arthur": {
+    "name": "Артур",
+    "lname": "артур",
+    "acc": "Артура",
+    "features": [
+      "скромний юнак",
+      "коричнева туніка",
+      "світле волосся"
+    ],
+    "img": "images/sword-anvil/arthur.svg",
+    "poses": {
+      "happy": "images/sword-anvil/arthur-happy.svg",
+      "sad": "images/sword-anvil/arthur-sad.svg",
+      "scared": "images/sword-anvil/arthur-scared.svg"
+    }
+  },
+  "kay": {
+    "name": "Кей",
+    "lname": "кей",
+    "acc": "Кея",
+    "features": [
+      "син сера Ектора",
+      "червона туніка",
+      "щит у руці"
+    ],
+    "img": "images/sword-anvil/kay.svg",
+    "poses": {
+      "happy": "images/sword-anvil/kay-happy.svg"
+    }
+  },
+  "ector": {
+    "name": "Сер Ектор",
+    "lname": "сер ектор",
+    "acc": "сера Ектора",
+    "features": [
+      "чесний лицар",
+      "зелена туніка",
+      "вихователь Артура"
+    ],
+    "img": "images/sword-anvil/ector.svg"
+  },
+  "merlin": {
+    "name": "Мерлін",
+    "lname": "мерлін",
+    "acc": "Мерліна",
+    "features": [
+      "мудрий чарівник",
+      "синя мантія",
+      "посох"
+    ],
+    "img": "images/sword-anvil/merlin.svg"
+  },
+  "archbishop": {
+    "name": "Архієпископ",
+    "lname": "архієпископ",
+    "acc": "архієпископа",
+    "features": [
+      "головний священик",
+      "біла мантія",
+      "книга в руках"
+    ],
+    "img": "images/sword-anvil/archbishop.svg"
+  },
+  "lord": {
+    "name": "Лорд",
+    "lname": "лорд",
+    "acc": "лорда",
+    "features": [
+      "багатий і гордий вельможа",
+      "фіолетовий плащ",
+      "меч при боці"
+    ],
+    "img": "images/sword-anvil/lord.svg",
+    "poses": {
+      "angry": "images/sword-anvil/lord-angry.svg"
+    }
+  }
+}

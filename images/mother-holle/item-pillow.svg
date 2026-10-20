@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Пухова перина, з якої летить пір'я, як с">
+<path d="M20 110Q20 70 60 74H140Q180 70 180 110Q180 160 140 156H60Q20 160 20 110Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M20 110Q20 70 60 74H140Q180 70 180 110Q180 160 140 156H60Q20 160 20 110Z" fill="#FFFFFF"/>
+<path d="M40 100Q100 90 160 100" fill="none"/>
+<path d="M40 100Q100 86 160 100" fill="none" stroke="#D8D0C0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 40H48M40 32V48M34 34L46 46M46 34L34 46" fill="none" stroke="#9EC3E6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M72 20H88M80 12V28M74 14L86 26M86 14L74 26" fill="none" stroke="#9EC3E6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M122 36H138M130 28V44M124 30L136 42M136 30L124 42" fill="none" stroke="#9EC3E6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M162 20H178M170 12V28M164 14L176 26M176 14L164 26" fill="none" stroke="#9EC3E6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M102 10H118M110 2V18M104 4L116 16M116 4L104 16" fill="none" stroke="#9EC3E6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

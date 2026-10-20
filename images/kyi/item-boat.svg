@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Човен перевізника">
+<rect x="0" y="140" width="200" height="60" fill="#4A7CC4"/>
+<path d="M10 120H190Q170 170 100 170Q30 170 10 120Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M10 120H190Q170 170 100 170Q30 170 10 120Z" fill="#8A5A34"/>
+<path d="M20 124H180Q176 134 170 140H30Q24 134 20 124Z" fill="#A06E44"/>
+<path d="M140 40L120 160" fill="none" stroke="#6B4630" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

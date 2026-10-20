@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" aria-hidden="true" preserveAspectRatio="xMidYMax slice">
+<rect x="0" y="0" width="600" height="400" fill="#3A3442"/>
+<path d="M0 0H600V120Q520 60 420 90Q300 30 180 90Q80 60 0 120Z" fill="#1E2433" opacity=".2" transform="translate(4 5)"/><path d="M0 0H600V120Q520 60 420 90Q300 30 180 90Q80 60 0 120Z" fill="#4E4658"/>
+<path d="M66 60L80 120L94 60Z" fill="#1E2433" opacity=".2" transform="translate(4 5)"/><path d="M66 60L80 120L94 60Z" fill="#5E5468"/>
+<path d="M186 60L200 100L214 60Z" fill="#1E2433" opacity=".2" transform="translate(4 5)"/><path d="M186 60L200 100L214 60Z" fill="#5E5468"/>
+<path d="M316 60L330 130L344 60Z" fill="#1E2433" opacity=".2" transform="translate(4 5)"/><path d="M316 60L330 130L344 60Z" fill="#5E5468"/>
+<path d="M456 60L470 110L484 60Z" fill="#1E2433" opacity=".2" transform="translate(4 5)"/><path d="M456 60L470 110L484 60Z" fill="#5E5468"/>
+<path d="M0 300Q300 270 600 300V400H0Z" fill="#1E2433" opacity=".2" transform="translate(4 5)"/><path d="M0 300Q300 270 600 300V400H0Z" fill="#4E4658"/>
+<path d="M100 320L120 290L140 320Z" fill="#1E2433" opacity=".2" transform="translate(4 5)"/><path d="M100 320L120 290L140 320Z" fill="#7FAAF5"/>
+<path d="M280 340L300 310L320 340Z" fill="#1E2433" opacity=".2" transform="translate(4 5)"/><path d="M280 340L300 310L320 340Z" fill="#7FAAF5"/>
+<path d="M460 316L480 286L500 316Z" fill="#1E2433" opacity=".2" transform="translate(4 5)"/><path d="M460 316L480 286L500 316Z" fill="#7FAAF5"/>
+<path d="M240 300Q300 250 360 300Z" fill="#F6CE5B" opacity=".25"/>
+</svg>

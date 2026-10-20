@@ -1,0 +1,81 @@
+{
+  "cossack": {
+    "name": "Козак-вартовий",
+    "lname": "козак",
+    "acc": "козака",
+    "features": [
+      "молодий козак",
+      "червоний жупан і шапка",
+      "спис у руці"
+    ],
+    "img": "images/cossack-guard/cossack.svg",
+    "poses": {
+      "happy": "images/cossack-guard/cossack-happy.svg",
+      "scared": "images/cossack-guard/cossack-scared.svg"
+    }
+  },
+  "ataman": {
+    "name": "Отаман",
+    "lname": "отаман",
+    "acc": "отамана",
+    "features": [
+      "старший на редуті",
+      "синій жупан",
+      "шабля і вуса з бородою"
+    ],
+    "img": "images/cossack-guard/ataman.svg",
+    "poses": {
+      "angry": "images/cossack-guard/ataman-angry.svg"
+    }
+  },
+  "enemy": {
+    "name": "Ординець",
+    "lname": "ординець",
+    "acc": "ординця",
+    "features": [
+      "ворожий вершник",
+      "шолом на голові",
+      "лук у руках"
+    ],
+    "img": "images/cossack-guard/enemy.svg",
+    "poses": {
+      "scared": "images/cossack-guard/enemy-scared.svg"
+    }
+  },
+  "peasant": {
+    "name": "Селянин",
+    "lname": "селянин",
+    "acc": "селянина",
+    "features": [
+      "працює в степу",
+      "біла сорочка",
+      "веде худобу"
+    ],
+    "img": "images/cossack-guard/peasant.svg",
+    "poses": {
+      "scared": "images/cossack-guard/peasant-scared.svg"
+    }
+  },
+  "horse": {
+    "name": "Кінь",
+    "lname": "кінь",
+    "acc": "коня",
+    "features": [
+      "козацький кінь",
+      "швидкий",
+      "возить вартових"
+    ],
+    "img": "images/cossack-guard/horse.svg"
+  },
+  "ox": {
+    "name": "Віл",
+    "lname": "віл",
+    "acc": "вола",
+    "features": [
+      "домашня худоба",
+      "великі роги",
+      "повільний"
+    ],
+    "img": "images/cossack-guard/ox.svg"
+  }
+}

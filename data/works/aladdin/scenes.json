@@ -1,0 +1,984 @@
+{
+  "pairs": [
+    [
+      "sultan",
+      "sorcerer"
+    ],
+    [
+      "mother",
+      "princess"
+    ],
+    [
+      "genie",
+      "sorcerer"
+    ]
+  ],
+  "scenes": [
+    {
+      "num": 1,
+      "title": "Дивний «дядько»",
+      "summary": "Аладдін, син бідного кравця, цілими днями гуляв на вулиці. Якось до нього підійшов чаклун із далекого Магрибу. Чаклун назвався його дядьком і дав хлопцеві гроші.",
+      "bg": "images/bg/east.svg",
+      "stage": [
+        {
+          "char": "aladdin",
+          "x": 30,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "char": "sorcerer",
+          "x": 70,
+          "bottom": 0,
+          "h": 70
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "aladdin",
+          "accepted": [
+            "аладдін",
+            "аладін",
+            "хлопець аладдін"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Аладдін",
+              "char": "aladdin"
+            },
+            {
+              "id": "b",
+              "text": "Чаклун",
+              "char": "sorcerer"
+            },
+            {
+              "id": "c",
+              "text": "Цар",
+              "char": "sultan"
+            }
+          ],
+          "answer": "a",
+          "hint": "Це син кравця, який не любив працювати."
+        },
+        "L2": {
+          "prompt": "Ким назвався незнайомець?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Купцем"
+            },
+            {
+              "id": "b",
+              "text": "Царем"
+            },
+            {
+              "id": "c",
+              "text": "Дядьком Аладдіна"
+            }
+          ],
+          "answer": "c",
+          "hint": "Він сказав, що він брат батька хлопця."
+        },
+        "L3": {
+          "prompt": "Чому чаклун шукав саме Аладдіна?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Хотів навчити його ремесла"
+            },
+            {
+              "id": "b",
+              "text": "Тільки Аладдін міг дістати скарб"
+            },
+            {
+              "id": "c",
+              "text": "Скучив за братом"
+            }
+          ],
+          "answer": "b",
+          "hint": "Чаклун прочитав про це по зорях."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/east.svg",
+          "text": "Аладдін, син бідного кравця, цілими днями гуляв на вулиці.",
+          "actors": [
+            {
+              "char": "aladdin",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/east.svg",
+          "text": "Якось до нього підійшов чаклун із далекого Магрибу.",
+          "actors": [
+            {
+              "char": "sorcerer",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "aladdin",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/east.svg",
+          "text": "Чаклун назвався його дядьком і дав хлопцеві гроші.",
+          "actors": [
+            {
+              "char": "sorcerer",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "aladdin",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/aladdin/item-coins.svg",
+              "alt": "золоті монети-динари",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Гостинці від чаклуна",
+      "summary": "Мати не вірила, що в її чоловіка був брат. Чаклун прийшов на вечерю і пообіцяв хлопцеві крамницю. На базарі він купив Аладдінові гарне нове вбрання.",
+      "bg": "images/bg/hut.svg",
+      "stage": [
+        {
+          "char": "mother",
+          "x": 18,
+          "bottom": 0,
+          "h": 60
+        },
+        {
+          "char": "aladdin",
+          "x": 50,
+          "bottom": 0,
+          "h": 60,
+          "pose": "happy"
+        },
+        {
+          "char": "sorcerer",
+          "x": 82,
+          "bottom": 0,
+          "h": 60
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "mother",
+          "accepted": [
+            "мати",
+            "мама",
+            "мати аладдіна"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Царівна",
+              "char": "princess"
+            },
+            {
+              "id": "b",
+              "text": "Мати",
+              "char": "mother"
+            },
+            {
+              "id": "c",
+              "text": "Аладдін",
+              "char": "aladdin"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вона пряде прядиво, щоб прогодувати сина."
+        },
+        "L2": {
+          "prompt": "Що купив чаклун Аладдінові?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Нове вбрання"
+            },
+            {
+              "id": "b",
+              "text": "Коня"
+            },
+            {
+              "id": "c",
+              "text": "Лампу"
+            }
+          ],
+          "answer": "a",
+          "hint": "Хлопець перевдягнувся і дуже зрадів."
+        },
+        "L3": {
+          "prompt": "Чому мати спершу не вірила гостеві?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Він був бідно вдягнений"
+            },
+            {
+              "id": "b",
+              "text": "Він прийшов пізно"
+            },
+            {
+              "id": "c",
+              "text": "Вона не знала родичів чоловіка"
+            }
+          ],
+          "answer": "c",
+          "hint": "Вона ніколи не чула про цього дядька."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Мати не вірила, що в її чоловіка був брат.",
+          "actors": [
+            {
+              "char": "mother",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "aladdin",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Чаклун прийшов на вечерю і пообіцяв хлопцеві крамницю.",
+          "actors": [
+            {
+              "char": "sorcerer",
+              "x": 18,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            },
+            {
+              "char": "mother",
+              "x": 50,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "aladdin",
+              "x": 82,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/market.svg",
+          "text": "На базарі він купив Аладдінові гарне нове вбрання.",
+          "actors": [
+            {
+              "char": "aladdin",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "sorcerer",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Підземелля",
+      "summary": "Чаклун привів хлопця до гори й розпалив вогонь. Земля розкололась, і під плитою відкрився хід униз. Аладдін пройшов підземний сад і взяв стару лампу.",
+      "bg": "images/bg/mountains.svg",
+      "stage": [
+        {
+          "char": "sorcerer",
+          "x": 30,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "char": "aladdin",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "scared"
+        },
+        {
+          "img": "images/aladdin/item-lamp.svg",
+          "alt": "стара мідна лампа",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "sorcerer",
+          "accepted": [
+            "чаклун",
+            "магрибинець",
+            "чарівник"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Цар",
+              "char": "sultan"
+            },
+            {
+              "id": "b",
+              "text": "Джин",
+              "char": "genie"
+            },
+            {
+              "id": "c",
+              "text": "Чаклун",
+              "char": "sorcerer"
+            }
+          ],
+          "answer": "c",
+          "hint": "Він тільки вдавав із себе дядька."
+        },
+        "L2": {
+          "prompt": "Що мав принести Аладдін із підземелля?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Глеки із золотом"
+            },
+            {
+              "id": "b",
+              "text": "Стару лампу",
+              "img": "images/aladdin/item-lamp.svg"
+            },
+            {
+              "id": "c",
+              "text": "Плоди з саду"
+            }
+          ],
+          "answer": "b",
+          "hint": "Ця річ світила над сходами."
+        },
+        "L3": {
+          "prompt": "Чому чаклун сам не пішов під землю?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Скарб міг узяти лише Аладдін"
+            },
+            {
+              "id": "b",
+              "text": "Він боявся темряви"
+            },
+            {
+              "id": "c",
+              "text": "Він дуже втомився"
+            }
+          ],
+          "answer": "a",
+          "hint": "Зорі сказали чаклунові, кому відкриється скарб."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/mountains.svg",
+          "text": "Чаклун привів хлопця до гори й розпалив вогонь.",
+          "actors": [
+            {
+              "char": "sorcerer",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "aladdin",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/mountains.svg",
+          "text": "Земля розкололась, і під плитою відкрився хід униз.",
+          "actors": [
+            {
+              "char": "sorcerer",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "aladdin",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Аладдін пройшов підземний сад і взяв стару лампу.",
+          "actors": [
+            {
+              "char": "aladdin",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/aladdin/item-lamp.svg",
+              "alt": "стара мідна лампа",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Чарівний перстень",
+      "summary": "Аладдін не віддав лампу, доки не вибереться нагору. Розлючений чаклун зачинив хлопця під землею. Хлопець торкнувся персня, і джин виніс його додому.",
+      "bg": "images/bg/cave.svg",
+      "stage": [
+        {
+          "char": "genie",
+          "x": 30,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "char": "aladdin",
+          "x": 70,
+          "bottom": 0,
+          "h": 70,
+          "pose": "sad"
+        },
+        {
+          "img": "images/aladdin/item-ring.svg",
+          "alt": "чарівний перстень",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "genie",
+          "accepted": [
+            "джин",
+            "джинн",
+            "велетень"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Аладдін",
+              "char": "aladdin"
+            },
+            {
+              "id": "b",
+              "text": "Джин",
+              "char": "genie"
+            },
+            {
+              "id": "c",
+              "text": "Чаклун",
+              "char": "sorcerer"
+            }
+          ],
+          "answer": "b",
+          "hint": "Він з’являється, коли потерти чарівну річ."
+        },
+        "L2": {
+          "prompt": "Що допомогло Аладдінові вибратися?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Мотузка"
+            },
+            {
+              "id": "b",
+              "text": "Чаклун"
+            },
+            {
+              "id": "c",
+              "text": "Чарівний перстень",
+              "img": "images/aladdin/item-ring.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Цю річ дав йому сам чаклун."
+        },
+        "L3": {
+          "prompt": "Що відчував Аладдін, коли залишився під землею?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Розпач і страх"
+            },
+            {
+              "id": "b",
+              "text": "Радість"
+            },
+            {
+              "id": "c",
+              "text": "Нудьгу"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він плакав і заламував руки."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Аладдін не віддав лампу, доки не вибереться нагору.",
+          "actors": [
+            {
+              "char": "aladdin",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "sorcerer",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            },
+            {
+              "img": "images/aladdin/item-lamp.svg",
+              "alt": "стара мідна лампа",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Розлючений чаклун зачинив хлопця під землею.",
+          "actors": [
+            {
+              "char": "sorcerer",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            },
+            {
+              "char": "aladdin",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Хлопець торкнувся персня, і джин виніс його додому.",
+          "actors": [
+            {
+              "char": "aladdin",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "genie",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/aladdin/item-ring.svg",
+              "alt": "чарівний перстень",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Джин із лампи",
+      "summary": "Мати почала чистити лампу, щоб її продати. З лампи з’явився джин, і мати злякалась. Аладдін попросив джина принести смачної їжі.",
+      "bg": "images/bg/hut.svg",
+      "stage": [
+        {
+          "char": "aladdin",
+          "x": 18,
+          "bottom": 0,
+          "h": 60
+        },
+        {
+          "char": "genie",
+          "x": 50,
+          "bottom": 0,
+          "h": 60
+        },
+        {
+          "char": "mother",
+          "x": 82,
+          "bottom": 0,
+          "h": 60,
+          "pose": "scared"
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "aladdin",
+          "accepted": [
+            "аладдін",
+            "аладін",
+            "син"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Мати",
+              "char": "mother"
+            },
+            {
+              "id": "b",
+              "text": "Чаклун",
+              "char": "sorcerer"
+            },
+            {
+              "id": "c",
+              "text": "Аладдін",
+              "char": "aladdin"
+            }
+          ],
+          "answer": "c",
+          "hint": "Це він приніс лампу з підземелля."
+        },
+        "L2": {
+          "prompt": "Що попросив Аладдін у джина?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Палац"
+            },
+            {
+              "id": "b",
+              "text": "Смачну їжу"
+            },
+            {
+              "id": "c",
+              "text": "Коня"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вдома не було чого їсти."
+        },
+        "L3": {
+          "prompt": "Чому Аладдін просив у джина небагато?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Він не був жадібним"
+            },
+            {
+              "id": "b",
+              "text": "Він боявся джина"
+            },
+            {
+              "id": "c",
+              "text": "Джин не вмів більше"
+            }
+          ],
+          "answer": "a",
+          "hint": "Йому досить було, щоб вони з матір’ю не голодували."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Мати почала чистити лампу, щоб її продати.",
+          "actors": [
+            {
+              "char": "mother",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/aladdin/item-lamp.svg",
+              "alt": "стара мідна лампа",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "З лампи з’явився джин, і мати злякалась.",
+          "actors": [
+            {
+              "char": "genie",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "mother",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            },
+            {
+              "img": "images/aladdin/item-lamp.svg",
+              "alt": "стара мідна лампа",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Аладдін попросив джина принести смачної їжі.",
+          "actors": [
+            {
+              "char": "aladdin",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "genie",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Палац для царівни",
+      "summary": "Аладдін побачив царівну Бадр аль-Будур і покохав її. Мати віднесла цареві таріль із самоцвітами. Джин збудував палац, і Аладдін одружився з царівною.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "princess",
+          "x": 18,
+          "bottom": 0,
+          "h": 60,
+          "pose": "happy"
+        },
+        {
+          "char": "aladdin",
+          "x": 50,
+          "bottom": 0,
+          "h": 60,
+          "pose": "happy"
+        },
+        {
+          "char": "sultan",
+          "x": 82,
+          "bottom": 0,
+          "h": 60
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "princess",
+          "accepted": [
+            "царівна",
+            "бадр аль-будур",
+            "принцеса"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Царівна",
+              "char": "princess"
+            },
+            {
+              "id": "b",
+              "text": "Мати",
+              "char": "mother"
+            },
+            {
+              "id": "c",
+              "text": "Цар",
+              "char": "sultan"
+            }
+          ],
+          "answer": "a",
+          "hint": "Вона донька правителя."
+        },
+        "L2": {
+          "prompt": "Що мати подарувала цареві?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Килим"
+            },
+            {
+              "id": "b",
+              "text": "Золоту лампу"
+            },
+            {
+              "id": "c",
+              "text": "Таріль із самоцвітами",
+              "img": "images/aladdin/item-gems.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Подарунок засяяв на всю залу."
+        },
+        "L3": {
+          "prompt": "За що люди полюбили Аладдіна?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Він був найсильніший"
+            },
+            {
+              "id": "b",
+              "text": "Він залишився добрим і щедрим"
+            },
+            {
+              "id": "c",
+              "text": "Він мав чарівну лампу"
+            }
+          ],
+          "answer": "b",
+          "hint": "Багатство його не зіпсувало."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/east.svg",
+          "text": "Аладдін побачив царівну Бадр аль-Будур і покохав її.",
+          "actors": [
+            {
+              "char": "aladdin",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "princess",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Мати віднесла цареві таріль із самоцвітами.",
+          "actors": [
+            {
+              "char": "mother",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "sultan",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "img": "images/aladdin/item-gems.svg",
+              "alt": "таріль із самоцвітами",
+              "x": 86,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Джин збудував палац, і Аладдін одружився з царівною.",
+          "actors": [
+            {
+              "char": "aladdin",
+              "x": 18,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            },
+            {
+              "char": "princess",
+              "x": 50,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            },
+            {
+              "char": "genie",
+              "x": 82,
+              "bottom": 0,
+              "h": 60
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

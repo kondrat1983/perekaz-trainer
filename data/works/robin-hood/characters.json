@@ -1,0 +1,96 @@
+{
+  "robin": {
+    "name": "Робін Гуд",
+    "lname": "робін",
+    "acc": "Робіна Гуда",
+    "features": [
+      "влучний лучник",
+      "зелене вбрання",
+      "каптур і лук"
+    ],
+    "img": "images/robin-hood/robin.svg",
+    "poses": {
+      "happy": "images/robin-hood/robin-happy.svg",
+      "sad": "images/robin-hood/robin-sad.svg",
+      "angry": "images/robin-hood/robin-angry.svg"
+    }
+  },
+  "father": {
+    "name": "Батько Робіна",
+    "lname": "батько",
+    "acc": "батька Робіна",
+    "features": [
+      "головний лісничий",
+      "коричневий плащ",
+      "капелюх"
+    ],
+    "img": "images/robin-hood/father.svg",
+    "poses": {
+      "sad": "images/robin-hood/father-sad.svg"
+    }
+  },
+  "marian": {
+    "name": "Маріан",
+    "lname": "маріан",
+    "acc": "Маріан",
+    "features": [
+      "подруга Робіна",
+      "блакитна сукня",
+      "квітка в руці"
+    ],
+    "img": "images/robin-hood/marian.svg",
+    "poses": {
+      "happy": "images/robin-hood/marian-happy.svg"
+    }
+  },
+  "sheriff": {
+    "name": "Шериф",
+    "lname": "шериф",
+    "acc": "шерифа",
+    "features": [
+      "жорстокий начальник міста",
+      "фіолетовий плащ",
+      "шапка"
+    ],
+    "img": "images/robin-hood/sheriff.svg",
+    "poses": {
+      "angry": "images/robin-hood/sheriff-angry.svg"
+    }
+  },
+  "forester": {
+    "name": "Лісничий",
+    "lname": "лісничий",
+    "acc": "лісничого",
+    "features": [
+      "ворог родини Робіна",
+      "сірий плащ",
+      "лук у руках"
+    ],
+    "img": "images/robin-hood/forester.svg",
+    "poses": {
+      "angry": "images/robin-hood/forester-angry.svg"
+    }
+  },
+  "will": {
+    "name": "Вілл",
+    "lname": "вілл",
+    "acc": "Вілла",
+    "features": [
+      "лісовий стрілець",
+      "коричнева сорочка",
+      "ціпок у руці"
+    ],
+    "img": "images/robin-hood/will.svg"
+  },
+  "deer": {
+    "name": "Олень",
+    "lname": "олень",
+    "acc": "оленя",
+    "features": [
+      "королівський олень",
+      "великі роги",
+      "живе в лісі"
+    ],
+    "img": "images/robin-hood/deer.svg"
+  }
+}

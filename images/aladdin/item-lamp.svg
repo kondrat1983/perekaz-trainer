@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Стара мідна лампа">
+<path d="M30 130Q30 90 90 90Q130 90 150 110L190 90L170 130Q140 150 30 130Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M30 130Q30 90 90 90Q130 90 150 110L190 90L170 130Q140 150 30 130Z" fill="#E8B23A"/>
+<path d="M60 92Q90 60 120 92Z" fill="#B9821C"/>
+<ellipse cx="90" cy="150" rx="40" ry="10" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><ellipse cx="90" cy="150" rx="40" ry="10" fill="#B9821C"/>
+<path d="M60 110Q90 100 120 110" fill="none"/>
+<path d="M60 110Q90 100 120 110" fill="none" stroke="#F6CE5B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M90 60q-8-14 0-24q8 10 0 24Z" fill="#1E2433" opacity=".2" transform="translate(1 2)"/><path d="M90 60q-8-14 0-24q8 10 0 24Z" fill="#F29A5E"/>
+</svg>

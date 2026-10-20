@@ -1,0 +1,27 @@
+{
+  "girl": {
+    "name": "Дівчинка",
+    "lname": "дівчинка",
+    "acc": "дівчинку",
+    "features": [
+      "вишита сорочка",
+      "червона хустинка",
+      "мріє про рідну країну"
+    ],
+    "img": "images/ukrainia/girl.svg",
+    "poses": {
+      "happy": "images/ukrainia/girl-happy.svg"
+    }
+  },
+  "sun": {
+    "name": "Сонце",
+    "lname": "сонце",
+    "acc": "сонце",
+    "features": [
+      "тепле",
+      "яскраве",
+      "світить над полем"
+    ],
+    "img": "images/ukrainia/sun.svg"
+  }
+}

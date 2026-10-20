@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Велика гармата">
+<path d="M30 110L170 60L180 90L40 140Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M30 110L170 60L180 90L40 140Z" fill="#4A4E60"/>
+<circle cx="175" cy="75" r="18" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><circle cx="175" cy="75" r="18" fill="#2E3242"/>
+<circle cx="175" cy="75" r="9" fill="#1E2433"/>
+<circle cx="70" cy="150" r="32" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><circle cx="70" cy="150" r="32" fill="#8A5A34"/>
+<circle cx="70" cy="150" r="10" fill="#6B4630"/>
+</svg>

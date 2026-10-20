@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Золоте яблуко">
+<path d="M100 60Q160 30 170 100Q170 170 100 176Q30 170 30 100Q40 30 100 60Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M100 60Q160 30 170 100Q170 170 100 176Q30 170 30 100Q40 30 100 60Z" fill="#E8B23A"/>
+<path d="M60 80Q70 60 90 62Q70 80 66 110Z" fill="#F6CE5B"/>
+<path d="M100 60Q104 40 110 30" fill="none" stroke="#6B4630" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M110 40Q140 20 150 40Q130 54 110 40Z" fill="#1E2433" opacity=".2" transform="translate(1 2)"/><path d="M110 40Q140 20 150 40Q130 54 110 40Z" fill="#6E9F5A"/>
+</svg>

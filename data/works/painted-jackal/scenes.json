@@ -1,0 +1,819 @@
+{
+  "pairs": [
+    [
+      "jackal",
+      "jackals"
+    ],
+    [
+      "lion",
+      "wolf"
+    ],
+    [
+      "dogs",
+      "wolf"
+    ]
+  ],
+  "scenes": [
+    {
+      "num": 1,
+      "title": "Голодний шакал у місті",
+      "summary": "Голодний шакал Чандарава подався з лісу до міста. Міські пси кинулися на нього й почали кусати. Рятуючись, шакал заскочив у дім маляра.",
+      "bg": "images/painted-fox/market.svg",
+      "stage": [
+        {
+          "char": "jackal",
+          "x": 30,
+          "bottom": 0,
+          "h": 54,
+          "pose": "scared"
+        },
+        {
+          "char": "dogs",
+          "x": 70,
+          "bottom": 0,
+          "h": 54,
+          "pose": "angry"
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "jackal",
+          "accepted": [
+            "шакал",
+            "чандарава",
+            "шакал чандарава"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Пси",
+              "char": "dogs"
+            },
+            {
+              "id": "b",
+              "text": "Шакал",
+              "char": "jackal"
+            },
+            {
+              "id": "c",
+              "text": "Вовк",
+              "char": "wolf"
+            }
+          ],
+          "answer": "b",
+          "hint": "Цей звір прийшов із лісу, бо дуже хотів їсти."
+        },
+        "L2": {
+          "prompt": "Хто напав на шакала в місті?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Міські пси"
+            },
+            {
+              "id": "b",
+              "text": "Леви"
+            },
+            {
+              "id": "c",
+              "text": "Люди з палицями"
+            }
+          ],
+          "answer": "a",
+          "hint": "Вони голосно гавкали."
+        },
+        "L3": {
+          "prompt": "Чому шакал прийшов до міста?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Хотів подивитися на будинки"
+            },
+            {
+              "id": "b",
+              "text": "Шукав друзів"
+            },
+            {
+              "id": "c",
+              "text": "Був дуже голодний"
+            }
+          ],
+          "answer": "c",
+          "hint": "У лісі йому не було чого їсти."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Голодний шакал Чандарава подався з лісу до міста.",
+          "actors": [
+            {
+              "char": "jackal",
+              "x": 42,
+              "bottom": 0,
+              "h": 54,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/market.svg",
+          "text": "Міські пси кинулися на нього й почали кусати.",
+          "actors": [
+            {
+              "char": "dogs",
+              "x": 30,
+              "bottom": 0,
+              "h": 54,
+              "pose": "angry"
+            },
+            {
+              "char": "jackal",
+              "x": 70,
+              "bottom": 0,
+              "h": 54,
+              "pose": "scared"
+            }
+          ]
+        },
+        {
+          "bg": "images/painted-fox/market.svg",
+          "text": "Рятуючись, шакал заскочив у дім маляра.",
+          "actors": [
+            {
+              "char": "jackal",
+              "x": 42,
+              "bottom": 0,
+              "h": 54,
+              "pose": "scared"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Синій звір",
+      "summary": "У хаті маляра шакал ускочив у бочку з фарбою. Звідти він виліз увесь синій. Пси його не впізнали, і він спокійно втік у ліс.",
+      "bg": "images/bg/hut.svg",
+      "stage": [
+        {
+          "char": "jackal",
+          "x": 42,
+          "bottom": 0,
+          "h": 54,
+          "pose": "blue"
+        },
+        {
+          "img": "images/painted-jackal/item-barrel.svg",
+          "alt": "велика бочка із синьою фарбою",
+          "x": 58,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "jackal",
+          "accepted": [
+            "шакал",
+            "чандарава",
+            "синій шакал"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Шакал",
+              "char": "jackal",
+              "pose": "blue"
+            },
+            {
+              "id": "b",
+              "text": "Лев",
+              "char": "lion"
+            },
+            {
+              "id": "c",
+              "text": "Пси",
+              "char": "dogs"
+            }
+          ],
+          "answer": "a",
+          "hint": "Тепер у нього незвичайний колір шерсті."
+        },
+        "L2": {
+          "prompt": "Куди стрибнув шакал у хаті маляра?",
+          "options": [
+            {
+              "id": "a",
+              "text": "У річку"
+            },
+            {
+              "id": "b",
+              "text": "У бочку з синьою фарбою",
+              "img": "images/painted-jackal/item-barrel.svg"
+            },
+            {
+              "id": "c",
+              "text": "У яму"
+            }
+          ],
+          "answer": "b",
+          "hint": "Маляр тримав там те, чим фарбують."
+        },
+        "L3": {
+          "prompt": "Чому пси не кинулися на шакала вдруге?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Вони наїлися"
+            },
+            {
+              "id": "b",
+              "text": "Вони злякалися маляра"
+            },
+            {
+              "id": "c",
+              "text": "Вони не впізнали синього звіра"
+            }
+          ],
+          "answer": "c",
+          "hint": "Подумай, як змінився шакал."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "У хаті маляра шакал ускочив у бочку з фарбою.",
+          "actors": [
+            {
+              "char": "jackal",
+              "x": 42,
+              "bottom": 0,
+              "h": 54,
+              "pose": "scared"
+            },
+            {
+              "img": "images/painted-jackal/item-barrel.svg",
+              "alt": "велика бочка із синьою фарбою",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/hut.svg",
+          "text": "Звідти він виліз увесь синій.",
+          "actors": [
+            {
+              "char": "jackal",
+              "x": 42,
+              "bottom": 0,
+              "h": 54,
+              "pose": "blue"
+            },
+            {
+              "img": "images/painted-jackal/item-barrel.svg",
+              "alt": "велика бочка із синьою фарбою",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Пси його не впізнали, і він спокійно втік у ліс.",
+          "actors": [
+            {
+              "char": "jackal",
+              "x": 30,
+              "bottom": 0,
+              "h": 54,
+              "pose": "blue"
+            },
+            {
+              "char": "dogs",
+              "x": 70,
+              "bottom": 0,
+              "h": 54
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Звірі лякаються",
+      "summary": "Лісові звірі побачили дивного синього звіра. Лев, вовк та інші звірі кинулися тікати. Шакал збрехав, що бог зробив його царем звірів.",
+      "bg": "images/bg/forest.svg",
+      "stage": [
+        {
+          "char": "lion",
+          "x": 18,
+          "bottom": 0,
+          "h": 56,
+          "pose": "scared"
+        },
+        {
+          "char": "wolf",
+          "x": 50,
+          "bottom": 0,
+          "h": 51,
+          "pose": "scared"
+        },
+        {
+          "char": "jackal",
+          "x": 82,
+          "bottom": 0,
+          "h": 46,
+          "pose": "blue"
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "lion",
+          "accepted": [
+            "лев",
+            "левик",
+            "цар звірів"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Вовк",
+              "char": "wolf"
+            },
+            {
+              "id": "b",
+              "text": "Шакал",
+              "char": "jackal",
+              "pose": "blue"
+            },
+            {
+              "id": "c",
+              "text": "Лев",
+              "char": "lion"
+            }
+          ],
+          "answer": "c",
+          "hint": "У нього пишна грива."
+        },
+        "L2": {
+          "prompt": "Що сказав шакал звірам?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Що тепер він їхній цар"
+            },
+            {
+              "id": "b",
+              "text": "Що він прийшов із міста"
+            },
+            {
+              "id": "c",
+              "text": "Що хоче з ними гратися"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він хотів, щоб усі його слухалися."
+        },
+        "L3": {
+          "prompt": "Чому звірі спочатку злякалися?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Шакал страшно гарчав"
+            },
+            {
+              "id": "b",
+              "text": "Вони ніколи не бачили синього звіра"
+            },
+            {
+              "id": "c",
+              "text": "Почалася гроза"
+            }
+          ],
+          "answer": "b",
+          "hint": "Подумай, чим шакал відрізнявся від усіх."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Лісові звірі побачили дивного синього звіра.",
+          "actors": [
+            {
+              "char": "lion",
+              "x": 18,
+              "bottom": 0,
+              "h": 56
+            },
+            {
+              "char": "wolf",
+              "x": 50,
+              "bottom": 0,
+              "h": 51
+            },
+            {
+              "char": "jackal",
+              "x": 82,
+              "bottom": 0,
+              "h": 46,
+              "pose": "blue"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Лев, вовк та інші звірі кинулися тікати.",
+          "actors": [
+            {
+              "char": "lion",
+              "x": 30,
+              "bottom": 0,
+              "h": 66,
+              "pose": "scared"
+            },
+            {
+              "char": "wolf",
+              "x": 70,
+              "bottom": 0,
+              "h": 60,
+              "pose": "scared"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Шакал збрехав, що бог зробив його царем звірів.",
+          "actors": [
+            {
+              "char": "jackal",
+              "x": 18,
+              "bottom": 0,
+              "h": 46,
+              "pose": "blue"
+            },
+            {
+              "char": "lion",
+              "x": 50,
+              "bottom": 0,
+              "h": 56
+            },
+            {
+              "char": "wolf",
+              "x": 82,
+              "bottom": 0,
+              "h": 51
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Цар-шакал",
+      "summary": "Звірі послухалися і визнали шакала своїм царем. Лева він зробив радником, а вовка — сторожем. Своїх родичів-шакалів новий цар прогнав геть.",
+      "bg": "images/bg/forest.svg",
+      "stage": [
+        {
+          "char": "jackal",
+          "x": 18,
+          "bottom": 0,
+          "h": 46,
+          "pose": "blue"
+        },
+        {
+          "char": "wolf",
+          "x": 50,
+          "bottom": 0,
+          "h": 51
+        },
+        {
+          "char": "jackals",
+          "x": 82,
+          "bottom": 0,
+          "h": 46,
+          "pose": "sad"
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "wolf",
+          "accepted": [
+            "вовк",
+            "вовчик",
+            "сірий вовк"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Вовк",
+              "char": "wolf"
+            },
+            {
+              "id": "b",
+              "text": "Лев",
+              "char": "lion"
+            },
+            {
+              "id": "c",
+              "text": "Шакал",
+              "char": "jackal",
+              "pose": "blue"
+            }
+          ],
+          "answer": "a",
+          "hint": "Цар доручив йому стерегти палац."
+        },
+        "L2": {
+          "prompt": "Що приносили звірі своєму цареві?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Квіти"
+            },
+            {
+              "id": "b",
+              "text": "Воду з річки"
+            },
+            {
+              "id": "c",
+              "text": "Здобич",
+              "img": "images/painted-jackal/item-meat.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Хижаки ходили на полювання."
+        },
+        "L3": {
+          "prompt": "Чому шакал прогнав своїх родичів?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Вони його образили"
+            },
+            {
+              "id": "b",
+              "text": "Загордився і боявся, що його впізнають"
+            },
+            {
+              "id": "c",
+              "text": "У лісі не вистачало їжі"
+            }
+          ],
+          "answer": "b",
+          "hint": "Родичі могли нагадати, хто він насправді."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Звірі послухалися і визнали шакала своїм царем.",
+          "actors": [
+            {
+              "char": "jackal",
+              "x": 18,
+              "bottom": 0,
+              "h": 46,
+              "pose": "blue"
+            },
+            {
+              "img": "images/painted-jackal/item-throne.svg",
+              "alt": "царське сидіння з каменю",
+              "x": 34,
+              "bottom": 18,
+              "h": 22
+            },
+            {
+              "char": "lion",
+              "x": 50,
+              "bottom": 0,
+              "h": 56
+            },
+            {
+              "char": "wolf",
+              "x": 82,
+              "bottom": 0,
+              "h": 51
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Лева він зробив радником, а вовка — сторожем.",
+          "actors": [
+            {
+              "char": "jackal",
+              "x": 18,
+              "bottom": 0,
+              "h": 46,
+              "pose": "blue"
+            },
+            {
+              "char": "lion",
+              "x": 50,
+              "bottom": 0,
+              "h": 56
+            },
+            {
+              "char": "wolf",
+              "x": 82,
+              "bottom": 0,
+              "h": 51
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/forest.svg",
+          "text": "Своїх родичів-шакалів новий цар прогнав геть.",
+          "actors": [
+            {
+              "char": "jackal",
+              "x": 30,
+              "bottom": 0,
+              "h": 54,
+              "pose": "blue"
+            },
+            {
+              "char": "jackals",
+              "x": 70,
+              "bottom": 0,
+              "h": 54,
+              "pose": "sad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Обман розкрито",
+      "summary": "Якось здалеку почулося протяжне виття шакалів. Цар-шакал зрадів і завив разом із ними. Розгнівані звірі покарали обманщика, і він загинув.",
+      "bg": "images/bg/glade.svg",
+      "stage": [
+        {
+          "char": "jackal",
+          "x": 18,
+          "bottom": 0,
+          "h": 46,
+          "pose": "bluescared"
+        },
+        {
+          "char": "lion",
+          "x": 50,
+          "bottom": 0,
+          "h": 56,
+          "pose": "angry"
+        },
+        {
+          "char": "jackals",
+          "x": 82,
+          "bottom": 0,
+          "h": 46
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "jackal",
+          "accepted": [
+            "шакал",
+            "чандарава",
+            "цар-шакал"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Лев",
+              "char": "lion"
+            },
+            {
+              "id": "b",
+              "text": "Шакали-родичі",
+              "char": "jackals"
+            },
+            {
+              "id": "c",
+              "text": "Шакал Чандарава",
+              "char": "jackal",
+              "pose": "blue"
+            }
+          ],
+          "answer": "c",
+          "hint": "Це той, хто вдавав із себе царя."
+        },
+        "L2": {
+          "prompt": "Що зробив шакал, коли почув виття родичів?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Сховався в кущах"
+            },
+            {
+              "id": "b",
+              "text": "Завив у відповідь"
+            },
+            {
+              "id": "c",
+              "text": "Заснув"
+            }
+          ],
+          "answer": "b",
+          "hint": "Він не втримався і подав голос."
+        },
+        "L3": {
+          "prompt": "Що відчули звірі, коли дізналися правду?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Гнів, бо їх обдурили"
+            },
+            {
+              "id": "b",
+              "text": "Радість"
+            },
+            {
+              "id": "c",
+              "text": "Сум за царем"
+            }
+          ],
+          "answer": "a",
+          "hint": "Ніхто не любить, коли його ошукують."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/glade.svg",
+          "text": "Якось здалеку почулося протяжне виття шакалів.",
+          "actors": [
+            {
+              "char": "jackals",
+              "x": 42,
+              "bottom": 0,
+              "h": 54
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/glade.svg",
+          "text": "Цар-шакал зрадів і завив разом із ними.",
+          "actors": [
+            {
+              "char": "jackal",
+              "x": 18,
+              "bottom": 0,
+              "h": 46,
+              "pose": "blue"
+            },
+            {
+              "char": "lion",
+              "x": 50,
+              "bottom": 0,
+              "h": 56
+            },
+            {
+              "char": "wolf",
+              "x": 82,
+              "bottom": 0,
+              "h": 51
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/glade.svg",
+          "text": "Розгнівані звірі покарали обманщика, і він загинув.",
+          "actors": [
+            {
+              "char": "lion",
+              "x": 18,
+              "bottom": 0,
+              "h": 56,
+              "pose": "angry"
+            },
+            {
+              "char": "wolf",
+              "x": 50,
+              "bottom": 0,
+              "h": 51,
+              "pose": "angry"
+            },
+            {
+              "char": "jackal",
+              "x": 82,
+              "bottom": 0,
+              "h": 46,
+              "pose": "bluescared"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

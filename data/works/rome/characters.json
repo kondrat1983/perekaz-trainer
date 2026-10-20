@@ -1,0 +1,82 @@
+{
+  "romulus": {
+    "name": "Ромул",
+    "lname": "ромул",
+    "acc": "Ромула",
+    "features": [
+      "один із братів-близнюків",
+      "червона туніка",
+      "спис у руці"
+    ],
+    "img": "images/rome/romulus.svg",
+    "poses": {
+      "sad": "images/rome/romulus-sad.svg",
+      "happy": "images/rome/romulus-happy.svg"
+    }
+  },
+  "remus": {
+    "name": "Рем",
+    "lname": "рем",
+    "acc": "Рема",
+    "features": [
+      "другий брат-близнюк",
+      "синя туніка",
+      "меч у руці"
+    ],
+    "img": "images/rome/remus.svg",
+    "poses": {
+      "angry": "images/rome/remus-angry.svg"
+    }
+  },
+  "amulius": {
+    "name": "Амулій",
+    "lname": "амулій",
+    "acc": "Амулія",
+    "features": [
+      "злий цар-загарбник",
+      "фіолетова мантія",
+      "корона"
+    ],
+    "img": "images/rome/amulius.svg",
+    "poses": {
+      "angry": "images/rome/amulius-angry.svg"
+    }
+  },
+  "numitor": {
+    "name": "Нумітор",
+    "lname": "нумітор",
+    "acc": "Нумітора",
+    "features": [
+      "старий дідусь близнюків",
+      "сива борода",
+      "біла мантія"
+    ],
+    "img": "images/rome/numitor.svg",
+    "poses": {
+      "sad": "images/rome/numitor-sad.svg",
+      "happy": "images/rome/numitor-happy.svg"
+    }
+  },
+  "wolf": {
+    "name": "Вовчиця",
+    "lname": "вовчиця",
+    "acc": "вовчицю",
+    "features": [
+      "велика сіра вовчиця",
+      "добра до малюків",
+      "прийшла до річки"
+    ],
+    "img": "images/rome/wolf.svg"
+  },
+  "shepherd": {
+    "name": "Пастух",
+    "lname": "пастух",
+    "acc": "пастуха",
+    "features": [
+      "простий пастух",
+      "капелюх",
+      "палиця в руці"
+    ],
+    "img": "images/rome/shepherd.svg"
+  }
+}

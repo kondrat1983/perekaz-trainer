@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Кришталевий черевичок">
+<path d="M20 140Q20 100 60 104Q100 110 130 80Q160 60 180 90Q180 130 150 140Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M20 140Q20 100 60 104Q100 110 130 80Q160 60 180 90Q180 130 150 140Z" fill="#C8E0F8"/>
+<path d="M40 120Q80 120 120 96" fill="none"/>
+<path d="M40 120Q90 118 130 92" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M150 140L156 176H168L170 140Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M150 140L156 176H168L170 140Z" fill="#9EC3E6"/>
+<circle cx="150" cy="96" r="6" fill="#FFFFFF"/>
+</svg>

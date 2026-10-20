@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Таріль із самоцвітами">
+<ellipse cx="100" cy="140" rx="90" ry="34" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><ellipse cx="100" cy="140" rx="90" ry="34" fill="#B7BBC8"/>
+<ellipse cx="100" cy="132" rx="76" ry="24" fill="#D9DBE3"/>
+<path d="M60 98L76 120L60 136L44 120Z" fill="#1E2433" opacity=".2" transform="translate(2 3)"/><path d="M60 98L76 120L60 136L44 120Z" fill="#C24A3E"/>
+<path d="M60 102L66 116L56 120Z" fill="#FFFFFF" opacity=".6"/>
+<path d="M100 88L116 110L100 126L84 110Z" fill="#1E2433" opacity=".2" transform="translate(2 3)"/><path d="M100 88L116 110L100 126L84 110Z" fill="#2F6FD6"/>
+<path d="M100 92L106 106L96 110Z" fill="#FFFFFF" opacity=".6"/>
+<path d="M140 98L156 120L140 136L124 120Z" fill="#1E2433" opacity=".2" transform="translate(2 3)"/><path d="M140 98L156 120L140 136L124 120Z" fill="#5E9A4C"/>
+<path d="M140 102L146 116L136 120Z" fill="#FFFFFF" opacity=".6"/>
+<path d="M80 78L96 100L80 116L64 100Z" fill="#1E2433" opacity=".2" transform="translate(2 3)"/><path d="M80 78L96 100L80 116L64 100Z" fill="#E8B23A"/>
+<path d="M80 82L86 96L76 100Z" fill="#FFFFFF" opacity=".6"/>
+<path d="M120 76L136 98L120 114L104 98Z" fill="#1E2433" opacity=".2" transform="translate(2 3)"/><path d="M120 76L136 98L120 114L104 98Z" fill="#9C7CC4"/>
+<path d="M120 80L126 94L116 98Z" fill="#FFFFFF" opacity=".6"/>
+</svg>

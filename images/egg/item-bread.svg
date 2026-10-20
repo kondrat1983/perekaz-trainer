@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Рум’яна паляниця">
+<ellipse cx="100" cy="120" rx="80" ry="50" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><ellipse cx="100" cy="120" rx="80" ry="50" fill="#C98A3E"/>
+<ellipse cx="90" cy="108" rx="60" ry="30" fill="#E0A85A"/>
+<path d="M60 100Q100 80 140 100M70 120Q100 104 130 120" fill="none" stroke="#9C6A2E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

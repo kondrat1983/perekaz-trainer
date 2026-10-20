@@ -1,0 +1,27 @@
+{
+  "poet": {
+    "name": "Тарас Шевченко",
+    "lname": "тарас шевченко",
+    "acc": "Тараса Шевченка",
+    "features": [
+      "великий український поет",
+      "вуса й теплий кожух",
+      "тримає книжку"
+    ],
+    "img": "images/learn-read/poet.svg"
+  },
+  "pupil": {
+    "name": "Учень",
+    "lname": "учень",
+    "acc": "учня",
+    "features": [
+      "школяр",
+      "синя сорочка",
+      "читає книжку"
+    ],
+    "img": "images/learn-read/pupil.svg",
+    "poses": {
+      "happy": "images/learn-read/pupil-happy.svg"
+    }
+  }
+}

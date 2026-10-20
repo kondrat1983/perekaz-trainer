@@ -1,0 +1,101 @@
+{
+  "mermaid": {
+    "name": "Русалонька",
+    "lname": "русалонька",
+    "acc": "Русалоньку",
+    "features": [
+      "наймолодша морська царівна",
+      "риб'ячий хвіст",
+      "мріє про світ людей"
+    ],
+    "img": "images/little-mermaid/mermaid.svg",
+    "poses": {
+      "happy": "images/little-mermaid/mermaid-happy.svg",
+      "sad": "images/little-mermaid/mermaid-sad.svg",
+      "scared": "images/little-mermaid/mermaid-scared.svg"
+    }
+  },
+  "maiden": {
+    "name": "Русалонька з ніжками",
+    "lname": "русалонька",
+    "acc": "Русалоньку",
+    "features": [
+      "стала дівчиною",
+      "не може говорити",
+      "гарно танцює"
+    ],
+    "img": "images/little-mermaid/maiden.svg",
+    "poses": {
+      "happy": "images/little-mermaid/maiden-happy.svg",
+      "sad": "images/little-mermaid/maiden-sad.svg"
+    }
+  },
+  "grandma": {
+    "name": "Бабуся",
+    "lname": "бабуся",
+    "acc": "бабусю",
+    "features": [
+      "стара морська королева",
+      "перли на хвості",
+      "розповідає про людей"
+    ],
+    "img": "images/little-mermaid/grandma.svg"
+  },
+  "sisters": {
+    "name": "Сестри",
+    "lname": "сестри",
+    "acc": "сестер",
+    "features": [
+      "старші русалки",
+      "спершу випливли нагору",
+      "дуже люблять Русалоньку"
+    ],
+    "img": "images/little-mermaid/sisters.svg",
+    "poses": {
+      "sad": "images/little-mermaid/sisters-sad.svg"
+    }
+  },
+  "prince": {
+    "name": "Принц",
+    "lname": "принц",
+    "acc": "принца",
+    "features": [
+      "юний і гарний",
+      "темні очі",
+      "врятований з моря"
+    ],
+    "img": "images/little-mermaid/prince.svg",
+    "poses": {
+      "happy": "images/little-mermaid/prince-happy.svg",
+      "scared": "images/little-mermaid/prince-scared.svg"
+    }
+  },
+  "witch": {
+    "name": "Морська відьма",
+    "lname": "морська відьма",
+    "acc": "морську відьму",
+    "features": [
+      "живе за вирами",
+      "варить чарівне зілля",
+      "бере плату голосом"
+    ],
+    "img": "images/little-mermaid/witch.svg",
+    "poses": {
+      "happy": "images/little-mermaid/witch-happy.svg"
+    }
+  },
+  "bride": {
+    "name": "Принцеса",
+    "lname": "принцеса",
+    "acc": "принцесу",
+    "features": [
+      "дівчина з білого будинку на березі",
+      "знайшла принца",
+      "стала його нареченою"
+    ],
+    "img": "images/little-mermaid/bride.svg",
+    "poses": {
+      "happy": "images/little-mermaid/bride-happy.svg"
+    }
+  }
+}

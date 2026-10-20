@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Зелений паросток пшениці в полі">
+<path d="M40 170Q100 140 160 170V190H40Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M40 170Q100 140 160 170V190H40Z" fill="#8A5A34"/>
+<path d="M100 170V90" fill="none" stroke="#5E9A4C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100 120Q60 110 50 70Q90 80 100 120Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M100 120Q60 110 50 70Q90 80 100 120Z" fill="#8CBF76"/>
+<path d="M100 100Q140 90 150 50Q110 60 100 100Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M100 100Q140 90 150 50Q110 60 100 100Z" fill="#6E9F5A"/>
+</svg>

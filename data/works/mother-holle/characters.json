@@ -1,0 +1,65 @@
+{
+  "girl": {
+    "name": "Працьовита дівчина",
+    "lname": "працьовита дівчина",
+    "acc": "працьовиту дівчину",
+    "features": [
+      "падчерка",
+      "добра й працьовита",
+      "пряде біля криниці"
+    ],
+    "img": "images/mother-holle/girl.svg",
+    "poses": {
+      "happy": "images/mother-holle/girl-happy.svg",
+      "sad": "images/mother-holle/girl-sad.svg",
+      "scared": "images/mother-holle/girl-scared.svg"
+    }
+  },
+  "lazy": {
+    "name": "Ледача сестра",
+    "lname": "ледача сестра",
+    "acc": "ледачу сестру",
+    "features": [
+      "рідна донька мачухи",
+      "лінива",
+      "хоче золота"
+    ],
+    "img": "images/mother-holle/lazy.svg",
+    "poses": {
+      "happy": "images/mother-holle/lazy-happy.svg",
+      "angry": "images/mother-holle/lazy-angry.svg",
+      "sad": "images/mother-holle/lazy-sad.svg",
+      "scared": "images/mother-holle/lazy-scared.svg"
+    }
+  },
+  "stepmother": {
+    "name": "Мачуха",
+    "lname": "мачуха",
+    "acc": "мачуху",
+    "features": [
+      "вдова",
+      "любить лише рідну доньку",
+      "сварлива"
+    ],
+    "img": "images/mother-holle/stepmother.svg",
+    "poses": {
+      "angry": "images/mother-holle/stepmother-angry.svg",
+      "happy": "images/mother-holle/stepmother-happy.svg"
+    }
+  },
+  "holle": {
+    "name": "Пані Метелиця",
+    "lname": "пані метелиця",
+    "acc": "пані Метелицю",
+    "features": [
+      "стара бабуся",
+      "великі зуби",
+      "від її перини падає сніг"
+    ],
+    "img": "images/mother-holle/holle.svg",
+    "poses": {
+      "happy": "images/mother-holle/holle-happy.svg",
+      "angry": "images/mother-holle/holle-angry.svg"
+    }
+  }
+}

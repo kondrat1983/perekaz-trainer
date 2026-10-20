@@ -1,0 +1,84 @@
+{
+  "svarog": {
+    "name": "Сварог",
+    "lname": "сварог",
+    "acc": "Сварога",
+    "features": [
+      "мудрий бог-коваль",
+      "жовта мантія",
+      "молот у руці"
+    ],
+    "img": "images/berehynia/svarog.svg",
+    "poses": {
+      "angry": "images/berehynia/svarog-angry.svg"
+    }
+  },
+  "berehynia": {
+    "name": "Берегиня",
+    "lname": "берегиня",
+    "acc": "Берегиню",
+    "features": [
+      "добра богиня",
+      "біла вишита сукня",
+      "веретено в руці"
+    ],
+    "img": "images/berehynia/berehynia.svg",
+    "poses": {
+      "happy": "images/berehynia/berehynia-happy.svg"
+    }
+  },
+  "chornobog": {
+    "name": "Чорнобог",
+    "lname": "чорнобог",
+    "acc": "Чорнобога",
+    "features": [
+      "злий підземний бог",
+      "чорна мантія",
+      "чорна корона"
+    ],
+    "img": "images/berehynia/chornobog.svg",
+    "poses": {
+      "angry": "images/berehynia/chornobog-angry.svg"
+    }
+  },
+  "dragon": {
+    "name": "Чорний ящір",
+    "lname": "чорний ящір",
+    "acc": "чорного ящера",
+    "features": [
+      "страшне чудовисько",
+      "чорний панцир",
+      "повзе по землі"
+    ],
+    "img": "images/berehynia/dragon.svg",
+    "poses": {
+      "angry": "images/berehynia/dragon-angry.svg",
+      "scared": "images/berehynia/dragon-scared.svg"
+    }
+  },
+  "man": {
+    "name": "Людина",
+    "lname": "людина",
+    "acc": "людину",
+    "features": [
+      "давній мешканець землі",
+      "проста сорочка",
+      "вчиться ремесла"
+    ],
+    "img": "images/berehynia/man.svg",
+    "poses": {
+      "happy": "images/berehynia/man-happy.svg"
+    }
+  },
+  "bilobog": {
+    "name": "Білобог",
+    "lname": "білобог",
+    "acc": "Білобога",
+    "features": [
+      "світлий добрий бог",
+      "біла мантія",
+      "сива борода"
+    ],
+    "img": "images/berehynia/bilobog.svg"
+  }
+}

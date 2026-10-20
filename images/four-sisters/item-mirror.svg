@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Люстерко">
+<rect x="88" y="130" width="24" height="60" rx="8" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="88" y="130" width="24" height="60" rx="8" fill="#B9821C"/>
+<circle cx="100" cy="86" r="66" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><circle cx="100" cy="86" r="66" fill="#E8B23A"/>
+<circle cx="100" cy="86" r="52" fill="#C8E0F8"/>
+<path d="M70 60Q80 44 100 40Q80 60 76 86Z" fill="#FFFFFF" opacity=".8"/>
+</svg>

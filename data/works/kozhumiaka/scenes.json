@@ -1,0 +1,968 @@
+{
+  "pairs": [
+    [
+      "knyazhna",
+      "knyahynia"
+    ],
+    [
+      "mykyta",
+      "voevoda"
+    ],
+    [
+      "knyaz",
+      "did"
+    ]
+  ],
+  "scenes": [
+    {
+      "num": 1,
+      "title": "Біда в князівстві",
+      "summary": "Князь сумний: над державою знову нависла біда. Страшний Змій вимагає віддати йому Князівну. Княгиня плаче, бо не хоче втратити доньку.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "knyaz",
+          "x": 18,
+          "bottom": 0,
+          "h": 60,
+          "pose": "sad"
+        },
+        {
+          "char": "zmiy",
+          "x": 50,
+          "bottom": 0,
+          "h": 71,
+          "pose": "angry"
+        },
+        {
+          "char": "knyahynia",
+          "x": 82,
+          "bottom": 0,
+          "h": 60,
+          "pose": "sad"
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "knyaz",
+          "accepted": [
+            "князь",
+            "цар",
+            "батько"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Дід",
+              "char": "did"
+            },
+            {
+              "id": "b",
+              "text": "Князь",
+              "char": "knyaz"
+            },
+            {
+              "id": "c",
+              "text": "Микита",
+              "char": "mykyta"
+            }
+          ],
+          "answer": "b",
+          "hint": "Він править державою і носить корону."
+        },
+        "L2": {
+          "prompt": "Чого вимагає Змій?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Віддати йому Князівну"
+            },
+            {
+              "id": "b",
+              "text": "Золоту корону"
+            },
+            {
+              "id": "c",
+              "text": "Мішок зерна"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він хоче забрати когось дуже дорогого для батьків."
+        },
+        "L3": {
+          "prompt": "Чому Князь і Княгиня сумні?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Бо в палаці холодно"
+            },
+            {
+              "id": "b",
+              "text": "Бо захворів кінь"
+            },
+            {
+              "id": "c",
+              "text": "Бо можуть утратити доньку"
+            }
+          ],
+          "answer": "c",
+          "hint": "Подумай, чого вимагає Змій."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Князь сумний: над державою знову нависла біда.",
+          "actors": [
+            {
+              "char": "knyaz",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Страшний Змій вимагає віддати йому Князівну.",
+          "actors": [
+            {
+              "char": "zmiy",
+              "x": 30,
+              "bottom": 0,
+              "h": 84,
+              "pose": "angry"
+            },
+            {
+              "char": "knyazhna",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "scared"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Княгиня плаче, бо не хоче втратити доньку.",
+          "actors": [
+            {
+              "char": "knyahynia",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            },
+            {
+              "char": "knyaz",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "Смілива Князівна",
+      "summary": "Посланець Змія сказав, що дає лише три дні. Князівна просить маму й тата не журитися. Вона вірить, що колись Змія переможуть.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "knyazhna",
+          "x": 18,
+          "bottom": 0,
+          "h": 60
+        },
+        {
+          "char": "knyahynia",
+          "x": 50,
+          "bottom": 0,
+          "h": 60,
+          "pose": "sad"
+        },
+        {
+          "char": "knyaz",
+          "x": 82,
+          "bottom": 0,
+          "h": 60,
+          "pose": "sad"
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "knyazhna",
+          "accepted": [
+            "князівна",
+            "донька",
+            "дочка",
+            "принцеса"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Княгиня",
+              "char": "knyahynia"
+            },
+            {
+              "id": "b",
+              "text": "Князь",
+              "char": "knyaz"
+            },
+            {
+              "id": "c",
+              "text": "Князівна",
+              "char": "knyazhna"
+            }
+          ],
+          "answer": "c",
+          "hint": "Вона наймолодша в княжій родині."
+        },
+        "L2": {
+          "prompt": "Скільки днів дав Змій Князеві?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Три дні"
+            },
+            {
+              "id": "b",
+              "text": "Цілий рік"
+            },
+            {
+              "id": "c",
+              "text": "Один тиждень"
+            }
+          ],
+          "answer": "a",
+          "hint": "Це зовсім мало часу."
+        },
+        "L3": {
+          "prompt": "Що відчуває Князівна?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Злість на батьків"
+            },
+            {
+              "id": "b",
+              "text": "Сміливість і надію"
+            },
+            {
+              "id": "c",
+              "text": "Нудьгу"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вона не плаче, а втішає рідних."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Посланець Змія сказав, що дає лише три дні.",
+          "actors": [
+            {
+              "char": "knyaz",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            },
+            {
+              "char": "knyahynia",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Князівна просить маму й тата не журитися.",
+          "actors": [
+            {
+              "char": "knyazhna",
+              "x": 18,
+              "bottom": 0,
+              "h": 60
+            },
+            {
+              "char": "knyahynia",
+              "x": 50,
+              "bottom": 0,
+              "h": 60,
+              "pose": "sad"
+            },
+            {
+              "char": "knyaz",
+              "x": 82,
+              "bottom": 0,
+              "h": 60,
+              "pose": "sad"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Вона вірить, що колись Змія переможуть.",
+          "actors": [
+            {
+              "char": "knyazhna",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "Рада воєвод",
+      "summary": "Князь скликав воєвод, щоб порадитися. Одні радять скоритися, інші — боротися зі Змієм. Але сміливого борця серед них немає.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "voevoda",
+          "x": 30,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "char": "knyaz",
+          "x": 70,
+          "bottom": 0,
+          "h": 70
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "voevoda",
+          "accepted": [
+            "воєвода",
+            "воєводи",
+            "воїн",
+            "лицар"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Воєвода",
+              "char": "voevoda"
+            },
+            {
+              "id": "b",
+              "text": "Микита",
+              "char": "mykyta"
+            },
+            {
+              "id": "c",
+              "text": "Дід",
+              "char": "did"
+            }
+          ],
+          "answer": "a",
+          "hint": "Він у шоломі й обладунку, служить Князеві."
+        },
+        "L2": {
+          "prompt": "Навіщо Князь скликав воєвод?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Щоб улаштувати бенкет"
+            },
+            {
+              "id": "b",
+              "text": "Щоб піти на полювання"
+            },
+            {
+              "id": "c",
+              "text": "Щоб вирішити, як урятувати державу"
+            }
+          ],
+          "answer": "c",
+          "hint": "Це була рада."
+        },
+        "L3": {
+          "prompt": "Чому воєводи замовкли?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Бо ніхто не наважувався битися зі Змієм"
+            },
+            {
+              "id": "b",
+              "text": "Бо заснули"
+            },
+            {
+              "id": "c",
+              "text": "Бо Князь заборонив говорити"
+            }
+          ],
+          "answer": "a",
+          "hint": "Змій був дуже страшний."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Князь скликав воєвод, щоб порадитися.",
+          "actors": [
+            {
+              "char": "knyaz",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "voevoda",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Одні радять скоритися, інші — боротися зі Змієм.",
+          "actors": [
+            {
+              "char": "voevoda",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "knyaz",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Але сміливого борця серед них немає.",
+          "actors": [
+            {
+              "char": "voevoda",
+              "x": 42,
+              "bottom": 0,
+              "h": 70,
+              "pose": "sad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "Дід радить Микиту",
+      "summary": "До Князя прийшов сивий дід із важливою справою. Він розповів про дужого Микиту Кожум'яку. Ковалі всю ніч кували Микиті залізну булаву.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "did",
+          "x": 30,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "char": "knyaz",
+          "x": 70,
+          "bottom": 0,
+          "h": 70
+        },
+        {
+          "img": "images/kozhumiaka/item-mace.svg",
+          "alt": "важка залізна булава",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "did",
+          "accepted": [
+            "дід",
+            "дідусь",
+            "старий"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Князь",
+              "char": "knyaz"
+            },
+            {
+              "id": "b",
+              "text": "Дід",
+              "char": "did"
+            },
+            {
+              "id": "c",
+              "text": "Воєвода",
+              "char": "voevoda"
+            }
+          ],
+          "answer": "b",
+          "hint": "Він старенький і ходить із палицею."
+        },
+        "L2": {
+          "prompt": "Що кували ковалі для Микити?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Корону"
+            },
+            {
+              "id": "b",
+              "text": "Підкови"
+            },
+            {
+              "id": "c",
+              "text": "Залізну булаву",
+              "img": "images/kozhumiaka/item-mace.svg"
+            }
+          ],
+          "answer": "c",
+          "hint": "Цією зброєю він піде на бій."
+        },
+        "L3": {
+          "prompt": "Чому дід порадив саме Микиту?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Бо Микита — його внук"
+            },
+            {
+              "id": "b",
+              "text": "Бо Микита дуже сильний і сміливий"
+            },
+            {
+              "id": "c",
+              "text": "Бо Микита багатий"
+            }
+          ],
+          "answer": "b",
+          "hint": "Згадай, яким дід описав Микиту."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "До Князя прийшов сивий дід із важливою справою.",
+          "actors": [
+            {
+              "char": "did",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "knyaz",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Він розповів про дужого Микиту Кожум'яку.",
+          "actors": [
+            {
+              "char": "did",
+              "x": 30,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "char": "mykyta",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/village.svg",
+          "text": "Ковалі всю ніч кували Микиті залізну булаву.",
+          "actors": [
+            {
+              "img": "images/kozhumiaka/item-anvil.svg",
+              "alt": "ковальське ковадло з молотом",
+              "x": 50,
+              "bottom": 4,
+              "h": 22
+            },
+            {
+              "img": "images/kozhumiaka/item-mace.svg",
+              "alt": "важка залізна булава",
+              "x": 72,
+              "bottom": 4,
+              "h": 22
+            },
+            {
+              "char": "mykyta",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Бій зі Змієм",
+      "summary": "Микита сміливо постукав у ворота до Змія. Розлючений Змій пускав пару і кидав жар. Микита вдарив булавою і звалив Змія на землю.",
+      "bg": "images/bg/cave.svg",
+      "stage": [
+        {
+          "char": "mykyta",
+          "x": 30,
+          "bottom": 0,
+          "h": 70,
+          "pose": "angry"
+        },
+        {
+          "char": "zmiy",
+          "x": 70,
+          "bottom": 0,
+          "h": 84,
+          "pose": "angry"
+        },
+        {
+          "img": "images/kozhumiaka/item-mace.svg",
+          "alt": "важка залізна булава",
+          "x": 86,
+          "bottom": 18,
+          "h": 22
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "mykyta",
+          "accepted": [
+            "микита",
+            "кожум'яка",
+            "кожумяка",
+            "микита кожум'яка"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Воєвода",
+              "char": "voevoda"
+            },
+            {
+              "id": "b",
+              "text": "Князь",
+              "char": "knyaz"
+            },
+            {
+              "id": "c",
+              "text": "Микита Кожум'яка",
+              "char": "mykyta"
+            }
+          ],
+          "answer": "c",
+          "hint": "Він вийшов битися зі Змієм сам."
+        },
+        "L2": {
+          "prompt": "Чим бився Микита?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Залізною булавою",
+              "img": "images/kozhumiaka/item-mace.svg"
+            },
+            {
+              "id": "b",
+              "text": "Луком і стрілами"
+            },
+            {
+              "id": "c",
+              "text": "Палицею діда"
+            }
+          ],
+          "answer": "a",
+          "hint": "Її кували цілу ніч."
+        },
+        "L3": {
+          "prompt": "Чому Микита не злякався Змія?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Бо Змій був маленький"
+            },
+            {
+              "id": "b",
+              "text": "Бо Змій спав"
+            },
+            {
+              "id": "c",
+              "text": "Бо він сильний і хотів урятувати людей"
+            }
+          ],
+          "answer": "c",
+          "hint": "Подумай, за кого він бився."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Микита сміливо постукав у ворота до Змія.",
+          "actors": [
+            {
+              "char": "mykyta",
+              "x": 42,
+              "bottom": 0,
+              "h": 70
+            },
+            {
+              "img": "images/kozhumiaka/item-mace.svg",
+              "alt": "важка залізна булава",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            },
+            {
+              "img": "images/kozhumiaka/item-gate.svg",
+              "alt": "ворота Змієвого замку",
+              "x": 58,
+              "bottom": 18,
+              "h": 22
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Розлючений Змій пускав пару і кидав жар.",
+          "actors": [
+            {
+              "char": "zmiy",
+              "x": 30,
+              "bottom": 0,
+              "h": 84,
+              "pose": "angry"
+            },
+            {
+              "char": "mykyta",
+              "x": 70,
+              "bottom": 0,
+              "h": 70
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/cave.svg",
+          "text": "Микита вдарив булавою і звалив Змія на землю.",
+          "actors": [
+            {
+              "char": "mykyta",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "angry"
+            },
+            {
+              "img": "images/kozhumiaka/item-mace.svg",
+              "alt": "важка залізна булава",
+              "x": 46,
+              "bottom": 18,
+              "h": 22
+            },
+            {
+              "char": "zmiy",
+              "x": 70,
+              "bottom": 0,
+              "h": 84,
+              "pose": "scared"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Слава Микиті",
+      "summary": "Микита переміг Змія і повернув Князівну додому. Люди радіють і славлять сміливого героя. Тепер держава вільна, і ніхто не боїться Змія.",
+      "bg": "images/bg/palace.svg",
+      "stage": [
+        {
+          "char": "mykyta",
+          "x": 18,
+          "bottom": 0,
+          "h": 60,
+          "pose": "happy"
+        },
+        {
+          "char": "knyazhna",
+          "x": 50,
+          "bottom": 0,
+          "h": 60,
+          "pose": "happy"
+        },
+        {
+          "char": "knyaz",
+          "x": 82,
+          "bottom": 0,
+          "h": 60,
+          "pose": "happy"
+        }
+      ],
+      "questions": {
+        "L1": {
+          "prompt": "Хто це?",
+          "target": "knyazhna",
+          "accepted": [
+            "князівна",
+            "донька",
+            "дочка",
+            "принцеса"
+          ],
+          "options": [
+            {
+              "id": "a",
+              "text": "Князівна",
+              "char": "knyazhna"
+            },
+            {
+              "id": "b",
+              "text": "Княгиня",
+              "char": "knyahynia"
+            },
+            {
+              "id": "c",
+              "text": "Дід",
+              "char": "did"
+            }
+          ],
+          "answer": "a",
+          "hint": "Саме її врятував Микита."
+        },
+        "L2": {
+          "prompt": "Кого Микита повернув додому?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Воєводу"
+            },
+            {
+              "id": "b",
+              "text": "Князівну"
+            },
+            {
+              "id": "c",
+              "text": "Діда"
+            }
+          ],
+          "answer": "b",
+          "hint": "Змій хотів забрати саме її."
+        },
+        "L3": {
+          "prompt": "Що відчувають люди після перемоги?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Страх і смуток"
+            },
+            {
+              "id": "b",
+              "text": "Радість і вдячність"
+            },
+            {
+              "id": "c",
+              "text": "Заздрість"
+            }
+          ],
+          "answer": "b",
+          "hint": "Вони гучно славлять Микиту."
+        }
+      },
+      "frames": [
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Микита переміг Змія і повернув Князівну додому.",
+          "actors": [
+            {
+              "char": "mykyta",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "knyazhna",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Люди радіють і славлять сміливого героя.",
+          "actors": [
+            {
+              "char": "mykyta",
+              "x": 18,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            },
+            {
+              "char": "knyaz",
+              "x": 50,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            },
+            {
+              "char": "knyahynia",
+              "x": 82,
+              "bottom": 0,
+              "h": 60,
+              "pose": "happy"
+            }
+          ]
+        },
+        {
+          "bg": "images/bg/palace.svg",
+          "text": "Тепер держава вільна, і ніхто не боїться Змія.",
+          "actors": [
+            {
+              "char": "knyaz",
+              "x": 30,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            },
+            {
+              "char": "knyazhna",
+              "x": 70,
+              "bottom": 0,
+              "h": 70,
+              "pose": "happy"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

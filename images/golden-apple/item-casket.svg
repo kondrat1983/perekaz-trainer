@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Золота шкатулка з голубиним яйцем">
+<rect x="30" y="80" width="140" height="90" rx="8" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="30" y="80" width="140" height="90" rx="8" fill="#E8B23A"/>
+<path d="M30 90Q100 30 170 90Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M30 90Q100 30 170 90Z" fill="#F6CE5B"/>
+<rect x="90" y="100" width="20" height="24" rx="4" fill="#B9821C"/>
+<ellipse cx="100" cy="58" rx="14" ry="18" fill="#1E2433" opacity=".2" transform="translate(2 2)"/><ellipse cx="100" cy="58" rx="14" ry="18" fill="#FFFFFF"/>
+</svg>

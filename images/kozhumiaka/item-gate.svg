@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Ворота змієвого замку">
+<rect x="10" y="40" width="40" height="150" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="10" y="40" width="40" height="150" fill="#4A4E60"/>
+<rect x="150" y="40" width="40" height="150" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="150" y="40" width="40" height="150" fill="#4A4E60"/>
+<path d="M50 190V90Q100 40 150 90V190Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M50 190V90Q100 40 150 90V190Z" fill="#2E3242"/>
+<path d="M60 100V190M80 80V190M100 70V190M120 80V190M140 100V190" fill="none" stroke="#6B7086" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

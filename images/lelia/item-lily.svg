@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Біла лілія">
+<path d="M100 190V90" fill="none" stroke="#5E9A4C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100 190Q60 160 70 130Q90 160 100 170Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M100 190Q60 160 70 130Q90 160 100 170Z" fill="#6E9F5A"/>
+<path d="M100 90Q90 40 100 20Q110 40 100 90Z" fill="#1E2433" opacity=".2" transform="translate(3 4) rotate(-60 100 90)"/><path d="M100 90Q90 40 100 20Q110 40 100 90Z" fill="#FFFFFF" transform="rotate(-60 100 90)"/>
+<path d="M100 90Q90 40 100 20Q110 40 100 90Z" fill="#1E2433" opacity=".2" transform="translate(3 4) rotate(-20 100 90)"/><path d="M100 90Q90 40 100 20Q110 40 100 90Z" fill="#FFFFFF" transform="rotate(-20 100 90)"/>
+<path d="M100 90Q90 40 100 20Q110 40 100 90Z" fill="#1E2433" opacity=".2" transform="translate(3 4) rotate(20 100 90)"/><path d="M100 90Q90 40 100 20Q110 40 100 90Z" fill="#FFFFFF" transform="rotate(20 100 90)"/>
+<path d="M100 90Q90 40 100 20Q110 40 100 90Z" fill="#1E2433" opacity=".2" transform="translate(3 4) rotate(60 100 90)"/><path d="M100 90Q90 40 100 20Q110 40 100 90Z" fill="#FFFFFF" transform="rotate(60 100 90)"/>
+<circle cx="100" cy="86" r="8" fill="#E8B23A"/>
+</svg>

@@ -1,0 +1,69 @@
+{
+  "uther": {
+    "name": "Утер Пендраґон",
+    "lname": "утер",
+    "acc": "Утера Пендраґона",
+    "features": [
+      "король Англії",
+      "червона мантія",
+      "корона"
+    ],
+    "img": "images/arthur-birth/uther.svg",
+    "poses": {
+      "sad": "images/arthur-birth/uther-sad.svg",
+      "angry": "images/arthur-birth/uther-angry.svg",
+      "happy": "images/arthur-birth/uther-happy.svg"
+    }
+  },
+  "igraine": {
+    "name": "Іґрейна",
+    "lname": "іґрейна",
+    "acc": "Іґрейну",
+    "features": [
+      "вродлива й розумна леді",
+      "зелена сукня",
+      "вуаль"
+    ],
+    "img": "images/arthur-birth/igraine.svg",
+    "poses": {
+      "scared": "images/arthur-birth/igraine-scared.svg",
+      "happy": "images/arthur-birth/igraine-happy.svg"
+    }
+  },
+  "gorlois": {
+    "name": "Герцоґ",
+    "lname": "герцоґ",
+    "acc": "герцоґа",
+    "features": [
+      "володар замку Тінтаґель",
+      "лицарські обладунки",
+      "шолом і щит"
+    ],
+    "img": "images/arthur-birth/gorlois.svg",
+    "poses": {
+      "angry": "images/arthur-birth/gorlois-angry.svg"
+    }
+  },
+  "merlin": {
+    "name": "Мерлін",
+    "lname": "мерлін",
+    "acc": "Мерліна",
+    "features": [
+      "мудрий чарівник",
+      "синя мантія",
+      "посох"
+    ],
+    "img": "images/arthur-birth/merlin.svg"
+  },
+  "ector": {
+    "name": "Сер Ектор",
+    "lname": "сер ектор",
+    "acc": "сера Ектора",
+    "features": [
+      "чесний лицар",
+      "зелена туніка",
+      "добрий вихователь"
+    ],
+    "img": "images/arthur-birth/ector.svg"
+  }
+}

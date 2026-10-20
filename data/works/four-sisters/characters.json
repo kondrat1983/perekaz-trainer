@@ -1,0 +1,79 @@
+{
+  "winter": {
+    "name": "Білокоса",
+    "lname": "білокоса",
+    "acc": "Білокосу",
+    "features": [
+      "сестра-Зима",
+      "біле волосся",
+      "не хоче віддати трон"
+    ],
+    "img": "images/four-sisters/winter.svg",
+    "poses": {
+      "happy": "images/four-sisters/winter-happy.svg",
+      "angry": "images/four-sisters/winter-angry.svg",
+      "sad": "images/four-sisters/winter-sad.svg",
+      "scared": "images/four-sisters/winter-scared.svg"
+    }
+  },
+  "spring": {
+    "name": "Зеленокоса",
+    "lname": "зеленокоса",
+    "acc": "Зеленокосу",
+    "features": [
+      "сестра-Весна",
+      "зелені коси у вінку",
+      "чемна й ніжна"
+    ],
+    "img": "images/four-sisters/spring.svg",
+    "poses": {
+      "happy": "images/four-sisters/spring-happy.svg",
+      "sad": "images/four-sisters/spring-sad.svg"
+    }
+  },
+  "summer": {
+    "name": "Синьокоса",
+    "lname": "синьокоса",
+    "acc": "Синьокосу",
+    "features": [
+      "сестра-Літо",
+      "синє волосся",
+      "довго спить у Голубій залі"
+    ],
+    "img": "images/four-sisters/summer.svg",
+    "poses": {
+      "happy": "images/four-sisters/summer-happy.svg",
+      "sad": "images/four-sisters/summer-sad.svg"
+    }
+  },
+  "autumn": {
+    "name": "Золотокоса",
+    "lname": "золотокоса",
+    "acc": "Золотокосу",
+    "features": [
+      "сестра-Осінь",
+      "вінок із барвистого листя",
+      "золотий пірнач у руці"
+    ],
+    "img": "images/four-sisters/autumn.svg",
+    "poses": {
+      "happy": "images/four-sisters/autumn-happy.svg",
+      "angry": "images/four-sisters/autumn-angry.svg"
+    }
+  },
+  "bird": {
+    "name": "Чорний Птах",
+    "lname": "чорний птах",
+    "acc": "Чорного Птаха",
+    "features": [
+      "чорні крила",
+      "каркає на вухо",
+      "сварить сестер"
+    ],
+    "img": "images/four-sisters/bird.svg",
+    "poses": {
+      "angry": "images/four-sisters/bird-angry.svg",
+      "scared": "images/four-sisters/bird-scared.svg"
+    }
+  }
+}

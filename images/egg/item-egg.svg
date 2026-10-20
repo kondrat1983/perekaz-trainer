@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Яйце-райце">
+<path d="M100 20Q160 20 164 110Q164 180 100 180Q36 180 36 110Q40 20 100 20Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M100 20Q160 20 164 110Q164 180 100 180Q36 180 36 110Q40 20 100 20Z" fill="#F6CE5B"/>
+<path d="M70 60Q80 40 100 36Q80 60 76 90Z" fill="#FFFFFF" opacity=".8"/>
+<path d="M44 110L70 96L90 116L110 96L130 116L156 100" fill="none" stroke="#C24A3E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

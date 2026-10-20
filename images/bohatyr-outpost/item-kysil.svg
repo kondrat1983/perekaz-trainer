@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Діжа з кисільною бовтанкою">
+<path d="M40 70H160L150 180H50Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M40 70H160L150 180H50Z" fill="#A06E44"/>
+<path d="M44 100H156M48 150H152" fill="none" stroke="#6B4630" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="100" cy="70" rx="60" ry="14" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><ellipse cx="100" cy="70" rx="60" ry="14" fill="#E3C9A0"/>
+<path d="M120 70L150 10" fill="none" stroke="#8A5A34" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

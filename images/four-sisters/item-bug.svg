@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Срібний жучок на павутинці">
+<path d="M100 10V70" fill="none" stroke="#D9DBE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="100" cy="120" rx="40" ry="50" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><ellipse cx="100" cy="120" rx="40" ry="50" fill="#B7BBC8"/>
+<path d="M100 74V170" fill="none"/>
+<path d="M100 76V168" fill="none" stroke="#6B7086" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="100" cy="72" r="18" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><circle cx="100" cy="72" r="18" fill="#8A8FA3"/>
+<path d="M64 110L36 96M64 130L34 134M136 110L164 96M136 130L166 134" fill="none" stroke="#6B7086" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="84" cy="104" rx="8" ry="14" fill="#FFFFFF" opacity=".6"/>
+</svg>

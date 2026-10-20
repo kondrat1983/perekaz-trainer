@@ -1,0 +1,49 @@
+{
+  "kyi": {
+    "name": "Кий",
+    "lname": "кий",
+    "acc": "Кия",
+    "features": [
+      "старший брат",
+      "князь свого роду",
+      "меч і червона туніка"
+    ],
+    "img": "images/kyi/kyi.svg",
+    "poses": {
+      "happy": "images/kyi/kyi-happy.svg"
+    }
+  },
+  "shchek": {
+    "name": "Щек",
+    "lname": "щек",
+    "acc": "Щека",
+    "features": [
+      "середній брат",
+      "зелена туніка",
+      "спис у руці"
+    ],
+    "img": "images/kyi/shchek.svg"
+  },
+  "khoryv": {
+    "name": "Хорив",
+    "lname": "хорив",
+    "acc": "Хорива",
+    "features": [
+      "молодший брат",
+      "синя туніка",
+      "лук мисливця"
+    ],
+    "img": "images/kyi/khoryv.svg"
+  },
+  "lybid": {
+    "name": "Либідь",
+    "lname": "либідь",
+    "acc": "Либідь",
+    "features": [
+      "сестра братів",
+      "біла сукня",
+      "вінок на голові"
+    ],
+    "img": "images/kyi/lybid.svg"
+  }
+}

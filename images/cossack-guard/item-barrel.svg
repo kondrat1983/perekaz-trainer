@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Діжка з фарбою">
+<path d="M44 50Q36 110 50 180H150Q164 110 156 50Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M44 50Q36 110 50 180H150Q164 110 156 50Z" fill="#A06E44"/>
+<path d="M128 50Q140 110 132 180H150Q164 110 156 50Z" fill="#8A5A34"/>
+<path d="M40 70Q100 78 160 70V80Q100 88 40 80Z" fill="#6B7086"/>
+<path d="M40 160Q100 168 160 160V170Q100 178 40 170Z" fill="#6B7086"/>
+<ellipse cx="100" cy="50" rx="56" ry="14" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><ellipse cx="100" cy="50" rx="56" ry="14" fill="#6B4630"/>
+<ellipse cx="100" cy="51" rx="48" ry="10" fill="#3B6FD0"/>
+<ellipse cx="88" cy="48" rx="18" ry="4" fill="#6A95E8"/>
+<rect x="60" y="56" width="9" height="40" rx="4.5" fill="#3B6FD0"/>
+<circle cx="64.5" cy="96" r="6.5" fill="#3B6FD0"/>
+<rect x="96" y="56" width="9" height="26" rx="4.5" fill="#3B6FD0"/>
+<circle cx="100.5" cy="82" r="6.5" fill="#3B6FD0"/>
+<rect x="130" y="56" width="9" height="52" rx="4.5" fill="#3B6FD0"/>
+<circle cx="134.5" cy="108" r="6.5" fill="#3B6FD0"/>
+</svg>

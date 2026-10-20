@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Кам'яні мури нового міста на пагорбі">
+<rect x="10" y="80" width="180" height="110" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="10" y="80" width="180" height="110" fill="#C9B27A"/>
+<rect x="10" y="60" width="18" height="24" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="10" y="60" width="18" height="24" fill="#C9B27A"/>
+<rect x="40" y="60" width="18" height="24" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="40" y="60" width="18" height="24" fill="#C9B27A"/>
+<rect x="70" y="60" width="18" height="24" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="70" y="60" width="18" height="24" fill="#C9B27A"/>
+<rect x="100" y="60" width="18" height="24" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="100" y="60" width="18" height="24" fill="#C9B27A"/>
+<rect x="130" y="60" width="18" height="24" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="130" y="60" width="18" height="24" fill="#C9B27A"/>
+<rect x="160" y="60" width="18" height="24" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><rect x="160" y="60" width="18" height="24" fill="#C9B27A"/>
+<path d="M80 190V130Q100 106 120 130V190Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M80 190V130Q100 106 120 130V190Z" fill="#6B4630"/>
+<path d="M10 110H70M130 110H190" fill="none" stroke="#A08A5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 140H70M130 140H190" fill="none" stroke="#A08A5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 170H70M130 170H190" fill="none" stroke="#A08A5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

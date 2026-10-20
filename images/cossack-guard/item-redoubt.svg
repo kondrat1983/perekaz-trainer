@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Редут">
+<path d="M10 190L40 110H160L190 190Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M10 190L40 110H160L190 190Z" fill="#A08A5A"/>
+<path d="M40 110H160L170 130H30Z" fill="#8A7A42"/>
+<path d="M70 110V70H130V110Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M70 110V70H130V110Z" fill="#C9A87A"/>
+<path d="M62 72L100 40L138 72Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M62 72L100 40L138 72Z" fill="#8A7A42"/>
+<path d="M100 40V10" fill="none" stroke="#6B4630" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M100 10H130L100 24Z" fill="#1E2433" opacity=".2" transform="translate(3 4)"/><path d="M100 10H130L100 24Z" fill="#3F5BA8"/>
+</svg>
