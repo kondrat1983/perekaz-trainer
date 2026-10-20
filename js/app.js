@@ -547,10 +547,10 @@ function pathView() {
 // ---------- Бібліотека ----------
 
 function libraryView() {
-  const cards = library.map((w) => {
+  const card = (w) => {
     const done = Object.values(state.works[w.id]?.scenes || {}).filter((e) => e.done).length;
     const ready = w.status !== 'soon';
-    const kind = w.kind === 'poem' ? 'Вірш' : w.kind === 'tale' ? 'Казка' : '';
+    const kind = { poem: 'Вірш', tale: 'Казка', legend: 'Легенда', folk: 'Фольклор' }[w.kind] || '';
     const inner = `
       <img class="cover" src="${w.cover}" alt="">
       <span class="work-text">
@@ -559,19 +559,23 @@ function libraryView() {
         ${ready
           ? `<span class="work-bar"><span style="width:${(done / w.scenes) * 100}%"></span></span>
              <span class="muted">${done} з ${w.scenes}</span>`
-          : '<span class="muted">Скоро</span>'}
+          : `<span class="muted">Скоро · с. ${w.page}</span>`}
       </span>`;
     return ready
       ? `<a class="card work" href="#/w/${w.id}">${inner}</a>`
       : `<div class="card work soon">${inner}</div>`;
-  }).join('');
+  };
+  const ready = library.filter((w) => w.status !== 'soon');
+  const soon = library.filter((w) => w.status === 'soon');
   return `
     <header class="top">
       <div class="brand"><span class="leaf-logo" aria-hidden="true"></span>Переказ</div>
     </header>
     <h1 class="title">Бібліотека</h1>
     <p class="note">Українська література, 5 клас</p>
-    <div class="works">${cards}</div>
+    <div class="works">${ready.map(card).join('')}</div>
+    ${soon.length ? `<h2 class="section">Скоро</h2>
+    <div class="works">${soon.map(card).join('')}</div>` : ''}
     ${tabs('library')}`;
 }
 

@@ -1,6 +1,116 @@
 {
   "works": [
     {
+      "id": "proverbs",
+      "title": "Прислів’я та приказки",
+      "author": "Українська народна творчість",
+      "kind": "folk",
+      "page": 13,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "riddles",
+      "title": "Народні загадки",
+      "author": "Українська народна творчість",
+      "kind": "folk",
+      "page": 18,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "glibov-riddles",
+      "title": "Загадки",
+      "author": "Леонід Глібов",
+      "kind": "poem",
+      "page": 22,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "painted-jackal",
+      "title": "Фарбований шакал",
+      "author": "Індійська народна казка",
+      "kind": "tale",
+      "page": 26,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "aladdin",
+      "title": "Казка про Аладдіна і чарівну лампу",
+      "author": "Арабська народна казка",
+      "kind": "tale",
+      "page": 30,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "egg",
+      "title": "Яйце-райце",
+      "author": "Українська народна казка",
+      "kind": "tale",
+      "page": 44,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "golden-apple",
+      "title": "Золоте яблуко",
+      "author": "Кримськотатарська народна казка",
+      "kind": "tale",
+      "page": 56,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "mother-holle",
+      "title": "Пані Метелиця",
+      "author": "Брати Якоб і Вільгельм Ґрімм",
+      "kind": "tale",
+      "page": 64,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "cinderella",
+      "title": "Попелюшка, або Кришталевий черевичок",
+      "author": "Шарль Перро",
+      "kind": "tale",
+      "page": 72,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "munchausen",
+      "title": "Пригоди барона Мюнхгаузена",
+      "author": "Еріх Распе",
+      "kind": "prose",
+      "page": 84,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "little-mermaid",
+      "title": "Русалонька",
+      "author": "Ганс Крістіан Андерсен",
+      "kind": "tale",
+      "page": 92,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
       "id": "happy-prince",
       "title": "Щасливий принц",
       "author": "Оскар Вайльд",
@@ -10,10 +120,221 @@
       "map": {
         "img": "images/map.svg",
         "pos": {
-          "1": [300, 334], "2": [96, 318], "3": [330, 74], "4": [188, 262],
-          "5": [430, 312], "6": [60, 170], "7": [236, 150], "8": [520, 130]
+          "1": [
+            300,
+            334
+          ],
+          "2": [
+            96,
+            318
+          ],
+          "3": [
+            330,
+            74
+          ],
+          "4": [
+            188,
+            262
+          ],
+          "5": [
+            430,
+            312
+          ],
+          "6": [
+            60,
+            170
+          ],
+          "7": [
+            236,
+            150
+          ],
+          "8": [
+            520,
+            130
+          ]
         }
-      }
+      },
+      "page": 112
+    },
+    {
+      "id": "painted-fox",
+      "title": "Фарбований Лис",
+      "author": "Іван Франко",
+      "kind": "tale",
+      "page": 125,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "lelia",
+      "title": "Лелія",
+      "author": "Леся Українка",
+      "kind": "tale",
+      "page": 134,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "four-sisters",
+      "title": "Чотири сестри",
+      "author": "Валерій Шевчук",
+      "kind": "tale",
+      "page": 147,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "rome",
+      "title": "Легенда про заснування Риму",
+      "author": "Давньоримська легенда",
+      "kind": "legend",
+      "page": 158,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "kalyna",
+      "title": "Калина",
+      "author": "Українська народна легенда",
+      "kind": "legend",
+      "page": 163,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "berehynia",
+      "title": "Берегиня",
+      "author": "Українська народна легенда",
+      "kind": "legend",
+      "page": 165,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "arthur-birth",
+      "title": "Народження Артура",
+      "author": "Легенди про короля Артура",
+      "kind": "legend",
+      "page": 172,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "sword-anvil",
+      "title": "Меч і ковадло",
+      "author": "Легенди про короля Артура",
+      "kind": "legend",
+      "page": 177,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "robin-hood",
+      "title": "Легенди про Робіна Гуда",
+      "author": "Англійські народні легенди",
+      "kind": "legend",
+      "page": 186,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "kyi",
+      "title": "Три брати – Кий, Щек, Хорив і сестра їхня Либідь",
+      "author": "Літописна оповідь",
+      "kind": "legend",
+      "page": 196,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "cossack-guard",
+      "title": "Козацька сторожа в степу",
+      "author": "Народний переказ",
+      "kind": "legend",
+      "page": 202,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "kozhumiaka",
+      "title": "Микита Кожум’яка",
+      "author": "Олександр Олесь",
+      "kind": "tale",
+      "page": 206,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "bohatyr-outpost",
+      "title": "Богатирська застава",
+      "author": "Сергій Плачинда",
+      "kind": "legend",
+      "page": 216,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "learn-read",
+      "title": "«Учітесь, читайте…»",
+      "author": "Тарас Шевченко",
+      "kind": "poem",
+      "page": 227,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "shevchenko-willow",
+      "title": "Шевченкова верба",
+      "author": "Богдан Лепкий",
+      "kind": "poem",
+      "page": 234,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "akkerman-steppes",
+      "title": "Акерманські степи",
+      "author": "Адам Міцкевич",
+      "kind": "poem",
+      "page": 238,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "my-language",
+      "title": "Мова моя",
+      "author": "Галина Кирпа",
+      "kind": "poem",
+      "page": 242,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
+    },
+    {
+      "id": "ukrainia",
+      "title": "Країна Українія",
+      "author": "Тетяна Майданович",
+      "kind": "poem",
+      "page": 244,
+      "cover": "images/icon.svg",
+      "scenes": 0,
+      "status": "soon"
     }
   ]
 }
