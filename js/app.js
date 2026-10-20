@@ -547,7 +547,7 @@ function pathView() {
 // ---------- Бібліотека ----------
 
 function libraryView() {
-  const cards = library.map((w) => {
+  const card = (w) => {
     const done = Object.values(state.works[w.id]?.scenes || {}).filter((e) => e.done).length;
     const ready = w.status !== 'soon';
     const kind = { poem: 'Вірш', tale: 'Казка', legend: 'Легенда', folk: 'Фольклор' }[w.kind] || '';
@@ -564,14 +564,18 @@ function libraryView() {
     return ready
       ? `<a class="card work" href="#/w/${w.id}">${inner}</a>`
       : `<div class="card work soon">${inner}</div>`;
-  }).join('');
+  };
+  const ready = library.filter((w) => w.status !== 'soon');
+  const soon = library.filter((w) => w.status === 'soon');
   return `
     <header class="top">
       <div class="brand"><span class="leaf-logo" aria-hidden="true"></span>Переказ</div>
     </header>
     <h1 class="title">Бібліотека</h1>
     <p class="note">Українська література, 5 клас</p>
-    <div class="works">${cards}</div>
+    <div class="works">${ready.map(card).join('')}</div>
+    ${soon.length ? `<h2 class="section">Скоро</h2>
+    <div class="works">${soon.map(card).join('')}</div>` : ''}
     ${tabs('library')}`;
 }
 

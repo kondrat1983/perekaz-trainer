@@ -405,3 +405,4 @@ u.hit { text-decoration-color: var(--reed); text-decoration-thickness: 3px; text
 .step.done .step-num { background: var(--reed); color: #fff; }
 .step.locked .step-btn { opacity: .5; cursor: default; }
 .step-title { font-family: 'Rubik', system-ui, sans-serif; font-weight: 700; font-size: 18px; }
+.section { font-size: 20px; padding: 6px 4px 0; color: var(--ink-soft); }
